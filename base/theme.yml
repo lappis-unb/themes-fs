@@ -1,4 +1,3 @@
-name: "Comunidade 2.0"
+name: "Noosfero base theme"
 layout: "application-ng"
-jquery_theme: "smoothness_mod"
 icon_theme: [default, pidgin]
