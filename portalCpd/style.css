@@ -46,9 +46,10 @@ body {
   position: static;
   display: block;
   width: 343px;
-  height: 72px;
-  background: url(images/logo.png);
+  height: 40px;
+  background: url(images/logo-unb.png);
   background-repeat: no-repeat;
+  margin-top: 20px;
 }
 
 #site-title span {
@@ -86,7 +87,7 @@ body {
 
 #top-functions {
   float: right;
-  background: #006633;
+  background: #0D4C89;
   white-space: nowrap;
   width: 100%;
   text-align: center;
@@ -234,7 +235,7 @@ body {
   position:absolute;
   top:18px;
   left:0px;
-  background-color: #006633;
+  background-color: #0D4C89;
   display:none;
   text-align: left;
   width: 166px;
@@ -283,7 +284,6 @@ body {
   outline: none;
   border: none;
 }
-
 #menu-top li:hover .menu-submenu-trigger:hover {
   background: #FFF url(/images/down-arrow.png) center center no-repeat;
   border: none;
@@ -310,6 +310,7 @@ body {
   display: none;
   background-image: url(images/icons/icone-blogoosfero.png);
 }
+
 
 /* * * fim dos Controles do topo * * * * * * * * * * * * * * * * * * * * * */
 
@@ -976,15 +977,6 @@ text-decoration: none;
   top: 70px;
 }
 
-#site-title a {
-  position: static;
-  display: block;
-  width: 343px;
-  height: 72px;
-  background: url(../unb-gama/images/logo.png);
-  background-repeat: no-repeat;
-}
-
 #site-title span {
   display: block;
 }
@@ -994,7 +986,7 @@ text-decoration: none;
 }
 
 #content-inner {
-  border-top: 3px solid #006633;
+  border-top: 3px solid #0D4C89;
   padding-top: 20px;
 }
 
