@@ -91,6 +91,7 @@ body {
   width: 100%;
   text-align: center;
   height: 32px;
+  position: fixed;
 }
 
 #top-functions span {
@@ -195,7 +196,62 @@ body {
   padding: 0px;
 }
 
+/*Estilizando itens menu*/
+#menu-top li {
+  list-style: none;
+  display: block;
+  height: auto;
+  /* width: 125px; */
+  float: left;
+  text-align: center;
+  position: relative;
+}
 
+/*estilo links*/
+#menu-top li a {
+  padding: 2px 5px;
+  font-size: 11px;
+  line-height: normal;
+  text-align: left;
+  white-space: nowrap;
+}
+
+/*estilo links*/
+#menu-top li a:hover {
+  font-size: 11px;
+  line-height: normal;
+  white-space: nowrap;
+  background: #FFF
+  color:#fff;
+  -moz-box-shadow:0 3px 10px 0 #FFF;
+  -webkit-box-shadow:0 3px 10px 0 #fff;
+  text-shadow:0px 0px 5px #fff;
+}
+
+/* Escondendo submenu */
+#menu-top li ul{
+  border-top: 0px;
+  position:absolute;
+  top:18px;
+  left:0px;
+  background-color: #006633;
+  display:none;
+  text-align: left;
+  width: 166px;
+  padding: 0;
+}
+
+/* Exibindo submenu */
+#menu-top li:hover ul, .menu-top li.over ul{
+  display:block;
+}
+
+/*Ajustes sub-menu */
+#menu-top li ul li{
+  display:block;
+  width:166px;
+  margin:2px 0px 2px 0px;
+}
 
 #menu-top li:last-child {
   margin-right: 0;
@@ -215,60 +271,6 @@ body {
   padding: 0px;
   position: relative;
 }
-/*Estilizando itens menu*/
-#menu-top li {
-  list-style: none;
-  display: block;
-  height: auto;
-  /* width: 125px; */
-  float: left;
-  text-align: center;
-  position: relative;
-  
-}
-/* Escondendo submenu */
-#menu-top li .menu-submenu{
-  border-top: 0px;
-  position:absolute;
-  top:19px;
-  left:-2px;
-  background-color: #006633;
-  display:none;
-  text-align: left;
-  width: 165px;
-}
-/* Exibindo submenu */
-#menu-top li:hover .menu-submenu, .menu-top li.over .menu-submenu{
-  display:block;
-}
-
-/*Ajustes sub-menu */
-#menu-top li .menu-submenu li{
-  display:block;
-  width:160px;
-}
-
-/*estilo links*/
-#menu-top li a {
-  padding: 4px 5px;
-  font-size: 11px;
-  line-height: normal;
-  text-align: left;
-  white-space: nowrap;
-}
-
-/*estilo links*/
-#menu-top li a:hover {
-  padding: 4px 5px;
-  font-size: 11px;
-  line-height: normal;
-  white-space: nowrap;
-  background: #FFF
-  color:#fff;
-  -moz-box-shadow:0 3px 10px 0 #FFF;
-  -webkit-box-shadow:0 3px 10px 0 #fff;
-  text-shadow:0px 0px 5px #fff;
-}
 
 #menu-top .menu-submenu-trigger {
   background: #B8B4B0 url(/images/down-arrow.png) center center no-repeat;
@@ -281,6 +283,7 @@ body {
   outline: none;
   border: none;
 }
+
 #menu-top li:hover .menu-submenu-trigger:hover {
   background: #FFF url(/images/down-arrow.png) center center no-repeat;
   border: none;
@@ -307,7 +310,6 @@ body {
   display: none;
   background-image: url(images/icons/icone-blogoosfero.png);
 }
-
 
 /* * * fim dos Controles do topo * * * * * * * * * * * * * * * * * * * * * */
 
