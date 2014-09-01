@@ -1,3 +1,15 @@
+<script type="text/javascript">
+jQuery("document").ready(function($){
+    var nav = $('#top-functions');
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 32) {
+            nav.addClass("fixed-top");
+        } else {
+            nav.removeClass("fixed-top");
+        }
+    });
+});
+</script>
 <div id="barra-brasil">
 </div>
 <div id="top-functions-box">

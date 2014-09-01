@@ -93,7 +93,14 @@ body {
   width: 100%;
   text-align: center;
   height: 32px;
+}
+
+.fixed-top{
+  z-index: 9999;
   position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
 }
 
 #top-functions span {
