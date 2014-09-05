@@ -45,12 +45,11 @@ body {
 #site-title a {
   position: static;
   display: block;
-  width: 343px;
-  height: 40px;
-  background: url(images/logo-unb.png);
+  width: 595px !important;
+  background: url(images/logo.png);
   background-repeat: no-repeat;
-  margin-top: 18px;
-  margin-right: -71px;
+  background-size: 100%;
+  margin-top: 15px;
 }
 
 #site-title span {
@@ -241,7 +240,7 @@ body {
 #menu-top li ul{
   border-top: 0px;
   position:absolute;
-  top:18px;
+  top:16px;
   left:0px;
   background-color: #0D4C89;
   display:none;
@@ -329,11 +328,7 @@ body {
 }
 
 #navigation ul{
-  background: url(images/logo_cpd.jpg);
-  background-repeat: no-repeat;
-  margin-right: 6px;
-  margin-top: 34px;
-  width: 274px;
+  dsiplay: none;
 }
 
 #navigation-end {
@@ -539,7 +534,7 @@ body {
 
 #content .link-list-block li a.link-this-page {
   border-radius: 0px;
-  background-color: #F0F0F0;
+  background-color: transparent;
   border: none;
   border-bottom: 1px dotted #555753;
 }
@@ -651,7 +646,7 @@ body {
 
 #footer-content {
   background: #EEE;
-  margin: -5px auto;
+  margin: auto auto;
   padding: 30px 20px 20px 20px;
   width: 921px;
   -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.3);
@@ -668,7 +663,7 @@ body {
 
 #footer-content li {
   margin: 0px;
-  padding: 0px 47px;
+  padding: 0px 68px;
   display: block;
   float: left;
 }
@@ -727,9 +722,9 @@ body {
 
 
 #license-on-footer {
-  padding: 170px 48px 0;
-  font-size: 11px;
-  text-align: left;
+  padding: 130px 48px 0;
+  font-size: 12px;
+  text-align: center;
   color: #003366;
 }
 
@@ -747,7 +742,7 @@ body {
 }
 
 #powered-by-noosfero {
-  font-size: 11px;
+  font-size: 10px;
   text-align: center;
 }
 
@@ -998,7 +993,7 @@ text-decoration: none;
 }
 
 #content {
-  margin-top: 166px;
+  margin-top: 150px;
 }
 
 #content-inner {
@@ -1008,7 +1003,7 @@ text-decoration: none;
 
 #top-search{
   float: right;
-  margin-top: 74px;
+  margin-top: 65px;
   display: inline-block;
 }
 
@@ -1017,7 +1012,7 @@ text-decoration: none;
   background: #F3F2F1;
   border: 1px solid #A09890;
   width: 273px;
-  margin-top: 42px;
+  margin-top: 8px;
 }
 
 #top-search div{

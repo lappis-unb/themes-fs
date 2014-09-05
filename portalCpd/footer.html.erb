@@ -1,7 +1,7 @@
 <script type="text/javascript">
   jQuery(".date").each(function() {
 		var d = jQuery(this).text().split(/,? /);
-		<% if html_language == 'en' %>
+		<% if html_language == 'pt' %>
 		  var month = d[0];
 			var day = d[1];
 		<% else %>
@@ -21,36 +21,12 @@
     <a href="http://unb.br" target="_blank" id="unb"><span>Universidade de Brasília</span></a>
   </li>
   <li>
-    <strong>Portal UnB Gama</strong>
+    <strong>Centro de Informática CPD</strong>
     <ul>
-      <li><%= link_to 'Página Inicial', '/' %></li>
       <li><%= link_to 'Sobre',  "/unb-gama/sobre" %></li>
-      <li><%= link_to 'Graduação',  "/unb-gama/graduacao" %></li>
-      <li><%= link_to 'Pós-Graduação',  "/unb-gama/pos-graduacao" %></li>
-     <!-- <li><%= link_to 'Informações',  "/unb-gama/informacoes" %></li> -->
+      <li><%= link_to 'Informações',  "/unb-gama/informacoes" %></li>
       <li><%= link_to 'Contato',  "/unb-gama/contato" %></li>
     </ul>
-  </li>
-  <li>
-   <div class="redesSociais">
-      <strong>Redes Sociais</strong>
-      <ul>
-        <li><a class="facebook" target="_blank" title="Facebook FGA" alt="Facebook FGA" href="https://www.facebook.com/groups/189467721113004/">Facebook</a>
-        </li>
-        <li><a class="googleplus" target="_blank" title="Google+ UnB Gama" alt="Google+ UnB Gama" href="https://plus.google.com/u/0/104490359477931809449">Google+
-        </a></li>
-        <li><a class="twitter" target="_blank" title="Siga-nos no Twiiter" alt="Siga-nos no Twiiter" href="http://www.twitter.com/unbgama">Twitter
-        </a></li>
-        <!--<li><a class="vimeo" target="_blank" title="UnB Gama on Vimeo" alt="UnB Gama on Vimeo" href="https://vimeo.com/user13476764">Vimeo
-        </a></li>-->
-        <li><a class="linkedin" target="_blank" title="Linkedin UnB Gama" alt="Linkedin UnB Gama" href="http://lnkd.in/iYwfA6">LinkedIn
-          </a></li>
-        <!--<li><a class="flickr" target="_blank" title="UnB Gama no Flickr" alt="UnB Gama no Flickr" href="http://www.flickr.com/people/87145351@N02/">Flickr
-        </a></li>-->
-        <li><a class="feed" title="Assinar RSS UnB Gama" alt="Assinar RSS UnB Gama" href="http://fga.unb.br/unb-gama/noticias/feed">Feed RSS
-        </a></li>
-      </ul>
-    </div>
   </li>
   <li>
     <% if logged_in? %>
@@ -84,10 +60,8 @@
   </li>
 </ul>
 <div id='license-on-footer'>
-<a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.pt_BR" id="footer-cc"><span>Licença Creative Commons</span></a>
-Todo o conteúdo e dados do Portal da UnB Gama estão disponíveis sob a licença <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.pt_BR">Creative Commons Atribuição 3.0 Unported (CC BY 3.0)</a>, exceto quando especificado em contrário e nos conteúdos replicados de outras fontes.
-</div>
-<%= language_chooser(environment) %>
+<p>Campus Universitário Darcy Ribeiro, Brasília - CEP 70910-900 - Telefone Geral (55 61)3107-3300
+<br>Copyright © 2012 Universidade de Brasília. Todos os direitos reservados.</p>
 <p id="powered-by-noosfero">Esta rede social utiliza o software livre Noosfero, licenciado pela GNU Affero General Public License, versão 3 ou superior.</p>
 </div><!-- fim id="footer-content" -->
 
