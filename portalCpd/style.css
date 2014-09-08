@@ -125,6 +125,12 @@ body {
   display: none;
 }
 
+#signup-form {
+  color: #4A4A4A;
+  display: inline-block;
+  width: 407px;
+}
+
 #user {
   display: inline-block;
   position: static;
@@ -392,6 +398,10 @@ body {
   border-radius: 15px;
 }
 
+#content input.button.with-text.icon-login.submit{
+  float: left;
+}
+
 #content .login-block h2 {
   background: url(images/icons/persons.png) no-repeat 0% 50%;
   border: none;
@@ -408,6 +418,10 @@ body {
 
 .login-block .login-box form {
   padding: 0px;
+}
+
+.login-box form {
+  padding: 0px 0px 0px;
 }
 
 .login-block .forgot-passwd a {
@@ -443,7 +457,14 @@ body {
 }
 
 #content .login-block .button.with-text span {
-  padding: 20px;
+  padding: 2px;
+}
+
+#content a.button.icon-add.with-text.join-community,
+#content a.button.icon-delete.with-text.leave-community,
+#content a.button.with-text.icon-menu-mail,
+#content a.button.icon-alert.with-text.report-abuse-action{
+  display: block;
 }
 
 #content .login-block input.button.icon-login {
@@ -1039,6 +1060,37 @@ text-decoration: none;
   display: none;
   bottom: -5px;
   left: 0px;
+}
+
+#public-profile-search .formfield {
+  width: 80%;
+}
+
+
+
+#profile-search-results form .formfield input {
+  width: 384px;
+}
+
+.search-field .formfield, .search-field .formfield input {
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  height: 25px;
+  top: 0px;
+}
+
+.search-field input {
+  vertical-align: middle;
+}
+
+#content input.button.with-text.icon-search.submit{
+  width: 18%;
+}
+
+#content form input.button.submit {
+  height: 28px;
+  cursor: pointer;
+  float: right;
 }
 
 .members-buttons-cell{
