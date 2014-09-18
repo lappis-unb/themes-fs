@@ -13,6 +13,7 @@
   line-height: 16px;
   height: 16px;
   text-decoration: none;
+  margin-left: -4px;
 }
 
 #content input.button.with-text, #content a.button.with-text {
