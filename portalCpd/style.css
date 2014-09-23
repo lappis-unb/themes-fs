@@ -767,6 +767,8 @@ body {
   -webkit-border-radius: 0;
   margin-left: 20px !important;
   margin-right: 20px !important;
+  height: 396px !important;
+  width: 704px !important;
 }
 
 .highlights-image-link {
@@ -779,7 +781,8 @@ body {
 
 .highlights-container,
 .highlights-image-link {
-  height: 275px !important;
+  height: 396px !important;
+  width: 704px !important;
   border:none;
 }
 
@@ -791,7 +794,7 @@ body {
 
 .highlights-label {
   #padding-left: 5px;
-  text-align: left;
+  text-align: center;
   position: absolute;
   z-index: 2;
   left: 0;
