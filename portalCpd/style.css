@@ -1074,12 +1074,17 @@ text-decoration: none;
   top: 0px;
 }
 
+.controller-search .search-field .formfield {
+  width: 784px;
+  margin-right: 5px;
+}
+
 .search-field input {
   vertical-align: middle;
 }
 
 #content input.button.with-text.icon-search.submit{
-  width: 18%;
+  width: 90px;
 }
 
 #content form input.button.submit {
