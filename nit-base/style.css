@@ -10,13 +10,228 @@ text-align: left;
 
 }
 
-
 /************************** user bar ***************************/
 
 #user a,
 #user a strong {
   color: #006633;
 }
+
+/* * * Controles do topo * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+#theme-header {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 100;
+  height: 0px;
+}
+
+#wrap-1 {
+  padding-top: 33px;
+}
+
+#wrap-2 #user {
+  display: none !important;
+  padding-top: 33px;
+}
+
+#top-functions-box {
+  margin: auto;
+  color: #FFF;
+  font-size: 13px;
+}
+
+#top-functions-box a {
+  color: #FFF;
+}
+
+#top-functions-box a:hover {
+  text-shadow: 0 0 4px #FFF;
+}
+
+#top-functions {
+  float: right;
+  background: #006633;
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+  height: 32px;
+}
+
+#top-functions span {
+  font-weight: bold;
+}
+
+.logged-in #top-functions {
+  padding-left: 6px;
+}
+
+#conecte-se {
+  display:inline-block;
+  position: relative;
+  right: 0px;
+  top: -7px;
+}
+#conecte-se a {
+  text-decoration: none;
+}
+
+#conecte-se .signup,
+#conecte-se .or {
+  display: none;
+}
+
+#user {
+  display: inline-block;
+  position: static;
+  color: rgba(255,255,255,0.4);
+  border-left: 1px dotted #959491;
+  padding-left: 6px;
+  margin-left: 11px;
+}
+
+.logged-in #user {
+  border-left: none;
+  padding-left: 0;
+}
+
+.logged-in .label-conect {
+  display: none;
+}
+
+#user a {
+  text-decoration: none;
+}
+
+#user .not-logged-in a {
+  background: url(images/icons/ok-smal.png) no-repeat 0% 50%;
+  padding-left: 15px;
+  margin: 0px 3px;
+}
+
+#user .not-logged-in a i {
+  display: none;
+}
+
+#user a strong {
+  color: #D8D4D0;
+}
+#user a:hover strong {
+  color: #FFF;
+}
+
+#user form div {
+  display: none;
+}
+
+#menu-top {
+  display:inline-block;
+  margin: 8px 0px 0px -5px;
+  padding: 0px;
+}
+
+#menu-top li {
+  list-style: none;
+  display: block;
+  height: auto;
+  /* width: 125px; */
+  float: left;
+  text-align: center;
+  position: relative;
+  margin-right: 20px;
+}
+
+#menu-top li:last-child {
+  margin-right: 0;
+}
+
+#menu-top a {
+  display: block;
+  /* line-height: 42px; */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+#menu-top .menu-submenu ul, #menu-top .menu-submenu li {
+  float: none;
+  text-align: right;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+
+#menu-top .menu-submenu {
+  bottom: -75px;
+  width: auto;
+  min-width: 100%;
+  top: 32px;
+  right: -10px;
+  position: absolute;
+  padding-top: 33px;
+}
+
+#menu-top .menu-submenu ul {
+  border-top: 0px;
+  background: #006633;
+  /*background-image: -webkit-linear-gradient(bottom, #564F47, #736D64);
+  background-image:    -moz-linear-gradient(bottom, #564F47, #736D64 90%);
+  background-image:     -ms-linear-gradient(bottom, #564F47, #736D64);
+  background-image:      -o-linear-gradient(bottom, #564F47, #736D64);
+  background-image:         linear-gradient(bottom, #564F47, #736D64);*/
+  padding: 0px 3px 4px 0px;
+  height: auto;
+  display: block;
+}
+
+#menu-top .menu-submenu a {
+  padding: 4px 5px;
+  font-size: 11px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+#menu-top .menu-submenu-trigger {
+  background: #B8B4B0 url(/images/down-arrow.png) center center no-repeat;
+  opacity: 0.5;
+  display: none;
+  height: 11px;
+  top: 21px;
+  left: 0;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+#menu-top li:hover .menu-submenu-trigger:hover {
+  background: #FFF url(/images/down-arrow.png) center center no-repeat;
+  border: none;
+}
+
+#menu-top li:hover .menu-submenu-trigger {
+  display: block;
+}
+
+#menu-top .menu-submenu-header, #menu-top .menu-submenu-footer, #menu-top .menu-submenu h4 {
+  display: none;
+}
+
+#menu-top span.icon-menu-people {
+  background-image: url(images/icons/persons.png);
+}
+#menu-top span.icon-menu-community {
+  background-image: url(images/icons/gear.png);
+}
+#menu-top #submenu-contents span {
+  background-image: url(images/icons/icone-08.png);
+}
+#conecte-se span.label-conect {
+  display: none;
+  background-image: url(images/icons/icone-blogoosfero.png);
+}
+
+
+/* * * fim dos Controles do topo * * * * * * * * * * * * * * * * * * * * * */
 
 /************************** content ***************************/
 
