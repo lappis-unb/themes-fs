@@ -450,8 +450,7 @@ body {
 
 #content a.button.icon-add.with-text.join-community,
 #content a.button.icon-delete.with-text.leave-community,
-#content a.button.with-text.icon-menu-mail,
-#content a.button.icon-alert.with-text.report-abuse-action{
+#content a.button.with-text.icon-menu-mail{
   display: block;
 }
 
