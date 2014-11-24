@@ -1085,7 +1085,6 @@ text-decoration: none;
 #content form input.button.submit {
   height: 28px;
   cursor: pointer;
-  float: right;
 }
 
 .members-buttons-cell{
@@ -1098,4 +1097,8 @@ table.cms-articles th:nth-child(2){
 
 table.cms-articles th:nth-child(3){
   width: 38%;
+}
+
+.button.icon-help.with-text.lbOn {
+  margin-top: -10px;
 }
