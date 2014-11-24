@@ -275,7 +275,8 @@ text-align: left;
 
 
 #content .link-list-block li a.link-this-page {
-  background-color: #73D216;
+  background-color: #006633;
+  color: #ffffff;
   border-right:2px solid #006633;
 }
 
