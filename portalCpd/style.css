@@ -583,10 +583,7 @@ body {
 
 .highlights-container a img{
   width: 100%;
-  float:  center;
-  position: relative;
-  top: 50%;
-  transform: translate(0, -50%)
+  height: 100%;
 }
 
 #portal-news ul {
