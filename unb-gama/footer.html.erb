@@ -27,7 +27,8 @@
       <li><%= link_to 'Sobre',  "/unb-gama/sobre" %></li>
       <li><%= link_to 'Graduação',  "/unb-gama/graduacao" %></li>
       <li><%= link_to 'Pós-Graduação',  "/unb-gama/pos-graduacao" %></li>
-     <!-- <li><%= link_to 'Informações',  "/unb-gama/informacoes" %></li> -->
+      <!-- <li><%= link_to 'Informações',  "/unb-gama/informacoes" %></li> -->
+      <li><%= link_to 'Termos de Uso', "/site/terms" %></li>
       <li><%= link_to 'Contato',  "/unb-gama/contato" %></li>
     </ul>
   </li>
@@ -65,7 +66,7 @@
               <%= link_to 'Administração',  "/admin" %>
             </li>
           <% end %>
-          
+
           <li>
             <%= link_to 'Sair', "/account/logout" %>
           </li>
@@ -113,7 +114,7 @@ jQuery(document).ready(function(){
       }
     });
   });
-  
+
   // Oculta painel para usuarios nao autorizados
   (function(){
     var logado = jQuery("#usuario_logado").val();
