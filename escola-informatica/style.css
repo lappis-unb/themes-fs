@@ -42,14 +42,11 @@ body {
   top: 70px;
 }
 
+/*FIX-ME*/
 #site-title a {
   position: static;
-  display: block;
-  width: 595px !important;
-  background: url(images/logo.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  margin-top: 15px;
+  display: none;
+  margin-top: 0px;
 }
 
 #site-title span {
@@ -206,7 +203,7 @@ body {
 
 #menu-top {
   display:inline-block;
-  margin: 8px 0px 0px -5px;
+  margin: 8px 0px 0px 50px;
   padding: 0px;
 }
 
@@ -219,6 +216,44 @@ body {
   float: left;
   text-align: center;
   position: relative;
+}
+
+#top-functions #logo-unb {
+  background-image: url(images/unb.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  list-style: none;
+  display: block;
+  height: 33px;
+  width: 121px;
+  float: left;
+  text-align: left;
+  position: relative;
+  top: 3px;
+  margin-left: 8px;
+  /*hide text*/
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#top-functions #logo-cpd {
+  background-image: url(images/logo-cpd.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  list-style: none;
+  display: block;
+  height: 33px;
+  width: 236px;
+  float: right;
+  text-align: right;
+  position: relative;
+  top: 4px;
+  margin-left: 8px;
+  /*hide text*/
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 /*estilo links*/
@@ -664,7 +699,7 @@ body {
 /* * * Footer * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 #theme-footer {
-  back ground: #E4E4E4;
+  background: #E4E4E4;
   width: auto;
   margin: -5px 0px;
   position: relative;
@@ -1020,12 +1055,12 @@ text-decoration: none;
 }
 
 #content {
-  margin-top: 150px;
+  margin-top: 50px;
 }
 
 #content-inner {
   border-top: 3px solid #00A0A7;
-  padding-top: 20px;
+  padding-top: 16px;
 }
 
 #top-search{

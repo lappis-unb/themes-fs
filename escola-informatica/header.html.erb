@@ -14,7 +14,9 @@ jQuery("document").ready(function($){
 </div>
 <div id="top-functions-box">
   <div id="top-functions">
+  <%= link_to 'UnB',  "http://www.unb.br", id: "logo-unb" %>
     <ul id="menu-top">
+      <li></li>
       <li><%= link_to 'Inicial',  "/" %></li>
       <li><%= link_to 'CFOR-TI UnB',  "/cfortiunb" %>
         <ul>
@@ -36,5 +38,6 @@ jQuery("document").ready(function($){
       </li>
       <li><%= link_to 'Sobre',  "/cfortiunb/sobre" %></li>
     </ul>
+    <%= link_to 'CPD',  "/cfortiunb/cpd", id: "logo-cpd" %>
   </div>
 </div>
