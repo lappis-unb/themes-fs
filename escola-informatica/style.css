@@ -85,7 +85,7 @@ body {
 #top-functions {
   float: right;
   background: #00A0A7;
-  white-space: nowrap;
+  white-space: normal;
   width: 100%;
   text-align: center;
   height: 40px;
@@ -577,9 +577,9 @@ body {
   color: #003366;
 }
 
-#content .tags-block .block-footer-content a, 
-#content .profile-list-block .block-footer-content a, 
-#content .enterprises-block .block-footer-content a, 
+#content .tags-block .block-footer-content a,
+#content .profile-list-block .block-footer-content a,
+#content .enterprises-block .block-footer-content a,
 #content .communities-block .block-footer-content a {
   position: absolute;
   top: 9px;
