@@ -1,3 +1,4 @@
 name: "Comunidade UnB"
 layout: "application-ng"
+jquery_theme: "smoothness"
 icon_theme: [default, pidgin]
