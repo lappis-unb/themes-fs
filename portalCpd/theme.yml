@@ -1,0 +1,4 @@
+name: "Portal CPD"
+layout: "application-ng"
+jquery_theme: "smoothness"
+icon_theme: [flaticons]

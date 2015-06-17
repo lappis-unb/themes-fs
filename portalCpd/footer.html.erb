@@ -1,0 +1,106 @@
+<script type="text/javascript">
+  jQuery(".date").each(function() {
+		var d = jQuery(this).text().split(/,? /);
+		<% if html_language == 'pt' %>
+		  var month = d[0];
+			var day = d[1];
+		<% else %>
+		  var month = d[1];
+			var day = d[0];
+    <% end %>
+	});
+	jQuery("#user").prependTo("#conecte-se");
+  jQuery("#top-search").prependTo("#wrap-2");
+  jQuery(".link-list-block li a").append("<span class='link-this-page-background'>&nbsp;</span>");
+</script>
+
+
+<div id="footer-content">
+<ul>
+  <li>
+    <a href="http://unb.br" target="_blank" id="unb"><span>Universidade de Brasília</span></a>
+  </li>
+  <li>
+    <strong>Centro de Informática CPD</strong>
+    <ul>
+      <li><%= link_to 'Sobre',  "/institucional/sobre-o-cpd" %></li>
+      <li><%= link_to 'Serviços',  "/servicos" %></li>
+      <li><%= link_to 'Contato',  "/institucional/fale-com-o-cpd" %></li>
+    </ul>
+  </li>
+  <li>
+    <% if logged_in? %>
+      <strong class="user-name"><%= user.name %></strong>
+        <ul>
+          <li>
+            <%= link_to 'Painel de Controle', "/myprofile/#{user.identifier}" %>
+          </li>
+
+          <% if user.is_admin? %>
+            <li>
+              <%= link_to 'Administração',  "/admin" %>
+            </li>
+          <% end %>
+          
+          <li>
+            <%= link_to 'Sair', "/account/logout" %>
+          </li>
+        </ul>
+    <% else %>
+      <strong>Painel de Controle</strong>
+        <form id="footer-login" action="/account/login" method="post">
+          <input name="user[login]" placeholder="<%=_('User name')%>" type="text">
+          <input name="user[password]" placeholder="<%=_('Password')%>" type="password">
+        <div>
+          <%= submit_button( 'login', _('Log in') )%>
+          <%= button :help, _("Esqueci a Senha"), :controller => 'account', :action => 'forgot_password' %>
+        </div>
+    </form>
+    <% end %>
+  </li>
+</ul>
+<div id='license-on-footer'>
+<p>Campus Universitário Darcy Ribeiro, Brasília - CEP 70910-900 - Telefone Geral (55 61)3107-3300
+<br>Copyright © 2012 Universidade de Brasília. Todos os direitos reservados.</p>
+<p id="powered-by-noosfero">Este site utiliza o software livre Noosfero, licenciado pela GNU Affero General Public License, versão 3 ou superior.</p>
+</div><!-- fim id="footer-content" -->
+
+<script type="text/javascript">
+jQuery(document).ready(function(){
+  // Corrige borda duplicada da ultima notica em destaque
+  (function(){
+    var busca = jQuery("#highlighted-news .highlighted-news-item");
+    var nLast = busca.length-1;
+
+    jQuery(busca[nLast]).css("border-bottom", "none");
+  })();
+
+  // Evento da dados do perfil do usuario
+  jQuery("#q").ready(function(){
+    jQuery("#q").val("Busca no perfil...");
+    jQuery("#q").click(function(){
+      jQuery(this).val("");
+    });
+    jQuery("#q").blur(function(){
+      if( jQuery("#q").val().length == 0 ) {
+        jQuery("#q").val("Busca no perfil...");
+      }
+    });
+  });
+  
+  // Oculta painel para usuarios nao autorizados
+  (function(){
+    var logado = jQuery("#usuario_logado").val();
+
+    if( logado == "Nao" ) jQuery(".my-network-actions").css("display", "none");
+  })();
+});
+</script>
+
+<% if logged_in? %>
+<input type="hidden" id="usuario_logado" value="Sim">
+<% else %>
+<input type="hidden" id="usuario_logado" value="Nao">
+<% end %>
+</script>
+<script type="text/javascript" src="http://barra.brasil.gov.br/barra.js?cor=cinza"></script>

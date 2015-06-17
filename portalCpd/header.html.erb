@@ -1,0 +1,70 @@
+<script type="text/javascript">
+jQuery("document").ready(function($){
+    var nav = $('#top-functions');
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 32) {
+            nav.addClass("fixed-top");
+        } else {
+            nav.removeClass("fixed-top");
+        }
+    });
+});
+</script>
+<div id="barra-brasil">
+</div>
+<div id="top-functions-box">
+  <div id="top-functions">
+    <ul id="menu-top">
+      <li><%= link_to 'Inicial',  "/" %></li>
+      <li><%= link_to 'Institucional',  "/institucional" %>
+        <ul>
+          <li><%= link_to 'Sobre o CPD',  "/institucional/sobre-o-cpd" %></li>
+          <li><%= link_to 'Missão e Visão',"/institucional/missao-e-visao" %></li>
+          <li><%= link_to 'Estrutura organizacional',  "/institucional/estrutura-organizacional" %></li>
+          <li><%= link_to 'Localização',"/institucional/localizacao" %></li>
+        </ul>
+      </li>
+      <li><%= link_to 'Atendimento',  "/institucional/atendimento" %></li>
+      <li><%= link_to 'Serviços',  "/servicos" %>
+        <ul>
+          <li><%= link_to 'Serviços de Negócio',  "/servicos-de-negocio" %></li>
+          <li><%= link_to 'Serviços Técnicos',  "/servicos-tecnicos" %></li>
+        </ul>
+      </li>
+      <li><%= link_to 'Processos',  "/processos" %>
+        <ul>
+          <li><%= link_to 'PDS',  "/processos/processo-de-desenvolvimento-de-software" %></li>
+          <li><%= link_to 'PED',  "/processos/processo-de-estrategia-de-dados" %></li>
+          <li><%= link_to 'PTS',  "/processos/processo-de-teste-de-software" %></li>
+        </ul>
+      </li>
+      <li><%= link_to 'Políticas',  "/politicas" %>
+        <ul>
+          <li><%= link_to 'Segurança',  "/politicas/seguranca" %></li>
+          <li><%= link_to 'Telefonia',  "/politicas/telefonia" %></li>
+          <li><%= link_to 'E-mail',  "/politicas/e-mail" %></li>
+        </ul>
+      </li>
+      <li><%= link_to 'Licitações e contratos',  "/licitacoes-e-contratos" %>
+        <ul>
+          <li><%= link_to 'Planejamento de contratações',  "/planejamento-de-contratacoes" %></li>
+          <li><%= link_to 'Licitações em andamento',  "/licitacoes-em-andamento" %></li>
+          <li><%= link_to 'Licitações concluídas',  "/licitacoes-concluidas" %></li>
+          <li><%= link_to 'Atas de registro e preço',  "/atas-de-registro-e-preco" %></li>
+          <li><%= link_to 'Licitações concluídas',  "/licitacoes-concluidas" %></li>
+          <li><%= link_to 'Atas de registro de preços',  "/atas-de-registro-de-precos" %></li>
+          <li><%= link_to 'Gestão de contratos',  "/gestao-de-contratos" %></li>
+        </ul>
+      </li>
+      <li><%= link_to 'Publicações',  "/publicacoes" %>
+        <ul>
+          <li><%= link_to 'Artigos',  "/publicacoes/artigos" %></li>
+          <li><%= link_to 'Cartilhas',  "/publicacoes/cartilhas" %></li>
+          <li><%= link_to 'Manuais',  "/publicacoes/manuais" %></li>
+          <li><%= link_to 'Boas práticas',  "/publicacoes/boas-praticas" %></li>
+        </ul>
+      </li>
+      <li><%= link_to 'Fale com o CPD',  "/institucional/fale-com-o-cpd" %></li>
+    </ul>
+  </div>
+</div>
