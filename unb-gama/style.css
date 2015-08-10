@@ -909,7 +909,7 @@ padding: 0;
   display: none;
 }
 
-#content .blog-post .title a { 
+#content .blog-post .title a {
 color: #003366;
 font-weight: normal;
 text-decoration: none;
@@ -1031,4 +1031,31 @@ table.cms-articles th:nth-child(2){
 
 table.cms-articles th:nth-child(3){
   width: 38%;
+}
+
+/* flags style */
+
+.flags{
+  float: right;
+  padding: 3px;
+}
+
+div.article-body.article-body-tiny-mce-article.has-flags {
+  margin-top: 55px;
+}
+
+.article-translations {
+  margin-top: -39px;
+}
+
+span.publishing-info.has-flags{
+  margin-top: 50px;
+}
+
+.publishing-info {
+  margin-top: 10px;
+}
+
+.article-body {
+  margin-top: 10px;
 }
