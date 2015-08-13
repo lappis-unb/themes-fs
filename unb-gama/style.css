@@ -1041,15 +1041,17 @@ table.cms-articles th:nth-child(3){
 }
 
 div.article-body.article-body-tiny-mce-article.has-flags {
-  margin-top: 55px;
+  margin-top: 37px;
 }
 
 .article-translations {
   margin-top: -39px;
+  padding-top: 96px;
 }
 
 span.publishing-info.has-flags{
-  margin-top: 50px;
+  float: left;
+  margin-top: 1px;
 }
 
 .publishing-info {
@@ -1058,4 +1060,17 @@ span.publishing-info.has-flags{
 
 .article-body {
   margin-top: 10px;
+}
+
+#addThis {
+  margin-top: -37px;
+  margin-right: 0px;
+}
+
+#bt_addThis.without-flags > img {
+  padding-top: 15px;
+}
+
+#bt_addThis.with-flags > img {
+  padding-top: 0px;
 }

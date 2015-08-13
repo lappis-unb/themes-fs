@@ -49,7 +49,11 @@ $(document).ready(function () {
 
     if($('.article-translations').length != 0) {
       $('.article-body').addClass('has-flags');
-      $('.publishing-info').addClass('  has-flags');
+      $('.publishing-info').addClass('has-flags');
+      $('#bt_addThis').addClass('with-flags');
+    }
+    else {
+      $('#bt_addThis').addClass('without-flags');
     }
 
     var link = $('.article-translations-menu');
