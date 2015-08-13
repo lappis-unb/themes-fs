@@ -691,7 +691,6 @@ body {
   margin-top: 1.5em;
 }
 
-
 #license-on-footer {
   padding: 170px 48px 0;
   font-size: 11px;
@@ -1073,4 +1072,33 @@ span.publishing-info.has-flags{
 
 #bt_addThis.with-flags > img {
   padding-top: 0px;
+}
+
+#agenda > div.agenda-calendar > table > caption > a.button.icon-next.with-text{
+  padding-left: 6px !important;
+  padding-right: 21px !important;
+}
+
+#events-of-the-day {
+  padding-top: 10px;
+}
+
+.button.icon-vertical-toggle.with-text {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  position: static;
+  float: right;
+}
+
+#content-inner > div.no-boxes > div > div > div > div.text-editor-sidebar > div.header {
+  height: 20px;
+}
+
+.text-editor-sidebar{
+  margin-top: 63%;
+  margin-right: -9px;
+}
+
+#content-inner > div.no-boxes > div > div > div > div.with_media_panel {
+  width: 940px;
 }
