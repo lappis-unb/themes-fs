@@ -523,7 +523,6 @@ body {
 }
 /* * * FIM Blocos * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-
 /* * * Notícias * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 #content .main-block h1 {
@@ -937,7 +936,6 @@ text-decoration: none;
   line-height: 1.9em;
 }
 
-
 .article-body>h2 {
   background: url("images/divider.png") center top no-repeat;
   left: 0;
@@ -981,7 +979,6 @@ text-decoration: none;
   margin-top: 74px;
   display: inline-block;
 }
-
 
 #top-search input {
   background: #F3F2F1;
@@ -1057,19 +1054,6 @@ span.publishing-info.has-flags{
   margin-top: 10px;
 }
 
-#addThis {
-  margin-top: -37px;
-  margin-right: 0px;
-}
-
-#bt_addThis.without-flags > img {
-  padding-top: 15px;
-}
-
-#bt_addThis.with-flags > img {
-  padding-top: 0px;
-}
-
 #agenda > div.agenda-calendar > table > caption > a.button.icon-next.with-text{
   padding-left: 6px !important;
   padding-right: 21px !important;
@@ -1097,4 +1081,26 @@ span.publishing-info.has-flags{
 
 #content-inner > div.no-boxes > div > div > div > div.with_media_panel {
   width: 940px;
+}
+
+/* Changing css */
+#content .main-block .publishing-info {
+  text-align: left;
+  color: #AAA;
+  font-size: 11px;
+  margin-bottom:15px;
+}
+
+/* fixing flag and bookmark style */
+
+#addThis {
+  margin-top: -37px;
+}
+
+#bt_addThis.without-flags > img {
+  padding-top: 15px;
+}
+
+#bt_addThis.with-flags > img {
+  padding-top: 0px;
 }
