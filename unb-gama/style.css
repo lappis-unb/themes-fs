@@ -1036,6 +1036,26 @@ div.article-body.article-body-tiny-mce-article.has-flags {
   margin-top: 37px;
 }
 
+
+.profile-info-options {
+  padding-right: 2px;
+}
+
+a.button.icon-add.with-text.join-community {
+  width: 151px;
+}
+
+a.button.icon-delete.with-text.leave-community {
+  width: 151px;
+}
+
+a.button.icon-menu-mail.with-text {
+  width: 151px;
+}
+
+.profile-info-options a.button.icon-alert.with-text.report-abuse-action {
+  width: 151px;
+}
 .article-translations {
   margin-top: -39px;
   padding-top: 96px;
@@ -1104,3 +1124,4 @@ span.publishing-info.has-flags{
 #bt_addThis.with-flags > img {
   padding-top: 0px;
 }
+
