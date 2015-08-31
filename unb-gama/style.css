@@ -1125,3 +1125,23 @@ span.publishing-info.has-flags{
   padding-top: 0px;
 }
 
+#content-inner > div.no-boxes > div > div > div > div.with_media_panel > form {
+  padding-right: 41px;
+}
+
+#content-inner > div.no-boxes > div > div > div > div.text-editor-sidebar {
+  margin-top: 44%;
+  margin-right: 11px;
+}
+
+#content-inner > div.no-boxes > div > div > div > div.with_media_panel > form > div:nth-child(11) {
+  margin-bottom: 0em;
+}
+
+#content-inner > div.no-boxes > div > div > div > div.with_media_panel > form > h4 {
+  margin: 13px 0px;
+}
+
+#content-inner > div.no-boxes > div > div > div > div.with_media_panel > form > div:nth-child(12) > a {
+  margin-right: 0px;
+}
