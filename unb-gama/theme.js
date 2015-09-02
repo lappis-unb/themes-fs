@@ -56,6 +56,13 @@ $(document).ready(function () {
       $('#bt_addThis').addClass('without-flags');
     }
 
+    if($('#article_end_date_3i').length != 0) {
+      $('.text-editor-sidebar').addClass('is-event');
+    }
+    else {
+      $('.text-editor-sidebar').addClass('is-not-event');
+    }
+
     var link = $('.article-translations-menu');
     var data = link.attr('onmouseover');
     var regExp = /\[.*\]/;
