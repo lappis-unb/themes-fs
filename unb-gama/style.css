@@ -1022,7 +1022,15 @@ table.cms-articles th:nth-child(2){
 }
 
 table.cms-articles th:nth-child(3){
-  width: 38%;
+  width: 17%;
+}
+
+table.cms-articles th:last-child {
+  width: 161px;
+}
+
+.last-update {
+  text-align: center;
 }
 
 /* flags style */
@@ -1156,4 +1164,6 @@ span.publishing-info.has-flags{
 .button-bar {
   margin-bottom: 0em;
 }
+
+/*Fix options in "My Profile" */
 
