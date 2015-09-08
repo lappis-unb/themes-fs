@@ -60,20 +60,22 @@ $(document).ready(function () {
     var data = link.attr('onmouseover');
     var regExp = /\[.*\]/;
     var new_data = regExp.exec(data);
-    var trad = $.parseJSON(new_data[0]);
     var div = link.parent();
 
-    if (link != undefined) {
-      $.each(trad, function(index, value) {
-        if (value.English != undefined) {
-          div.append(' <a  div class="flags" href="'+value.English.href+'"><img src="../designs/themes/unb-gama/images/flag_en.png"></a>');
-        }else if(value.Portugu\u00eas != undefined) {
-          div.append(' <a div class="flags" href="'+value.Portugu\u00eas.href+'"><img src="../designs/themes/unb-gama/images/flag_pt.png" /> </a>');
-        }else if(value.Espa\u00f1ol != undefined) {
-          div.append(' <a div class="flags" href="'+value.Espa\u00f1ol.href+'"><img src="../designs/themes/unb-gama/images/flag_es.png" /></a>');
-        }
-      });
-      link.replaceWith('<span class="article-translations-menu simplemenu-trigger up">'+link.text()+'</span>');
+    if (new_data != null) {
+      var trad = $.parseJSON(new_data[0]);
+      if (link != undefined) {
+        $.each(trad, function(index, value) {
+          if (value.English != undefined) {
+            div.append(' <a  div class="flags" href="'+value.English.href+'"><img src="../designs/themes/unb-gama/images/flag_en.png"></a>');
+          }else if(value.Portugu\u00eas != undefined) {
+            div.append(' <a div class="flags" href="'+value.Portugu\u00eas.href+'"><img src="../designs/themes/unb-gama/images/flag_pt.png" /> </a>');
+          }else if(value.Espa\u00f1ol != undefined) {
+            div.append(' <a div class="flags" href="'+value.Espa\u00f1ol.href+'"><img src="../designs/themes/unb-gama/images/flag_es.png" /></a>');
+          }
+        });
+        link.replaceWith('<span class="article-translations-menu simplemenu-trigger up">'+link.text()+'</span>');
+      }
     }
   });
 });
