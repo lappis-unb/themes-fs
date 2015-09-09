@@ -52,7 +52,7 @@ body {
 }
 
 #site-title span {
-  display:
+  /*display*/:
 }
 
 /* * * Controles do topo * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -607,7 +607,7 @@ body {
 /* * * Footer * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 #theme-footer {
-  backg   round: #E4E4E4;
+  background: #E4E4E4;
   width: auto;
   margin: -5px 0px;
   position: relative;
@@ -909,7 +909,7 @@ padding: 0;
   display: none;
 }
 
-#content .blog-post .title a { 
+#content .blog-post .title a {
 color: #003366;
 font-weight: normal;
 text-decoration: none;
