@@ -1167,3 +1167,15 @@ span.publishing-info.has-flags{
 
 /*Fix options in "My Profile" */
 
+#signup-password-confirmation {
+  padding-top: 8px;
+}
+
+#signup-formfield-group > label {
+  text-align: center;
+  padding-left: 276px;
+}
+
+#signup-login-field {
+  width: 135px;
+}
