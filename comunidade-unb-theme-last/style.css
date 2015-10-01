@@ -11,7 +11,7 @@ body {
 }
 
 #site-title span {
-  display:
+  display: block;
 }
 
 #site-title {
@@ -162,8 +162,9 @@ body {
   top: 24px;
   right: -5px;
   overflow: hidden;
-  padding: 7px 10px;#user .logged-in a
+  padding: 7px 10px;
 }
+
 .logged-in #user:hover .logged-in .usr-menu-submenu {
   display: block;
 }
