@@ -1133,49 +1133,6 @@ span.publishing-info.has-flags{
   padding-top: 0px;
 }
 
-/*  Fix location and text of 'Insert Media' option */
-
-.text-editor-sidebar.is-not-event {
-  margin-top: 45%;
-}
-
-.text-editor-sidebar.is-event {
-  margin-top: 63%;
-}
-
-.header:before {
-  content: "Adicionar Mídia";
-}
-
-.header strong {
-    display:  none;
-}
-
-/* Fix 'Categorize your article' div and 'Why categorize?' button */
-
-#content-inner .no-boxes .with_media_panel > form > h4 {
-  margin: 13px 0px;
-}
-
-#content-inner .no-boxes .with_media_panel > form > div:nth-child(12) > a {
-  margin-right: 0px;
-}
-
-.button-bar {
-  margin-bottom: 0em;
-}
-
-/*Fix options in "My Profile" */
-
-#signup-password-confirmation {
-  padding-top: 8px;
-}
-
-#signup-formfield-group > label {
-  text-align: center;
-  padding-left: 276px;
-}
-
-#signup-login-field {
-  width: 135px;
+#wrap-2 {
+  box-shadow: none;
 }
