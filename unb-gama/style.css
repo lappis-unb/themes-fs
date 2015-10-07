@@ -1136,3 +1136,15 @@ span.publishing-info.has-flags{
 #wrap-2 {
   box-shadow: none;
 }
+
+#site-title a {
+  margin-top: 15px;
+}
+
+#top-search {
+  margin-top: 95px;
+}
+
+#top-functions {
+  background: #000066;
+}
