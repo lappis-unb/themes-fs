@@ -787,8 +787,11 @@ body {
 
 .highlights-block-pager {
   height: 20px;
-  background-color: #EEE;
   width: 495px;
+  position: absolute;
+  right: 4px;
+  top: 284px;
+  background-color: #FFFFFF;
 }
 
 .link-list-block .sobre {
@@ -1147,4 +1150,8 @@ span.publishing-info.has-flags{
 
 #top-functions {
   background: #000066;
+}
+
+#block-1 > div > div > div {
+  margin-top: 32px;
 }
