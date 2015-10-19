@@ -47,8 +47,6 @@ body {
   display: block;
   width: 343px;
   height: 72px;
-  background: url(images/logo.png);
-  background-repeat: no-repeat;
 }
 
 /* * * Controles do topo * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -86,7 +84,7 @@ body {
   white-space: nowrap;
   width: 100%;
   text-align: center;
-  height: 32px;
+  height: 20px;
 }
 
 #top-functions span {
@@ -187,7 +185,7 @@ body {
 
 #menu-top {
   display:inline-block;
-  margin: 8px 0px 0px -5px;
+  margin: 2px 0px 0px -5px;
   padding: 0px;
 }
 
@@ -960,6 +958,9 @@ text-decoration: none;
   display: block;
   width: 343px;
   height: 72px;
+}
+
+#portal-logo {
   background: url(../unb-gama/images/logo.png);
   background-repeat: no-repeat;
 }
@@ -973,8 +974,7 @@ text-decoration: none;
 }
 
 #content-inner {
-  border-top: 3px solid #006633;
-  padding-top: 20px;
+  padding-top: 45px;
 }
 
 #top-search{
@@ -1025,15 +1025,7 @@ table.cms-articles th:nth-child(2){
 }
 
 table.cms-articles th:nth-child(3){
-  width: 17%;
-}
-
-table.cms-articles th:last-child {
-  width: 161px;
-}
-
-.last-update {
-  text-align: center;
+  width: 38%;
 }
 
 /* flags style */
@@ -1145,13 +1137,194 @@ span.publishing-info.has-flags{
 }
 
 #top-search {
+  border-radius: 15px;
   margin-top: 95px;
 }
 
 #top-functions {
-  background: #000066;
+  background: #003366;
 }
 
-#block-1 > div > div > div {
-  margin-top: 32px;
+#top-search input {
+  border-radius: 7px;
+}
+
+.highlights-block-pager {
+  margin-top: 5px;
+  background: none;
+}
+
+#down-functions-box {
+  margin: auto;
+  color: #FFF;
+  font-size: 13px;
+  width: 961px;
+  margin-top: 143px;
+}
+
+#down-functions-box a {
+  color: #FFF;
+}
+
+#down-functions-box a:hover {
+  text-shadow: 0 0 4px #FFF;
+}
+
+#down-functions {
+  float: right;
+  background: #006633;
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+  height: 32px;
+}
+
+#down-functions span {
+  font-weight: bold;
+}
+
+.logged-in #down-functions {
+  padding-left: 6px;
+}
+
+#menu-down {
+  display:inline-block;
+  margin: 8px 0px 0px -5px;
+  padding: 0px;
+}
+
+/*Estilizando itens menu*/
+#menu-down li {
+  list-style: none;
+  display: block;
+  height: auto;
+  /* width: 125px; */
+  float: left;
+  text-align: center;
+  position: relative;
+}
+
+/*estilo links*/
+#menu-down li a {
+  padding: 0px 20px;
+  font-size: 13px;
+  line-height: normal;
+  text-align: left;
+  white-space: nowrap;
+}
+
+/* Escondendo submenu */
+#menu-down li ul{
+  border-top: 0px;
+  position:absolute;
+  top:20px;
+  left:0px;
+  background-color: #006633;
+  display:none;
+  text-align: left;
+  width: 166px;
+  padding: 0;
+}
+
+/* Exibindo submenu */
+#menu-down li:hover ul, .menu-down li.over ul{
+  display:block;
+}
+
+/*Ajustes sub-menu */
+#menu-down li ul li{
+  display:block;
+  width:166px;
+  margin:2px 0px 2px 0px;
+}
+
+#menu-down li:last-child {
+  margin-right: 0;
+}
+
+#menu-down a {
+  display: block;
+  /* line-height: 42px; */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#menu-down .menu-submenu ul, #menu-down .menu-submenu li {
+  float: none;
+  text-align: right;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+
+#menu-down .menu-submenu-trigger {
+  background: #B8B4B0 url(/images/down-arrow.png) center center no-repeat;
+  opacity: 0.5;
+  display: none;
+  height: 11px;
+  top: 21px;
+  left: 0;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+#menu-down li:hover .menu-submenu-trigger:hover {
+  background: #FFF url(/images/down-arrow.png) center center no-repeat;
+  border: none;
+}
+
+#menu-down li:hover .menu-submenu-trigger {
+  display: block;
+}
+
+#menu-down .menu-submenu-header, #menu-down .menu-submenu-footer, #menu-down .menu-submenu h4 {
+  display: none;
+}
+
+#menu-down span.icon-menu-people {
+  background-image: url(images/icons/persons.png);
+}
+#menu-down span.icon-menu-community {
+  background-image: url(images/icons/gear.png);
+}
+#menu-down #submenu-contents span {
+  background-image: url(images/icons/icone-08.png);
+}
+#conecte-se span.label-conect {
+  display: none;
+  background-image: url(images/icons/icone-blogoosfero.png);
+}
+
+#portal-navbar .navbar-list {
+  padding-top:  7px;
+  display: inline-block;
+  margin: 0px;
+  height: inherit;
+  list-style: none;
+}
+
+#portal-navbar .navbar-list li {
+  height: inherit;
+  display: inline-block;
+  padding-right: 25px;
+}
+
+#portal-navbar .navbar-list li a {
+  color: white;
+  height: inherit;
+  float: left;
+  margin-top: 0px;
+  width: auto;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+#portal-navbar {
+  height: 30px;
+  background-color: #006633;
+  border: 1px solid #006633;
+  width: 959px;
+  margin-left: -25px;
+  margin-top: 18px;
+  text-align: center;
 }
