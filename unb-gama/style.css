@@ -1183,10 +1183,6 @@ span.publishing-info.has-flags{
   font-weight: bold;
 }
 
-.logged-in #down-functions {
-  padding-left: 6px;
-}
-
 #menu-down {
   display:inline-block;
   margin: 8px 0px 0px -5px;
@@ -1223,7 +1219,7 @@ span.publishing-info.has-flags{
   display:none;
   text-align: left;
   width: 166px;
-  padding: 0;
+  padding: 8px 0px 5px;
 }
 
 /* Exibindo submenu */
