@@ -1198,6 +1198,7 @@ span.publishing-info.has-flags{
   float: left;
   text-align: center;
   position: relative;
+  padding-bottom: 10px;
 }
 
 /*estilo links*/
@@ -1210,16 +1211,19 @@ span.publishing-info.has-flags{
 }
 
 /* Escondendo submenu */
-#menu-down li ul{
+#menu-down li ul {
   border-top: 0px;
-  position:absolute;
-  top:15px;
-  left:0px;
-  background-color: #006633;
-  display:none;
+  position: absolute;
+  top: 22px;
+  left: 0px;
+  background-color: white;
+  display: none;
   text-align: left;
-  width: 166px;
   padding: 8px 0px 5px;
+  border-radius: 15px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #006633;
 }
 
 /* Exibindo submenu */
@@ -1323,4 +1327,44 @@ span.publishing-info.has-flags{
   margin-left: -25px;
   margin-top: 18px;
   text-align: center;
+}
+
+#engineerings > li > a {
+  color: #006633;
+}
+
+#startups > li > a {
+  color: #006633;
+}
+
+#labs > li > a {
+  color: #006633;
+}
+
+#news > li > a {
+  color: #006633;
+}
+
+#learn-more > li > a {
+  color: #006633;
+}
+
+#news {
+  width: 133px;
+}
+
+#learn-more {
+  width: 157px;
+}
+
+#engineerings {
+  width: 122px;
+}
+
+#labs {
+  width: 164px;
+}
+
+#startups {
+  width: 141px;
 }
