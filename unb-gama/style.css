@@ -75,7 +75,7 @@ body {
 }
 
 #top-functions-box a:hover {
-  text-shadow: 0 0 4px #FFF;
+  text-shadow: none;
 }
 
 #top-functions {
@@ -208,7 +208,7 @@ body {
   display: block;
   /* line-height: 42px; */
   text-decoration: none;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 
@@ -1166,10 +1166,6 @@ span.publishing-info.has-flags{
   color: #FFF;
 }
 
-#down-functions-box a:hover {
-  text-shadow: 0 0 4px #FFF;
-}
-
 #down-functions {
   float: right;
   background: #006633;
@@ -1220,9 +1216,10 @@ span.publishing-info.has-flags{
   display: none;
   text-align: left;
   padding: 8px 0px 5px;
-  border-radius: 15px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
   border-style: solid;
-  border-width: 3px;
+  border-width: 1px;
   border-color: #006633;
 }
 
@@ -1331,22 +1328,27 @@ span.publishing-info.has-flags{
 
 #engineerings > li > a {
   color: #006633;
+  font-weight: normal;
 }
 
 #startups > li > a {
   color: #006633;
+  font-weight: normal;
 }
 
 #labs > li > a {
   color: #006633;
+  font-weight: normal;
 }
 
 #news > li > a {
   color: #006633;
+  font-weight: normal;
 }
 
 #learn-more > li > a {
   color: #006633;
+  font-weight: normal;
 }
 
 #news {
@@ -1367,4 +1369,9 @@ span.publishing-info.has-flags{
 
 #startups {
   width: 141px;
+}
+
+#forgot-button {
+  margin: 5px auto;
+  width: 75%;
 }
