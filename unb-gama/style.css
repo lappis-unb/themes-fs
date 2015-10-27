@@ -785,7 +785,7 @@ body {
 
 .highlights-block-pager {
   height: 20px;
-  width: 495px;
+  width: 50%;
   position: absolute;
   right: 4px;
   top: 284px;
@@ -1374,4 +1374,12 @@ span.publishing-info.has-flags{
 #forgot-button {
   margin: 5px auto;
   width: 75%;
+}
+
+.highlights-container {
+  width: 139% !important;
+}
+
+#block-1 > div {
+  margin-top: 42px;
 }
