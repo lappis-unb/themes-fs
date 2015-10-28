@@ -18,7 +18,11 @@
   <div id="down-functions">
     <ul id="menu-down">
       <li><%= link_to 'Inicial',  "#" %></li>
-      <li><%= link_to 'Noticias',  "#" %>
+      <li>
+        <div class="dropdown-arrow">
+          <%= link_to 'Notícias',  "#" %>
+          <span class="arrow-down">▼</span>
+        </div>
         <ul id="news">
           <li><%= link_to 'Unb Gama',  "/unb-gama/noticias" %></li>
           <li><%= link_to 'UnB Agência',"/unb-gama/unb-agencia" %></li>
@@ -28,7 +32,11 @@
           <li><%= link_to 'Oportunidades',"/unb-gama/oportunidades/" %></li>
         </ul>
       </li>
-      <li><%= link_to 'Engenharias',  "#" %>
+      <li>
+        <div class="dropdown-arrow">
+          <%= link_to 'Engenharias',  "#" %>
+          <span class="arrow-down">▼</span>
+        </div>
         <ul id="engineerings">
           <li><%= link_to 'Aeroespacial',  "/aeroespacial" %></li>
           <li><%= link_to 'Automotiva',  "/automotiva" %></li>
@@ -37,7 +45,11 @@
           <li><%= link_to 'Software',  "/software" %></li>
         </ul>
       </li>
-      <li><%= link_to 'Laboratórios',  "#" %>
+      <li>
+        <div class="dropdown-arrow">
+          <%= link_to 'Laboratórios',  "#" %>
+          <span class="arrow-down">▼</span>
+        </div>
         <ul id="labs">
           <li><%= link_to 'LAPPIS',  "/lappis" %></li>
           <li><%= link_to 'LART',  "/lart" %></li>
@@ -45,14 +57,22 @@
           <li><%= link_to 'Fábrica de Software',  "http://fabrica.fga.unb.br" %></li>
         </ul>
       </li>
-      <li><%= link_to 'Empresas Juniores',  "#" %>
+      <li>
+        <div class="dropdown-arrow">
+          <%= link_to 'Empresas Juniores',  "#" %>
+          <span class="arrow-down">▼</span>
+        </div>
         <ul id="startups">
           <li><%= link_to 'InSoft',  "/insoft" %></li>
           <li><%= link_to 'Matriz Energia',  "http://www.matrizenergia.com" %></li>
           <li><%= link_to 'Zenit Aerospace',  "http://zenitaerospace.com" %></li>
         </ul>
       </li>
-      <li><%= link_to 'Aprenda Mais',  "#" %>
+      <li>
+        <div class="dropdown-arrow">
+          <%= link_to 'Aprenda Mais',  "#" %>
+          <span class="arrow-down">▼</span>
+        </div>
         <ul id="learn-more">
           <li><%= link_to 'Intercâmbio',  "/unb-gama/aprenda-mais/intercambio" %></li>
           <li><%= link_to 'Monitoria',  "/unb-gama/aprenda-mais/monitoria" %></li>

@@ -1356,14 +1356,16 @@ span.publishing-info.has-flags{
 
 #engineerings {
   width: 122px;
+  margin-left: 6px;
 }
 
 #labs {
-  width: 164px;
+  width: 158px;
 }
 
 #startups {
   width: 141px;
+  margin-left: 14px;
 }
 
 #forgot-button {
@@ -1407,4 +1409,25 @@ span.publishing-info.has-flags{
 
 #block-1662 > div > div > ul > li:nth-child(4) > a {
   content: url('images/guia_do_universitario.png');
+}
+
+.dropdown-arrow {
+  display: flex;
+}
+
+#menu-down li div a{
+  padding-right: 0px;
+}
+
+#menu-down li div span {
+  padding-right: 12px;
+}
+
+#menu-down li:hover div span {
+  display: none;
+}
+
+#menu-down li:hover div:after {
+  padding-right: 12px;
+  content: '▲';
 }
