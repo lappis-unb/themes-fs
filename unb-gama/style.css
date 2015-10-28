@@ -67,7 +67,7 @@ body {
 #top-functions-box {
   margin: auto;
   color: #FFF;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 #top-functions-box a {
@@ -1181,7 +1181,7 @@ span.publishing-info.has-flags{
 
 #menu-down {
   display:inline-block;
-  margin: 8px 0px 0px -5px;
+  margin: 9px 0px 0px -5px;
   padding: 0px;
 }
 
@@ -1382,4 +1382,26 @@ span.publishing-info.has-flags{
 
 #block-1 > div {
   margin-top: 42px;
+}
+
+/*.blocks {
+  margin: 0px 20px;
+}*/
+
+/*.block-outer:nth-child(2) {
+  margin-left: -20px;
+}*/
+
+.block.main-block {
+  width: 702px;
+  margin: 0px 20px !important;
+}
+
+
+.main-content {
+  box-shadow: none;
+}
+
+.highlights-container {
+  margin-top: 12px;
 }
