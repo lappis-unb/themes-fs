@@ -5,7 +5,6 @@ body {
   color: #000;
 }
 
-
 #wrap-2 {
   margin-top: 0 !important;
 }
@@ -1409,6 +1408,26 @@ span.publishing-info.has-flags{
 
 #block-1662 > div > div > ul > li:nth-child(4) > a {
   content: url('images/guia_do_universitario.png');
+}
+
+#block-342 > div > div > ul > li:nth-child(1) > a {
+  content: url('images/aeroespacial.png');
+}
+
+#block-342 > div > div > ul > li:nth-child(2) > a {
+  content: url('images/automotiva.png');
+}
+
+#block-342 > div > div > ul > li:nth-child(3) > a {
+  content: url('images/eletronica.png');
+}
+
+#block-342 > div > div > ul > li:nth-child(4) > a {
+  content: url('images/energia.png');
+}
+
+#block-342 > div > div > ul > li:nth-child(5) > a {
+  content: url('images/software.png');
 }
 
 .dropdown-arrow {
