@@ -161,19 +161,13 @@ body {
 #top-search input {
   background: #F3F2F1;
   border: 1px solid #A09890;
-  padding: 7px 0px 7px 6px;
+  padding: 7px 0px 7px 7px;
   width: 186px;
+  background: url(images/search.png) no-repeat scroll 167px 6px;
 }
 
 #top-search div{
   display: none;
-}
-
-#top-search:hover div{
-  display: block;
-}
-
-#top-search div {
   color: #000;
   background: #FFF;
   font-size: 11px;
@@ -181,6 +175,10 @@ body {
   display: none;
   bottom: -5px;
   left: 0px;
+}
+
+#top-search:hover div{
+  display: block;
 }
 
 #menu-top {
@@ -259,6 +257,7 @@ body {
   outline: none;
   border: none;
 }
+
 #menu-top li:hover .menu-submenu-trigger:hover {
   background: #FFF url(/images/down-arrow.png) center center no-repeat;
   border: none;
@@ -1039,19 +1038,19 @@ div.article-body.article-body-tiny-mce-article.has-flags {
 }
 
 a.button.icon-add.with-text.join-community {
-  width: 151px;
+  width: 155px;
 }
 
 a.button.icon-delete.with-text.leave-community {
-  width: 151px;
+  width: 155px;
 }
 
 a.button.icon-menu-mail.with-text {
-  width: 151px;
+  width: 155px;
 }
 
 .profile-info-options a.button.icon-alert.with-text.report-abuse-action {
-  width: 151px;
+  width: 155px;
 }
 .article-translations {
   margin-top: -39px;
@@ -1384,7 +1383,6 @@ span.publishing-info.has-flags{
   width: 702px;
   margin: 0px 20px !important;
 }
-
 
 .main-content {
   box-shadow: none;
