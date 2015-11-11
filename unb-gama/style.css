@@ -828,7 +828,8 @@ body {
 #content .profile-image-block p,
 .action-profile-index #content .main-block h1,
 #content .main-block #article h1.title {
- color: #336699;
+  color: #336699;
+  font-weight: bold;
 }
 
 #profile-header{
@@ -1395,49 +1396,52 @@ span.publishing-info.has-flags{
 }
 
 .main-content {
-  border-width: 0px;
-  border-radius: 0px;
-  box-shadow: 0px 0px 0px;
-  padding: 0px 0px;
+  box-shadow: none;
+  border-style: solid;
+  border-color: #BABDB6;
+  border-width: 1px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px #888;
+  padding: 10px 20px;
 }
 
 .highlights-container {
   margin-top: 12px;
 }
 
-#block-1662 > div > div > ul > li:nth-child(1) > a {
+.blocks > div:nth-child(1) > div > div > div > ul.menu-cursos > li:nth-child(1) > a {
   content: url('images/direcao.png');
 }
 
-#block-1662 > div > div > ul > li:nth-child(2) > a {
+.blocks > div:nth-child(1) > div > div > div > ul.menu-cursos > li:nth-child(2) > a {
   content: url('images/coordenacao.png');
 }
 
-#block-1662 > div > div > ul > li:nth-child(3) > a {
+.blocks > div:nth-child(1) > div > div > div > ul.menu-cursos > li:nth-child(3) > a {
   content: url('images/guia_fga.png');
 }
 
-#block-1662 > div > div > ul > li:nth-child(4) > a {
+.blocks > div:nth-child(1) > div > div > div > ul.menu-cursos > li:nth-child(4) > a {
   content: url('images/guia_do_universitario.png');
 }
 
-#block-342 > div > div > ul > li:nth-child(1) > a {
+.blocks > div:nth-child(2) > div > div > div > ul.menu-cursos > li:nth-child(1) > a {
   content: url('images/aeroespacial.png');
 }
 
-#block-342 > div > div > ul > li:nth-child(2) > a {
+.blocks > div:nth-child(2) > div > div > div > ul.menu-cursos > li:nth-child(2) > a {
   content: url('images/automotiva.png');
 }
 
-#block-342 > div > div > ul > li:nth-child(3) > a {
+.blocks > div:nth-child(2) > div > div > div > ul.menu-cursos > li:nth-child(3) > a {
   content: url('images/eletronica.png');
 }
 
-#block-342 > div > div > ul > li:nth-child(4) > a {
+.blocks > div:nth-child(2) > div > div > div > ul.menu-cursos > li:nth-child(4) > a {
   content: url('images/energia.png');
 }
 
-#block-342 > div > div > ul > li:nth-child(5) > a {
+.blocks > div:nth-child(2) > div > div > div > ul.menu-cursos > li:nth-child(5) > a {
   content: url('images/software.png');
 }
 
@@ -1462,9 +1466,13 @@ span.publishing-info.has-flags{
   content: '▲';
 }
 
-#block-3550 > div {
+.block.main-block > div {
   margin-top: 5px;
 }
+
+/*#block-3550 > div {
+  margin-top: 5px;
+}*/
 
 #footer-login > div.login-buttons > a {
   width: 78px;
@@ -1480,4 +1488,12 @@ span.publishing-info.has-flags{
 
 .my-network-block ul {
   padding: 0px 0px 10px 6px;
+}
+
+.block-inner-2 > ul > li > a {
+  color: #003366;
+}
+
+.block-inner-2 > div > div.admin-link > a {
+  color: #003366;
 }
