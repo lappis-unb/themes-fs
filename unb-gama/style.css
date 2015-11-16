@@ -83,7 +83,7 @@ body {
   white-space: nowrap;
   width: 100%;
   text-align: center;
-  height: 20px;
+  height: 23px;
 }
 
 #top-functions span {
@@ -183,7 +183,7 @@ body {
 
 #menu-top {
   display:inline-block;
-  margin: 2px 0px 0px -5px;
+  margin: 5px 0px 0px -5px;
   padding: 0px;
 }
 
@@ -1536,5 +1536,36 @@ span.publishing-info.has-flags{
 }
 
 #block-1 > div > div > div > div.news-area.odd > div > div > ul > li > a {
+  color: #336699;
+}
+
+.article-body.article-body-blog > div:nth-child(2) > div > span > span.author > a {
+  color: #336699; 
+}
+
+#content .main-block .publishing-info a {
+  color: #336699;
+}
+
+#article > div.article-body.article-body-tiny-mce-article > h2 > span > strong {
+  color: #555555;
+}
+
+#article-header > h1 {
+  color: #006633 !important;  
+}
+
+.block-footer-content a.view-all {
+  color: #336699;
+  top: 8px;
+}
+
+#content .people-block .block-footer-content a.view-all, #content .friends-block .block-footer-content a.view-all, #content .members-block .block-footer-content a.view-all {
+  background: url(/designs/themes/base/imgs/arrow-right-p.png) 0% 50% no-repeat ;
+  background-size: 7px;
+  padding-left: 11px;
+}
+
+.block.recent-documents-block > div > div > div.block-footer-content > a {
   color: #336699;
 }
