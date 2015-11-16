@@ -539,6 +539,10 @@ body {
   border: none;
 }
 
+#portal-news > ul > li > a {
+  color: #336699;
+}
+
 .news-area {
   background-image:         linear-gradient(top, #EEE, #FFF 66%, #FFF);
 }
@@ -1059,11 +1063,6 @@ a.button.icon-alert.with-text.report-abuse-action {
   margin-bottom: 4px !important;
 }
 
-#article-actions > a.report-abuse-action.button.with-text.icon-alert {
-  width: 58px;
-  margin-bottom: 0px !important; 
-}
-
 .article-translations {
   margin-top: -39px;
   padding-top: 96px;
@@ -1397,13 +1396,10 @@ span.publishing-info.has-flags{
 }
 
 .main-content {
-  box-shadow: none;
-  border-style: solid;
-  border-color: #BABDB6;
-  border-width: 1px;
-  border-radius: 10px;
-  box-shadow: 1px 1px 2px #888;
-  padding: 10px 20px;
+  border-width: 0px;
+  border-radius: 0px;
+  box-shadow: 0px 0px 0px;
+  padding: 0px 0px;
 }
 
 .highlights-container {
@@ -1477,4 +1473,68 @@ span.publishing-info.has-flags{
 
 #search-results > div.search-results-articles.search-results-box > div > ul > li {
   border-bottom: 1px solid #CCC;
+}
+
+.block.main-block > div {
+  margin-top: 5px;
+}
+
+#footer-login > div.login-buttons > a {
+  width: 78px;
+}
+
+#fullscreen-btn {
+  display: none;
+}
+
+#profile-header {
+  margin-bottom:  6px;
+}
+
+.my-network-block ul {
+  padding: 0px 0px 10px 6px;
+}
+
+.block-inner-2 > ul > li > a {
+  color: #003366;
+}
+
+.block-inner-2 > div > div.admin-link > a {
+  color: #003366;
+}
+
+#article-actions {
+  height: 78px;
+}
+
+#article-actions > a {
+  width: 115px;
+  margin-top: 3px !important;
+}
+
+#article-actions > a.report-abuse-action.button.with-text.icon-alert {
+  width: 115px;
+  margin-top: 6px !important;
+}
+
+#portal-news > ul > li > a {
+  color: #336699;
+}
+
+#block-1 > div > div > div > div.news-area.even > div > div > ul > li {
+  margin-left: 20px;
+  list-style-image: url(images/li-black.png);
+}
+
+#block-1 > div > div > div > div.news-area.odd > div > div > ul > li {
+  margin-left: 20px;
+  list-style-image: url(images/li-black.png);
+}
+
+#block-1 > div > div > div > div.news-area.even > div > div > ul > li > a {
+  color: #336699;
+}
+
+#block-1 > div > div > div > div.news-area.odd > div > div > ul > li > a {
+  color: #336699;
 }
