@@ -154,8 +154,7 @@ body {
 
 #top-search{
   float: right;
-  margin-top: 74px;
-  margin-right: 19px;
+  margin: 74px 10px 0px 0px;
 }
 
 #top-search input {
@@ -564,7 +563,7 @@ body {
 
 #content .news-area a.news-see-more {
   background: url(images/icons/more.png);
-  display: block;
+  display: none;
   width: 20px;
   height: 20px;
   right: 12px;
@@ -727,7 +726,7 @@ body {
 }
 
 .highlights-image-link {
-  width: 504px !important;
+  width: 100% !important;
   font-weight: bold;
   text-decoration: none;
   text-align: center;
@@ -871,9 +870,9 @@ body #content .highlighted-news-read-more a {
 }
 
 .news-area ul {
-overflow: hidden;
-height: 165px;
-padding: 0;
+  overflow: auto;
+  height: 165px;
+  padding: 0;
 }
 
 .main-block .article-body {
@@ -954,7 +953,7 @@ text-decoration: none;
 #site-title {
   width: 343px;
   height: 72px;
-  left: 25px;
+  left: 20px;
   top: 70px;
 }
 
@@ -1135,6 +1134,7 @@ span.publishing-info.has-flags{
 
 #wrap-2 {
   box-shadow: none;
+  padding-bottom: 20px;
 }
 
 #site-title a {
@@ -1571,27 +1571,8 @@ span.publishing-info.has-flags{
   color: #336699;
 }
 
-#news > li > a:hover, #engineerings > li > a:hover, #labs > li > a:hover,
-#startups > li > a:hover, #learn-more > li > a:hover {
+#menu-down > li > ul > li > a:hover {
   font-weight: bold;
-}
-
-#box-2 > div > div:nth-child(1):before {
-  content: 'Administração';
-  color: #2e3436;
-  font-size: 14px;
-  font-variant: normal;
-  font-weight: bold;
-  text-align: left;
-}
-
-#block-1662 > div > div > ul {
-  padding-top: 13px;
-  border-top: 1px solid #888;
-}
-
-#box-2 > div > div:nth-child(1) {
-  margin-top: 13px;
 }
 
 .search-results-articles.search-results-box {
@@ -1611,7 +1592,7 @@ span.publishing-info.has-flags{
 }
 
 #box-2 {
-  margin-left: 10px !important;
+  margin: 10px 0px 0px 10px !important;
 }
 
 .block-inner-2 .main-content {
