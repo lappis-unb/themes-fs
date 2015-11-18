@@ -1598,3 +1598,11 @@ span.publishing-info.has-flags{
 .block-inner-2 .main-content {
   width: 710px;
 }
+
+#content-inner > div > div > div > div > div.search-form {
+  margin: 10px 10px 10px 10px;
+}
+
+#search-content {
+  margin: 10px 10px 10px 10px; 
+}
