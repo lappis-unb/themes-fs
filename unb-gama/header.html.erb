@@ -3,14 +3,86 @@
 <div id="top-functions-box">
   <div id="top-functions">
     <ul id="menu-top">
-    
-      <li><%= link_to 'Home',  "/" %></li>
-      <li><%= link_to 'Sobre',  "/unb-gama/sobre" %></li>
-      <li><%= link_to 'Graduação',  "/unb-gama/graduacao" %></li>
-      <li><%= link_to 'Pós-Graduação',  "/unb-gama/pos-graduacao" %></li>
-      <li><%= link_to 'Professores',  "/professores" %></li>
-     <!-- <li><%= link_to 'Informações',  "/unb-gama/informacoes" %></li> -->
-      <li><%= link_to 'Contato',  "/unb-gama/contato" %></li>
+      <li ><%= link_to 'Portal UnB',  "http://www.unb.br/" %></li>
+      <li><%= link_to 'MatrículaWeb',  "https://matriculaweb.unb.br/matriculaweb/" %></li>
+      <li><%= link_to 'SAEWeb',  "https://www.saeweb.unb.br/saeWeb/Fronteira/formloginaluno.aspx" %></li>
+      <li><%= link_to 'Moodle UnB',  "http://aprender.unb.br/" %></li>
+      <li><%= link_to 'Moodle FGA',  "http://gama.ead.unb.br/login/index.php" %></li>
+      <li><%= link_to 'UnB Doc',  "https://unbdoc.unb.br/" %></li>
+      <li><%= link_to 'Cardápio RU',  "http://www.ru.unb.br/cardapio-ru-unb" %></li>
+    </ul>
+  </div>
+</div>
+
+<div id="down-functions-box">
+  <div id="down-functions">
+    <ul id="menu-down">
+      <li><%= link_to 'Inicial',  "/" %></li>
+      <li>
+        <div class="dropdown-arrow">
+          <%= link_to 'Notícias',  "#" %>
+          <span class="arrow-down">▼</span>
+        </div>
+        <ul id="news">
+          <li><%= link_to 'Unb Gama',  "/unb-gama/noticias" %></li>
+          <li><%= link_to 'UnB Agência',"/unb-gama/unb-agencia" %></li>
+          <li><%= link_to 'ECT 2015',"/ect" %></li>
+          <li><%= link_to 'Palestra',"/unb-gama/palestras" %></li>
+          <li><%= link_to 'Eventos',"/unb-gama/eventos" %></li>
+          <li><%= link_to 'Oportunidades',"/unb-gama/oportunidades/" %></li>
+        </ul>
+      </li>
+      <li>
+        <div class="dropdown-arrow">
+          <%= link_to 'Engenharias',  "#" %>
+          <span class="arrow-down">▼</span>
+        </div>
+        <ul id="engineerings">
+          <li><%= link_to 'Aeroespacial',  "/aeroespacial" %></li>
+          <li><%= link_to 'Automotiva',  "/automotiva" %></li>
+          <li><%= link_to 'Eletrônica',  "/eletronica" %></li>
+          <li><%= link_to 'Energia',  "/energia" %></li>
+          <li><%= link_to 'Software',  "/software" %></li>
+        </ul>
+      </li>
+      <li>
+        <div class="dropdown-arrow">
+          <%= link_to 'Laboratórios',  "#" %>
+          <span class="arrow-down">▼</span>
+        </div>
+        <ul id="labs">
+          <li><%= link_to 'LAPPIS',  "/lappis" %></li>
+          <li><%= link_to 'LART',  "/lart" %></li>
+          <li><%= link_to 'LEI',  "/lei" %></li>
+          <li><%= link_to 'Fábrica de Software',  "http://fabrica.fga.unb.br" %></li>
+        </ul>
+      </li>
+      <li>
+        <div class="dropdown-arrow">
+          <%= link_to 'Empresas Juniores',  "#" %>
+          <span class="arrow-down">▼</span>
+        </div>
+        <ul id="startups">
+          <li><%= link_to 'InSoft',  "/insoft" %></li>
+          <li><%= link_to 'Matriz Energia',  "http://www.matrizenergia.com" %></li>
+          <li><%= link_to 'Zenit Aerospace',  "http://zenitaerospace.com" %></li>
+        </ul>
+      </li>
+      <li>
+        <div class="dropdown-arrow">
+          <%= link_to 'Aprenda Mais',  "#" %>
+          <span class="arrow-down">▼</span>
+        </div>
+        <ul id="learn-more">
+          <li><%= link_to 'Intercâmbio',  "/unb-gama/aprenda-mais/intercambio" %></li>
+          <li><%= link_to 'Monitoria',  "/unb-gama/aprenda-mais/monitoria" %></li>
+          <li><%= link_to 'Iniciação Científica',  "/unb-gama/aprenda-mais/iniciacao-cientifica" %></li>
+          <li><%= link_to 'Educação Tutorial',  "/unb-gama/aprenda-mais/programa-de-educacao-tutorial" %></li>
+          <li><%= link_to 'TCC FGA',  "/tcc" %></li>
+          <li><%= link_to 'SOU FGA',  "/sou" %></li>
+          <li><%= link_to 'Biblioteca FGA',  "/biblioteca-fga" %></li>
+        </ul>
+      </li>
     </ul>
   </div>
 </div>

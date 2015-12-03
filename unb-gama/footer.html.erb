@@ -74,8 +74,11 @@
         <form id="footer-login" action="/account/login" method="post">
           <input name="user[login]" placeholder="<%=_('User name')%>" type="text">
           <input name="user[password]" placeholder="<%=_('Password')%>" type="password">
-        <div>
+        <div class="login-buttons">
           <%= submit_button( 'login', _('Log in') )%>
+          <%= button :new, _("Cadastre-se"), :controller => 'account', :action => 'signup' %>
+        </div>
+        <div id="forgot-button">
           <%= button :help, _("Esqueci Senha"), :controller => 'account', :action => 'forgot_password' %>
         </div>
     </form>
