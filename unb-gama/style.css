@@ -1568,7 +1568,7 @@ span.publishing-info.has-flags{
 }
 
 #search-content {
-  margin: 10px 10px 10px 10px; 
+  margin: 10px 10px 10px 10px;
 }
 
 #box-184 > div {
@@ -1577,4 +1577,8 @@ span.publishing-info.has-flags{
 
 #block-3003 > div > div {
   padding-left: 17px;
+}
+
+#language-chooser {
+  display: none;
 }
