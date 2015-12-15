@@ -1392,7 +1392,7 @@ span.publishing-info.has-flags{
 }
 
 .block.main-block {
-  width: 702px;
+  width: auto;
   margin: 0px 20px !important;
 }
 
@@ -1557,10 +1557,6 @@ span.publishing-info.has-flags{
 
 #box-2 {
   margin: 10px 0px 0px 10px !important;
-}
-
-.block-inner-2 .main-content {
-  width: 710px;
 }
 
 #content-inner > div > div > div > div > div.search-form {
