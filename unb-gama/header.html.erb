@@ -17,6 +17,7 @@
 <div id="down-functions-box">
   <div id="down-functions">
     <ul id="menu-down">
+      <li><%= link_to 'Inicial',  "/" %></li>
       <li>
         <div class="dropdown-arrow">
           <%= link_to 'Notícias',  "#" %>
@@ -80,11 +81,20 @@
           <li><%= link_to 'Iniciação Científica',  "/unb-gama/aprenda-mais/iniciacao-cientifica" %></li>
           <li><%= link_to 'Intercâmbio',  "/unb-gama/aprenda-mais/intercambio" %></li>
           <li><%= link_to 'Monitoria',  "/unb-gama/aprenda-mais/monitoria" %></li>
-          <li><%= link_to 'TCC FGA',  "/tcc" %></li>
           <li><%= link_to 'SOU FGA',  "/sou" %></li>
         </ul>
       </li>
-      <li><%= link_to 'Contato',  "/unb-gama/contato" %></li>
+      <li>
+        <div class="dropdown-arrow">
+          <%= link_to 'Informações',  "#" %>
+          <span class="arrow-down">▼</span>
+        </div>
+        <ul id="info">
+          <li><%= link_to 'Contato',  "/unb-gama/contato" %></li>
+          <li><%= link_to 'Estágio FGA',  "/estagio" %></li>
+          <li><%= link_to 'TCC FGA',  "/tcc" %></li>
+        </ul>
+      </li>
     </ul>
   </div>
 </div>

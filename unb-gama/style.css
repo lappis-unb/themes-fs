@@ -1578,3 +1578,12 @@ span.publishing-info.has-flags{
 #language-chooser {
   display: none;
 }
+
+#info > li > a {
+  color: #006633;
+  font-weight: normal;
+}
+
+#info {
+  width: 125px;
+}
