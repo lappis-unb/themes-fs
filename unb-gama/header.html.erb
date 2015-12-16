@@ -24,12 +24,12 @@
           <span class="arrow-down">▼</span>
         </div>
         <ul id="news">
-          <li><%= link_to 'Unb Gama',  "/unb-gama/noticias" %></li>
-          <li><%= link_to 'UnB Agência',"/unb-gama/unb-agencia" %></li>
-          <li><%= link_to 'ECT 2015',"/ect" %></li>
-          <li><%= link_to 'Palestra',"/unb-gama/palestras" %></li>
+          <li><%= link_to 'ECT 2015',"/ect" %></li
           <li><%= link_to 'Eventos',"/unb-gama/eventos" %></li>
           <li><%= link_to 'Oportunidades',"/unb-gama/oportunidades/" %></li>
+          <li><%= link_to 'Palestra',"/unb-gama/palestras" %></li>
+          <li><%= link_to 'UnB Agência',"/unb-gama/unb-agencia" %></li>
+          <li><%= link_to 'UnB Gama',  "/unb-gama/noticias" %></li>
         </ul>
       </li>
       <li>
@@ -51,10 +51,11 @@
           <span class="arrow-down">▼</span>
         </div>
         <ul id="labs">
+          <li><%= link_to 'Fábrica de Software',  "http://fabrica.fga.unb.br" %></li>
+          <li><%= link_to 'LabNVH', "http://www.labnvh.unb.br" %></li>
           <li><%= link_to 'LAPPIS',  "/lappis" %></li>
           <li><%= link_to 'LART',  "/lart" %></li>
           <li><%= link_to 'LEI',  "/lei" %></li>
-          <li><%= link_to 'Fábrica de Software',  "http://fabrica.fga.unb.br" %></li>
         </ul>
       </li>
       <li>
@@ -63,6 +64,7 @@
           <span class="arrow-down">▼</span>
         </div>
         <ul id="startups">
+          <li><%= link_to 'EletronJun', "/eletronjun" %></li>
           <li><%= link_to 'InSoft',  "/insoft" %></li>
           <li><%= link_to 'Matriz Energia',  "http://www.matrizenergia.com" %></li>
           <li><%= link_to 'Zenit Aerospace',  "http://zenitaerospace.com" %></li>
@@ -74,13 +76,23 @@
           <span class="arrow-down">▼</span>
         </div>
         <ul id="learn-more">
+          <li><%= link_to 'Biblioteca FGA',  "/biblioteca-fga" %></li>
+          <li><%= link_to 'Educação Tutorial',  "/unb-gama/aprenda-mais/programa-de-educacao-tutorial" %></li>
+          <li><%= link_to 'Iniciação Científica',  "/unb-gama/aprenda-mais/iniciacao-cientifica" %></li>
           <li><%= link_to 'Intercâmbio',  "/unb-gama/aprenda-mais/intercambio" %></li>
           <li><%= link_to 'Monitoria',  "/unb-gama/aprenda-mais/monitoria" %></li>
-          <li><%= link_to 'Iniciação Científica',  "/unb-gama/aprenda-mais/iniciacao-cientifica" %></li>
-          <li><%= link_to 'Educação Tutorial',  "/unb-gama/aprenda-mais/programa-de-educacao-tutorial" %></li>
-          <li><%= link_to 'TCC FGA',  "/tcc" %></li>
           <li><%= link_to 'SOU FGA',  "/sou" %></li>
-          <li><%= link_to 'Biblioteca FGA',  "/biblioteca-fga" %></li>
+        </ul>
+      </li>
+      <li>
+        <div class="dropdown-arrow">
+          <%= link_to 'Informações',  "#" %>
+          <span class="arrow-down">▼</span>
+        </div>
+        <ul id="info">
+          <li><%= link_to 'Estágio FGA',  "/estagio" %></li>
+          <li><%= link_to 'TCC FGA',  "/tcc" %></li>
+          <li><%= link_to 'Contato',  "/unb-gama/contato" %></li>
         </ul>
       </li>
     </ul>
