@@ -17,24 +17,22 @@
 <div id="down-functions-box">
   <div id="down-functions">
     <ul id="menu-down">
-      <li><%= link_to 'Inicial',  "/" %></li>
       <li>
         <div class="dropdown-arrow">
-          <%= link_to 'Notícias',  "#" %>
+          <%= link_to 'Notícias',  "/unb-gama/noticias" %>
           <span class="arrow-down">▼</span>
         </div>
         <ul id="news">
-          <li><%= link_to 'ECT 2015',"/ect" %></li
           <li><%= link_to 'Eventos',"/unb-gama/eventos" %></li>
           <li><%= link_to 'Oportunidades',"/unb-gama/oportunidades/" %></li>
-          <li><%= link_to 'Palestra',"/unb-gama/palestras" %></li>
+          <li><%= link_to 'Palestras',"/unb-gama/palestras" %></li>
           <li><%= link_to 'UnB Agência',"/unb-gama/unb-agencia" %></li>
           <li><%= link_to 'UnB Gama',  "/unb-gama/noticias" %></li>
         </ul>
       </li>
       <li>
         <div class="dropdown-arrow">
-          <%= link_to 'Engenharias',  "#" %>
+          <%= link_to 'Engenharias',  "/unb-gama/graduacao" %>
           <span class="arrow-down">▼</span>
         </div>
         <ul id="engineerings">
@@ -47,12 +45,23 @@
       </li>
       <li>
         <div class="dropdown-arrow">
-          <%= link_to 'Laboratórios',  "#" %>
+          <%= link_to 'Pós-Graduação',  "/unb-gama/pos-graduacao" %>
+          <span class="arrow-down">▼</span>
+        </div>
+        <ul id="pos-graduation">
+          <li><%= link_to 'Engenharia Biomédica', "/pgengclinica" %></li>
+          <li><%= link_to 'Engenharia Clínica', "/pgengbiomedica" %></li>
+          <li><a target="_blank" href="http://www.pgintegridade.unb.br">Integridade de Materiais</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="dropdown-arrow">
+          <%= link_to 'Laboratórios',  "/unb-gama/laboratorios" %>
           <span class="arrow-down">▼</span>
         </div>
         <ul id="labs">
-          <li><%= link_to 'Fábrica de Software',  "http://fabrica.fga.unb.br" %></li>
-          <li><%= link_to 'LabNVH', "http://www.labnvh.unb.br" %></li>
+          <li><a target="_blank" href="http://fabrica.fga.unb.br">Fábrica de Software</a></li>
+          <li><a target="_blank" href="http://www.labnvh.unb.br">LabNVH</a></li>
           <li><%= link_to 'LAPPIS',  "/lappis" %></li>
           <li><%= link_to 'LART',  "/lart" %></li>
           <li><%= link_to 'LEI',  "/lei" %></li>
@@ -60,19 +69,31 @@
       </li>
       <li>
         <div class="dropdown-arrow">
-          <%= link_to 'Empresas Juniores',  "#" %>
+          <%= link_to 'Empresas Juniores',  "/unb-gama/empresas-juniores" %>
           <span class="arrow-down">▼</span>
         </div>
         <ul id="startups">
           <li><%= link_to 'EletronJun', "/eletronjun" %></li>
           <li><%= link_to 'InSoft',  "/insoft" %></li>
-          <li><%= link_to 'Matriz Energia',  "http://www.matrizenergia.com" %></li>
-          <li><%= link_to 'Zenit Aerospace',  "http://zenitaerospace.com" %></li>
+          <li><a target="_blank" href="http://www.matrizenergia.com">Matriz Energia</a></li>
+          <li><a target="_blank" href="http://zenitaerospace.com">Zenit Aerospace</a></li>
         </ul>
       </li>
       <li>
         <div class="dropdown-arrow">
-          <%= link_to 'Aprenda Mais',  "#" %>
+          <%= link_to 'Informações',  "/unb-gama/sobre" %>
+          <span class="arrow-down">▼</span>
+        </div>
+        <ul id="info">
+          <li><%= link_to 'Contato',  "/unb-gama/contato" %></li>
+          <li><%= link_to 'Estágio FGA',  "/estagio" %></li>
+          <li><%= link_to 'Professores',  "/professores" %></li>
+          <li><%= link_to 'TCC FGA',  "/tcc" %></li>
+        </ul>
+      </li>
+      <li>
+        <div class="dropdown-arrow">
+          <%= link_to 'Aprenda Mais',  "/unb-gama/aprenda-mais" %>
           <span class="arrow-down">▼</span>
         </div>
         <ul id="learn-more">
@@ -82,17 +103,6 @@
           <li><%= link_to 'Intercâmbio',  "/unb-gama/aprenda-mais/intercambio" %></li>
           <li><%= link_to 'Monitoria',  "/unb-gama/aprenda-mais/monitoria" %></li>
           <li><%= link_to 'SOU FGA',  "/sou" %></li>
-        </ul>
-      </li>
-      <li>
-        <div class="dropdown-arrow">
-          <%= link_to 'Informações',  "#" %>
-          <span class="arrow-down">▼</span>
-        </div>
-        <ul id="info">
-          <li><%= link_to 'Estágio FGA',  "/estagio" %></li>
-          <li><%= link_to 'TCC FGA',  "/tcc" %></li>
-          <li><%= link_to 'Contato',  "/unb-gama/contato" %></li>
         </ul>
       </li>
     </ul>

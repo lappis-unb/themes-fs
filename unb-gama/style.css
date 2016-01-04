@@ -1346,6 +1346,11 @@ span.publishing-info.has-flags{
   font-weight: normal;
 }
 
+#pos-graduation > li > a {
+  color: #006633;
+  font-weight: normal;
+}
+
 #news > li > a {
   color: #006633;
   font-weight: normal;
@@ -1357,25 +1362,29 @@ span.publishing-info.has-flags{
 }
 
 #news {
-  width: 133px;
+  width: 120px;
+}
+
+#pos-graduation {
+  width: 172px;
 }
 
 #learn-more {
-  width: 157px;
+  width: 144px;
 }
 
 #engineerings {
-  width: 122px;
+  width: 113px;
   margin-left: 6px;
 }
 
 #labs {
-  width: 158px;
+  width: 152px;
 }
 
 #startups {
-  width: 141px;
-  margin-left: 14px;
+  width: 132px;
+  margin-left: 18px;
 }
 
 #forgot-button {
@@ -1585,5 +1594,5 @@ span.publishing-info.has-flags{
 }
 
 #info {
-  width: 125px;
+  width: 113px;
 }
