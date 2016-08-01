@@ -154,7 +154,7 @@ body {
 
 #top-search{
   float: right;
-  margin: 74px 10px 0px 0px;
+  margin: 74px 150px 0px 0px;
 }
 
 #top-search input {
@@ -687,7 +687,7 @@ body {
 }
 
 #license-on-footer {
-  padding: 170px 48px 0;
+  padding: 240px 48px 0;
   font-size: 11px;
   text-align: left;
   color: #003366;
@@ -1185,7 +1185,6 @@ span.publishing-info.has-flags{
 }
 
 #menu-down {
-  display:inline-block;
   margin: 9px 0px 0px -5px;
   padding: 0px;
 }
@@ -1595,4 +1594,27 @@ span.publishing-info.has-flags{
 
 #info {
   width: 113px;
+}
+
+#login-button {
+  width: 80%;
+  margin-top: 27px;
+  margin-left: 15px;
+}
+
+#login-down ul.login-fields {
+  display: none;
+}
+
+#login-down ul.visible {
+  display: block;
+}
+
+.signup-form {
+  width: 80%;
+}
+
+.signup-form a {
+  text-align: center;
+  font-size: 13px !important;
 }

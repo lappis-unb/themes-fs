@@ -1,0 +1,34 @@
+<div class="session-elements">
+<div class="login-form">
+	<ul id="login-down">
+		<li class="parent">
+      <div id="login-button">
+				<%= _("Login") %>
+      </div>  
+			<ul class="login-fields">
+        <form id="footer-login" action="/account/login" method="post">
+          <input name="user[login]" placeholder="<%=_('User name')%>" type="text">
+          <input name="user[password]" placeholder="<%=_('Password')%>" type="password">
+          <div class="login-buttons">
+            <%= submit_button( 'login', _('Log in') )%>
+          </div>
+        </form>
+      </ul>
+    </li>
+  </ul>
+</div>
+  
+<div class="signup-form">
+    <%= link_to _("Cadastre-se"), :controller => 'account', :action => 'signup' %>
+    <%= link_to _("Esqueci Senha"), :controller => 'account', :action => 'forgot_password' %>
+</div>
+
+</div>
+<script>
+	$(document).ready(function() {
+		$('#login-button').click(function() {
+			$('.login-fields').toggleClass('visible');
+		});
+  }); 
+
+</script>

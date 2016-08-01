@@ -52,39 +52,19 @@
     </div>
   </li>
   <li>
-    <% if logged_in? %>
-      <strong class="user-name"><%= user.name %></strong>
-        <ul>
-          <li>
-            <%= link_to 'Painel de Controle', "/myprofile/#{user.identifier}" %>
-          </li>
-
-          <% if user.is_admin? %>
-            <li>
-              <%= link_to 'Administração',  "/admin" %>
-            </li>
-          <% end %>
-
-          <li>
-            <%= link_to 'Sair', "/account/logout" %>
-          </li>
-        </ul>
-    <% else %>
-      <strong>Painel de Controle</strong>
-        <form id="footer-login" action="/account/login" method="post">
-          <input name="user[login]" placeholder="<%=_('User name')%>" type="text">
-          <input name="user[password]" placeholder="<%=_('Password')%>" type="password">
-        <div class="login-buttons">
-          <%= submit_button( 'login', _('Log in') )%>
-          <%= button :new, _("Cadastre-se"), :controller => 'account', :action => 'signup' %>
-        </div>
-        <div id="forgot-button">
-          <%= button :help, _("Esqueci Senha"), :controller => 'account', :action => 'forgot_password' %>
-        </div>
-    </form>
-    <% end %>
+    <strong>Links Úteis</strong>
+    <ul>
+      <li ><%= link_to 'Portal UnB',  "http://www.unb.br/" %></li>
+      <li><%= link_to 'MatrículaWeb',  "https://matriculaweb.unb.br/matriculaweb/" %></li>
+      <li><%= link_to 'SAEWeb',  "https://www.saeweb.unb.br/saeWeb/Fronteira/formloginaluno.aspx" %></li>
+      <li><%= link_to 'Moodle UnB',  "http://aprender.unb.br/" %></li>
+      <li><%= link_to 'Moodle FGA',  "http://gama.ead.unb.br/login/index.php" %></li>
+      <li><%= link_to 'UnB Doc',  "https://unbdoc.unb.br/" %></li>
+      <li><%= link_to 'Cardápio RU',  "http://www.ru.unb.br/cardapio-ru-unb" %></li>
+    </ul>
   </li>
 </ul>
+
 <div id='license-on-footer'>
 <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.pt_BR" id="footer-cc"><span>Licença Creative Commons</span></a>
 Todo o conteúdo e dados do Portal da UnB Gama estão disponíveis sob a licença <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.pt_BR">Creative Commons Atribuição 3.0 Unported (CC BY 3.0)</a>, exceto quando especificado em contrário e nos conteúdos replicados de outras fontes.
