@@ -1,33 +1,47 @@
-<div class="login-form">
-	<ul id="login-down">
+<div class="profile-header">
+	<ul id="profile-down">
 		<li class="parent">
-      <div id="login-button">
-        <%= link_to _("Login"), "#" %>
+      <div id="profile-button">
+        <% if logged_in? %>
+          <%= link_to _("Bem-vindo, #{current_user.name}"), "#" %>
+        <% else %>
+          <%= link_to _("Login"), "#" %>
+        <% end %>
       </div>
-      <div class="login-div">
-          <ul class="login-fields">
-          <form id="footer-login" action="/account/login" method="post">
-            <input name="user[login]" placeholder="<%=_('User name')%>" type="text">
-            <input name="user[password]" placeholder="<%=_('Password')%>" type="password">
-            <div class="login-buttons">
-              <%= submit_button( 'login', _('Log in') )%>
-            </div>
-          </form>
-         <%= link_to _("Esqueci Senha"), :controller => 'account', :action => 'forgot_password' %>
+      <div class="profile-div">
+          <ul class="profile-fields">
+            <% if logged_in? %>
+                <%= link_to 'Painel de Controle', "/myprofile/#{user.identifier}" %>
+                <% if user.is_admin? %>
+                  <%= link_to 'Administração',  "/admin" %>
+                <% end %>
+                <%= link_to 'Sair', "/account/logout" %>
+            <% else %>
+              <form id="footer-login" action="/account/login" method="post">
+                <input name="user[login]" placeholder="<%=_('User name')%>" type="text">
+                <input name="user[password]" placeholder="<%=_('Password')%>" type="password">
+                <div class="profile-buttons">
+                  <%= submit_button( 'login', _('Log in') )%>
+                </div>
+              </form>
+             <%= link_to _("Esqueci Senha"), :controller => 'account', :action => 'forgot_password' %>
+            <% end %>
         </ul>
       </div>
     </li>
   </ul>
 </div>
   
-<div class="signup-form">
-  <%= link_to _("Cadastre-se"), :controller => 'account', :action => 'signup' %>
-</div>
+<% if not logged_in? %>
+  <div class="signup-form">
+    <%= link_to _("Cadastre-se"), :controller => 'account', :action => 'signup' %>
+  </div>
+<% end %>
 
 <script>
 	$(document).ready(function() {
-		$('#login-button').click(function() {
-			$('.login-fields').toggleClass('visible');
+		$('#profile-button').click(function() {
+			$('.profile-fields').toggleClass('visible');
 		});
   }); 
 

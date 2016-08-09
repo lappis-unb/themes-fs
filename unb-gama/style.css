@@ -1453,7 +1453,7 @@ span.publishing-info.has-flags{
   margin-top: 5px;
 }
 
-#footer-login > div.login-buttons > a {
+#footer-login > div.profile-buttons > a {
   width: 78px;
 }
 
@@ -1597,17 +1597,17 @@ span.publishing-info.has-flags{
   width: 113px;
 }
 
-#login-button {
+#profile-button {
   width: 80%;
   margin-top: 27px;
   margin-left: 15px;
 }
 
-#login-down ul.login-fields {
+#profile-down ul.profile-fields {
   display: none;
 }
 
-#login-down ul.visible {
+#profile-down ul.visible {
   display: block;
 }
 
@@ -1630,17 +1630,17 @@ span.publishing-info.has-flags{
   text-decoration: underline;
 }
 
-#login-button {
+#profile-button {
   background-color: #008E32;
   height: 33px;
   border-radius: 6px;
 }
 
-#login-button a {
+#profile-button a {
   border: none;
   color: #FFFFFF;
 }
 
-#login-button a:hover {
+#profile-button a:hover {
   color: #FFFFFF;
 }
