@@ -410,7 +410,7 @@ body {
 }
 
 #content .login-block input.button.icon-login {
-  background: #DFDAD0;
+  background: #000;
   background-image: -webkit-linear-gradient(top, #EFEAE0, #CFCAC0);
   background-image:    -moz-linear-gradient(top, #F4F0E0, #DFDAD0, #C8C8C8);
   background-image:     -ms-linear-gradient(top, #EFEAE0, #CFCAC0);
@@ -419,6 +419,7 @@ body {
   -moz-border-radius: 8px;
   border-radius: 8px;
 }
+
 #content .login-block input.button.icon-login:hover {
   -webkit-box-shadow: 0 0 6px #FFF;
   -moz-box-shadow: 0 0 6px #FFF;
@@ -1610,11 +1611,36 @@ span.publishing-info.has-flags{
   display: block;
 }
 
-.signup-form {
-  width: 80%;
+#navigation .signup-form {
+  margin-top: 50px;
 }
 
-.signup-form a {
+#navigation .signup-form a {
   text-align: center;
-  font-size: 13px !important;
+  font-size: 13px;
+  border: none;
+}
+
+#navigation a:hover {
+  background: none;
+  color: #000;
+}
+
+#navigation .signup-form a:hover {
+  text-decoration: underline;
+}
+
+#login-button {
+  background-color: #008E32;
+  height: 33px;
+  border-radius: 6px;
+}
+
+#login-button a {
+  border: none;
+  color: #FFFFFF;
+}
+
+#login-button a:hover {
+  color: #FFFFFF;
 }
