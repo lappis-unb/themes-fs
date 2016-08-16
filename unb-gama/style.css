@@ -1,7 +1,7 @@
 @import url(../unb-base/style.css);
 @import url(../base/style.css);
 body {
-  background: #EEE;
+  background: #FFF;
   color: #000;
 }
 
@@ -35,7 +35,7 @@ body {
 }
 
 #site-title {
-  width: 343px;
+  width: 330px;
   height: 72px;
   left: 25px;
   top: 70px;
@@ -44,7 +44,7 @@ body {
 #site-title a {
   position: static;
   display: block;
-  width: 343px;
+  width: 330px;
   height: 72px;
 }
 
@@ -306,7 +306,7 @@ body {
 }
 
 #content {
-  margin-top: 166px;
+  margin-top: 210px;
 }
 
 #main-content-wrapper-1, #main-content-wrapper-2,
@@ -603,7 +603,7 @@ body {
 /* * * Footer * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 #theme-footer {
-  background: #E4E4E4;
+  background: #EFEFEF;
   width: auto;
   margin: -5px 0px;
   position: relative;
@@ -612,13 +612,13 @@ body {
 }
 
 #footer-content {
-  background: #EEE;
+  background: #EFEFEF;
   margin: -5px auto;
   padding: 30px 20px 20px 20px;
   width: 921px;
   -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.3);
   -moz-box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  box-shadow: none;
   font-size: 14px;
 }
 
@@ -788,7 +788,7 @@ body {
 
 .highlights-block-pager {
   height: 20px;
-  width: 50%;
+  width: 25%;
   position: absolute;
   right: 18px;
   top: 284px;
@@ -952,7 +952,7 @@ text-decoration: none;
 /* Header */
 
 #site-title {
-  width: 343px;
+  width: 330px;
   height: 72px;
   left: 20px;
   top: 70px;
@@ -968,14 +968,11 @@ text-decoration: none;
 #portal-logo {
   background: url(../unb-gama/images/logo.png);
   background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 #site-title span {
   display: block;
-}
-
-#content {
-  margin-top: 166px;
 }
 
 #content-inner {
@@ -1139,7 +1136,7 @@ span.publishing-info.has-flags{
 }
 
 #site-title a {
-  margin-top: -22px;
+  margin-top: -17px;
 }
 
 #top-search {
@@ -1164,8 +1161,7 @@ span.publishing-info.has-flags{
   margin: auto;
   color: #FFF;
   font-size: 13px;
-  width: 961px;
-  margin-top: 143px;
+  margin-top: 116px;
 }
 
 #down-functions-box a {
@@ -1174,11 +1170,11 @@ span.publishing-info.has-flags{
 
 #down-functions {
   float: right;
-  background: #006633;
+  background: #005263;
   white-space: nowrap;
   width: 100%;
   text-align: center;
-  height: 32px;
+  height: 50px;
 }
 
 #down-functions span {
@@ -1186,7 +1182,7 @@ span.publishing-info.has-flags{
 }
 
 #menu-down {
-  margin: 9px 0px 0px -5px;
+  margin: 17px 0px 0px 19%;
   padding: 0px;
 }
 
@@ -1393,7 +1389,7 @@ span.publishing-info.has-flags{
 }
 
 .highlights-container {
-  width: 141% !important;
+  width: 181% !important;
 }
 
 #block-1 > div {
@@ -1643,4 +1639,12 @@ span.publishing-info.has-flags{
 
 #profile-button a:hover {
   color: #FFFFFF;
+}
+
+.home-link:before {
+  background: url(images/search.png) no-repeat scroll 200px 6px;
+}
+
+#box-3 > div:nth-child(1) > div:nth-child(1) {
+  margin-left: -1%;
 }
