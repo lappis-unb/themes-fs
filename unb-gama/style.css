@@ -1,5 +1,6 @@
 @import url(../unb-base/style.css);
 @import url(../base/style.css);
+
 body {
   background: #FFF;
   color: #000;
@@ -549,12 +550,13 @@ body {
 }
 
 #content .news-area h3 {
-  background: transparent;
-  padding: 4px 0px 14px 2px;
+  background: #005263 !important;
+  padding: 0px 0px 14px 2px;
+  text-transform: uppercase;
 }
 
 #content .news-area h3 a {
-  color: #003366;
+  color: white;
 }
 
 .news-area ul {
@@ -1449,7 +1451,7 @@ span.publishing-info.has-flags{
   margin-top: 5px;
 }
 
-#footer-login > div.profile-buttons > a {
+#footer-login > div.profile-button  > a {
   width: 78px;
 }
 
@@ -1489,16 +1491,6 @@ span.publishing-info.has-flags{
 
 #portal-news > ul > li > a {
   color: #336699;
-}
-
-#block-1 > div > div > div > div.news-area.even > div > div > ul > li {
-  margin-left: 20px;
-  list-style-image: url(images/li-black.png);
-}
-
-#block-1 > div > div > div > div.news-area.odd > div > div > ul > li {
-  margin-left: 20px;
-  list-style-image: url(images/li-black.png);
 }
 
 #block-1 > div > div > div > div.news-area.even > div > div > ul > li > a {
