@@ -1,4 +1,4 @@
-<div class="profile-header">
+<!-- <div class="profile-header">
 	<ul id="profile-down">
 		<li class="parent">
       <div id="profile-button">
@@ -28,21 +28,21 @@
             <% end %>
         </ul>
       </div>
-    </li>
+     </li>
   </ul>
 </div>
-  
-<% if not logged_in? %>
+
+ <% if not logged_in? %>
   <div class="signup-form">
     <%= link_to _("Cadastre-se"), :controller => 'account', :action => 'signup' %>
   </div>
-<% end %>
+<% end %> -->
 
 <script>
 	$(document).ready(function() {
 		$('#profile-button').click(function() {
 			$('.profile-fields').toggleClass('visible');
 		});
-  }); 
+  });
 
 </script>

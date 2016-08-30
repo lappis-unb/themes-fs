@@ -34,7 +34,8 @@
    <div class="redesSociais">
       <strong>Redes Sociais</strong>
       <ul>
-        <li><a class="facebook" target="_blank" title="Facebook FGA" alt="Facebook FGA" href="https://www.facebook.com/groups/189467721113004/">Facebook</a>
+        <li><a class="facebook" target="_blank" title="Facebook FGA" alt="Facebook FGA" href="">Facebook</a>
+          <div class="fa-facebook-square" style="font-size:2em; color: purple"></div>
         </li>
         <li><a class="googleplus" target="_blank" title="Google+ UnB Gama" alt="Google+ UnB Gama" href="https://plus.google.com/u/0/104490359477931809449">Google+
         </a></li>
@@ -51,8 +52,8 @@
       </ul>
     </div>
   </li>
-  <li>
-    <strong>Links Úteis</strong>
+  <!-- <li> -->
+    <!-- <strong>Links Úteis</strong>
     <ul>
       <li ><%= link_to 'Portal UnB',  "http://www.unb.br/" %></li>
       <li><%= link_to 'MatrículaWeb',  "https://matriculaweb.unb.br/matriculaweb/" %></li>
@@ -61,7 +62,40 @@
       <li><%= link_to 'Moodle FGA',  "http://gama.ead.unb.br/login/index.php" %></li>
       <li><%= link_to 'UnB Doc',  "https://unbdoc.unb.br/" %></li>
       <li><%= link_to 'Cardápio RU',  "http://www.ru.unb.br/cardapio-ru-unb" %></li>
-    </ul>
+    </ul> -->
+  <!-- </li> -->
+  <li>
+    <% if logged_in? %>
+      <strong class="user-name"><%= user.name %></strong>
+        <ul>
+          <li>
+            <%= link_to 'Painel de Controle', "/myprofile/#{user.identifier}" %>
+          </li>
+
+          <% if user.is_admin? %>
+            <li>
+              <%= link_to 'Administração',  "/admin" %>
+            </li>
+          <% end %>
+
+          <li>
+            <%= link_to 'Sair', "/account/logout" %>
+          </li>
+        </ul>
+    <% else %>
+      <strong>Painel de Controle</strong>
+        <form id="footer-login" action="/account/login" method="post">
+          <input name="user[login]" placeholder="<%=_('User name')%>" type="text">
+          <input name="user[password]" placeholder="<%=_('Password')%>" type="password">
+        <div class="login-buttons">
+          <%= submit_button( 'login', _('Log in') )%>
+          <%= button :new, _("Cadastre-se"), :controller => 'account', :action => 'signup' %>
+        </div>
+        <div id="forgot-button">
+          <%= button :help, _("Esqueci Senha"), :controller => 'account', :action => 'forgot_password' %>
+        </div>
+    </form>
+    <% end %>
   </li>
 </ul>
 
