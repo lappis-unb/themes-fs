@@ -1,5 +1,6 @@
 @import url(../unb-base/style.css);
 @import url(../base/style.css);
+@import url(../../icons/awesome/style.scss);
 
 body {
   background: #FFF;
@@ -651,8 +652,7 @@ body {
   color: #003366;
 }
 #footer-content a:hover {
-  color: #333;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 #external-sns a {
@@ -1213,7 +1213,6 @@ span.publishing-info.has-flags{
 #menu-down li ul {
   border-top: 0px;
   position: absolute;
-  top: 22px;
   left: 0px;
   background-color: white;
   display: none;
@@ -1223,7 +1222,8 @@ span.publishing-info.has-flags{
   border-bottom-left-radius: 10px;
   border-style: solid;
   border-width: 1px;
-  border-color: #006633;
+  border-color: #005263;
+  top: 76%;
 }
 
 /* Exibindo submenu */
@@ -1330,32 +1330,32 @@ span.publishing-info.has-flags{
 }
 
 #engineerings > li > a {
-  color: #006633;
+  color: #005263;
   font-weight: normal;
 }
 
 #startups > li > a {
-  color: #006633;
+  color: #005263;
   font-weight: normal;
 }
 
 #labs > li > a {
-  color: #006633;
+  color: #005263;
   font-weight: normal;
 }
 
 #pos-graduation > li > a {
-  color: #006633;
+  color: #005263;
   font-weight: normal;
 }
 
 #news > li > a {
-  color: #006633;
+  color: #005263;
   font-weight: normal;
 }
 
 #learn-more > li > a {
-  color: #006633;
+  color: #005263;
   font-weight: normal;
 }
 
@@ -1416,6 +1416,7 @@ span.publishing-info.has-flags{
 
 .dropdown-arrow {
   display: flex;
+  height: 33px;
 }
 
 #menu-down li div a{
@@ -1577,7 +1578,7 @@ span.publishing-info.has-flags{
 }
 
 #info > li > a {
-  color: #006633;
+  color: #005263;
   font-weight: normal;
 }
 
