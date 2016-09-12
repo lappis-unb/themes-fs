@@ -56,7 +56,7 @@ body {
   position: absolute;
   top: 0px;
   width: 100%;
-  z-index: 100;
+  z-index: 1;
   height: 0px;
 }
 
@@ -1586,12 +1586,6 @@ span.publishing-info.has-flags{
   width: 113px;
 }
 
-#profile-button {
-  width: 80%;
-  margin-top: 27px;
-  margin-left: 15px;
-}
-
 #profile-down ul.profile-fields {
   display: none;
 }
@@ -1608,6 +1602,7 @@ span.publishing-info.has-flags{
   text-align: center;
   font-size: 13px;
   border: none;
+  color: #7b7b7b;
 }
 
 #navigation a:hover {
@@ -1620,14 +1615,20 @@ span.publishing-info.has-flags{
 }
 
 #profile-button {
-  background-color: #008E32;
+  width: 80%;
+  margin-top: 27px;
+  margin-left: 15px;
+  background-color: #009B37;
   height: 33px;
   border-radius: 6px;
+  border-bottom: 2px solid #146543;
 }
 
 #profile-button a {
   border: none;
   color: #FFFFFF;
+  font-weight: 900;
+  line-height: 2;
 }
 
 #profile-button a:hover {
@@ -1640,4 +1641,85 @@ span.publishing-info.has-flags{
 
 #box-3 > div:nth-child(1) > div:nth-child(1) {
   margin-left: -1%;
+}
+
+#profile-div {
+  display: none;
+  z-index: 100;
+  padding: 5px 15px;
+  background: #009B37;
+  min-width: 275px;
+  float: right;
+  margin-right: 10px;
+  border-radius: 5px;
+  position: relative;
+  border: 4px solid #009B37;
+  margin-top: 7px;
+}
+#profile-div:after, #profile-div:before {
+  bottom: 100%;
+  left: 95%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+#profile-div:after {
+  border-color: rgba(0, 155, 55, 0);
+  border-bottom-color: #009B37;
+  border-width: 4px;
+  margin-left: -4px;
+}
+#profile-div:before {
+  border-color: rgba(0, 155, 55, 0);
+  border-bottom-color: #009B37;
+  border-width: 10px;
+  margin-left: -10px;
+}
+
+#profile-div.visible {
+  display: block;
+}
+
+#profile-div a {
+  border-left: none;
+}
+
+.footer-division-title {
+  text-transform: uppercase;
+}
+
+#footer-content .footer-list {
+  margin-top: 20px;
+}
+
+#footer-login input {
+  display: inline;
+  border-radius: 4px;
+  width: 125px;
+  height: 20px;
+}
+
+#footer-login input::-webkit-input-placeholder {
+  text-align: center;
+  font-weight: 900;
+  text-transform: lowercase;
+  color: #E9E9E9;
+}
+
+.profile-buttons input {
+  float: right;
+  padding: 25px !important;
+  margin: 10px;
+  margin-right: 0px;
+  text-transform: UPPERCASE;
+  background-color: #005D34 !important;
+  line-height: 2px !important;
+  color: white !important;
+  font-weight: 900 !important;
+  border: none !important;
+  border-bottom: 5px solid #003A19 !important;
 }

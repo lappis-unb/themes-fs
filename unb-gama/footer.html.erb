@@ -21,8 +21,8 @@
     <a href="http://unb.br" target="_blank" id="unb"><span>Universidade de Brasília</span></a>
   </li>
   <li>
-    <strong>Portal UnB Gama</strong>
-    <ul>
+    <strong class="footer-division-title">Portal UnB Gama</strong>
+    <ul class="footer-list">
       <li><%= link_to 'Sobre',  "/unb-gama/sobre" %></li>
       <li><%= link_to 'Graduação',  "/unb-gama/graduacao" %></li>
       <li><%= link_to 'Pós-Graduação',  "/unb-gama/pos-graduacao" %></li>
@@ -32,12 +32,12 @@
   </li>
   <li>
    <div class="redesSociais">
-      <strong>Redes Sociais</strong>
+      <strong class="footer-division-title">Redes Sociais</strong>
       <ul>
-        <li><a class="fa-facebook-square" target="_blank" title="Facebook FGA" alt="Facebook FGA" href="" style="font-size:2em; color: #3b5997"></a>
+        <li><a class="fa fa-facebook-square" target="_blank" title="Facebook FGA" alt="Facebook FGA" href="" style="font-size:2em; color: #3b5997"></a>
         <a class="fa fa-google-plus" target="_blank" title="Google+ UnB Gama" alt="Google+ UnB Gama" style="font-size:2em; color: #dd4c3f" href="https://plus.google.com/u/0/104490359477931809449">
         </a>
-        <a class="fa-twitter-square" target="_blank" title="Siga-nos no Twiiter" alt="Siga-nos no Twiiter" style="font-size:2em; color: #4798d7" href="http://www.twitter.com/unbgama">
+        <a class="fa fa-twitter-square" target="_blank" title="Siga-nos no Twiiter" alt="Siga-nos no Twiiter" style="font-size:2em; color: #4798d7" href="http://www.twitter.com/unbgama">
         </a></li>
         <!--<li><a class="vimeo" target="_blank" title="UnB Gama on Vimeo" alt="UnB Gama on Vimeo" href="https://vimeo.com/user13476764">Vimeo
         </a></li>-->
@@ -45,13 +45,13 @@
           </a>
         <!--<li><a class="flickr" target="_blank" title="UnB Gama no Flickr" alt="UnB Gama no Flickr" href="http://www.flickr.com/people/87145351@N02/">Flickr
         </a></li>-->
-        <a class="fa-rss" title="Assinar RSS UnB Gama" alt="Assinar RSS UnB Gama" style="font-size:2em; color: #fc7f01" href="http://fga.unb.br/unb-gama/noticias/feed">
+        <a class="fa fa-rss" title="Assinar RSS UnB Gama" alt="Assinar RSS UnB Gama" style="font-size:2em; color: #fc7f01" href="http://fga.unb.br/unb-gama/noticias/feed">
         </a></li>
       </ul>
     </div>
   </li>
-  <!-- <li> -->
-    <!-- <strong>Links Úteis</strong>
+  <li>
+    <strong class="footer-division-title">Links Úteis</strong>
     <ul>
       <li ><%= link_to 'Portal UnB',  "http://www.unb.br/" %></li>
       <li><%= link_to 'MatrículaWeb',  "https://matriculaweb.unb.br/matriculaweb/" %></li>
@@ -60,40 +60,7 @@
       <li><%= link_to 'Moodle FGA',  "http://gama.ead.unb.br/login/index.php" %></li>
       <li><%= link_to 'UnB Doc',  "https://unbdoc.unb.br/" %></li>
       <li><%= link_to 'Cardápio RU',  "http://www.ru.unb.br/cardapio-ru-unb" %></li>
-    </ul> -->
-  <!-- </li> -->
-  <li>
-    <% if logged_in? %>
-      <strong class="user-name"><%= user.name %></strong>
-        <ul>
-          <li>
-            <%= link_to 'Painel de Controle', "/myprofile/#{user.identifier}" %>
-          </li>
-
-          <% if user.is_admin? %>
-            <li>
-              <%= link_to 'Administração',  "/admin" %>
-            </li>
-          <% end %>
-
-          <li>
-            <%= link_to 'Sair', "/account/logout" %>
-          </li>
-        </ul>
-    <% else %>
-      <strong>Painel de Controle</strong>
-        <form id="footer-login" action="/account/login" method="post">
-          <input name="user[login]" placeholder="<%=_('User name')%>" type="text">
-          <input name="user[password]" placeholder="<%=_('Password')%>" type="password">
-        <div class="login-buttons">
-          <%= submit_button( 'login', _('Log in') )%>
-          <%= button :new, _("Cadastre-se"), :controller => 'account', :action => 'signup' %>
-        </div>
-        <div id="forgot-button">
-          <%= button :help, _("Esqueci Senha"), :controller => 'account', :action => 'forgot_password' %>
-        </div>
-    </form>
-    <% end %>
+    </ul>
   </li>
 </ul>
 
