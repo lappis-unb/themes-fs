@@ -5,7 +5,11 @@
         <% if logged_in? %>
           <%= link_to _("Bem-vindo, #{current_user.name}"), "#" %>
         <% else %>
-          <%= link_to "Login", "#", id: "login-button" %>
+          <a href="#" id="login-button">
+            <span class="fa fa-user"></span>
+            Login
+          </a>
+          </span>
         <% end %>
       </div>
       <div id="profile-div">
@@ -31,7 +35,7 @@
   </ul>
 </div>
 
- <% if not logged_in? %>
+<% if not logged_in? %>
   <div class="signup-form">
     <%= link_to _("Cadastre-se"), :controller => 'account', :action => 'signup' %>
   </div>
