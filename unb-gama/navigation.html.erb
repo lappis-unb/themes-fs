@@ -28,6 +28,17 @@
                 <%= submit_button( 'login', _('Log in') )%>
               </div>
             </form>
+
+            <div>
+              <input type="checkbox" class="header-remember-me-checkbox">
+            </div>
+
+            <div class="header-remember-me">Remember me</div>
+
+            <span class="header-forgot-password">
+              <%= link_to _("Esqueci minha senha"), :controller => 'account', :action => 'forgot_password' %>
+            </span>
+
           <% end %>
         </div>
       </div>
