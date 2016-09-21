@@ -1,17 +1,16 @@
 <div class="profile-header">
-	<ul id="profile-down">
-		<li class="parent">
-      <div id="profile-button">
-        <% if logged_in? %>
+  <ul id="profile-down">
+    <li class="parent">
+      <% if logged_in? %>
           <%= link_to _("Bem-vindo, #{current_user.name}"), "#" %>
-        <% else %>
+      <% else %>
+        <div id="profile-button">
           <a href="#" id="login-button">
-            <span class="fa fa-user"></span>
-            Login
+            <span class="fa fa-user"></span>Login
           </a>
-          </span>
-        <% end %>
-      </div>
+        </div>
+      <% end %>
+
       <div id="profile-div">
         <div class="profile-fields">
           <% if logged_in? %>
@@ -21,7 +20,7 @@
             <% end %>
             <%= link_to 'Sair', "/account/logout" %>
           <% else %>
-            <form id="footer-login" action="/account/login" method="post">
+            <form id="header-login" action="/account/login" method="post">
               <input name="user[login]" placeholder="<%=_('email')%>" type="text" style="float: left;">
               <input name="user[password]" placeholder="<%=_('Password')%>" type="password" style="float: right;">
               <div class="profile-buttons">
@@ -33,7 +32,7 @@
               <input type="checkbox" class="header-remember-me-checkbox">
             </div>
 
-            <div class="header-remember-me">Remember me</div>
+            <div class="header-remember-me"><%= _('Remember me') %></div>
 
             <span class="header-forgot-password">
               <%= link_to _("Esqueci minha senha"), :controller => 'account', :action => 'forgot_password' %>

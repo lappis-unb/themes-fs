@@ -1460,7 +1460,7 @@ span.publishing-info.has-flags{
   margin-top: 5px;
 }
 
-#footer-login > div.profile-button  > a {
+#header-login > div.profile-button  > a {
   width: 78px;
 }
 
@@ -1623,7 +1623,7 @@ span.publishing-info.has-flags{
 }
 
 #profile-button {
-  width: 80%;
+  width: 90%;
   margin-top: 27px;
   margin-left: 15px;
   background-color: #009B37;
@@ -1704,14 +1704,14 @@ span.publishing-info.has-flags{
   margin-top: 20px;
 }
 
-#footer-login input {
+#header-login input {
   display: inline;
   border-radius: 4px;
   width: 110px;
   height: 20px;
 }
 
-#footer-login input::-webkit-input-placeholder {
+#header-login input::-webkit-input-placeholder {
   text-align: center;
   font-weight: 900;
   text-transform: lowercase;
@@ -1738,7 +1738,7 @@ span.publishing-info.has-flags{
 }
 
 .signup-form {
-  padding-top: 10px !important;
+  padding-top: 5px !important;
 }
 
 .home-button {
@@ -1761,6 +1761,12 @@ span.publishing-info.has-flags{
 #down-functions-box #down-functions #learn-more,
 #down-functions-box #down-functions #startups {
   margin-top: 15px;
+}
+
+.navigation-dropdown-list li a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
 }
 
 #pos-graduation.navigation-dropdown-list,
@@ -1786,11 +1792,10 @@ span.publishing-info.has-flags{
 #startups.navigation-dropdown-list li,
 #info.navigation-dropdown-list li{
   background: #009B37;
-  padding-top: 10px;
-  padding-left: 10px;
+  padding-bottom: 0px;
   margin-left: 5px;
   margin-right: 5px;
-  min-width: 180px;
+  min-width: 190px;
   border-radius: 5px;
 }
 
@@ -1806,6 +1811,7 @@ span.publishing-info.has-flags{
 
 #navigation #login-button span {
   padding-left: 0px;
+  padding-right: 5px;
 }
 
 .header-forgot-password {
@@ -1813,8 +1819,15 @@ span.publishing-info.has-flags{
 }
 
 #navigation .header-forgot-password a {
-  color: #bbb;
+  color: white;
   font-family: "Aller";
+  font-size: 13px;
+  line-height: 10px;
+  padding-bottom: 5px;
+}
+
+#navigation .header-forgot-password a:hover {
+  color: #bbb;
 }
 
 #navigation .header-remember-me {
@@ -1826,10 +1839,6 @@ span.publishing-info.has-flags{
 
 .header-remember-me-checkbox {
   float: left;
-}
-
-#navigation .header-forgot-password a:hover {
-  color: white;
 }
 
 .navigation-dropdown-list.arrow_box {
