@@ -848,14 +848,6 @@ body {
   font-weight: bold;
 }
 
-#profile-header-options {
-  max-height: 217px;
-  width: 125px;
-  float: left;
-  text-align: center;
-  position: relative;
-}
-
 .action-home-index #content .main-block h1 {
    font-size: 16px;
    font-weight: bold;
@@ -1054,7 +1046,6 @@ div.article-body.article-body-tiny-mce-article.has-flags {
 
 
 .profile-info-options {
-  padding-right: 2px;
 }
 
 a.button.icon-add.with-text.join-community {
@@ -1473,10 +1464,6 @@ span.publishing-info.has-flags{
   display: none;
 }
 
-#profile-header-options {
-  margin-bottom:  6px;
-}
-
 .my-network-block ul {
   padding: 0px 0px 10px 6px;
 }
@@ -1709,6 +1696,23 @@ span.publishing-info.has-flags{
   margin-top: 20px;
 }
 
+#profile-header {
+  max-height: 217px;
+  float: left;
+  text-align: center;
+  position: relative;
+  margin-bottom:  6px;
+}
+
+#profile-header-actions {
+  max-width: 125px;
+}
+
+#profile-header-actions #profile-button {
+  width: 125px;
+  margin-left: 0px;
+}
+
 #header-login input {
   display: inline;
   border-radius: 4px;
@@ -1815,7 +1819,8 @@ span.publishing-info.has-flags{
 }
 
 #profile-menu-dropdown {
-  margin-top: 68px;
+  display: flex;
+  align-items: center;
 }
 
 #profile-menu-dropdown img {

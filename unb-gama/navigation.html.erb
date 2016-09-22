@@ -1,16 +1,18 @@
-<div id="profile-header-options">
-  <% if logged_in? %>
-    <div id="profile-menu-dropdown">
-      <%= image_tag(profile_icon(current_person, :portrait)) %>
-      <span class="fa fa-angle-down"></span>
-    </div>
-  <% else %>
-    <div id="profile-button">
-      <a href="#" id="login-button">
-        <span class="fa fa-user"></span>Login
-      </a>
-    </div>
-  <% end %>
+<div id="profile-header">
+  <div id="profile-header-actions">
+    <% if logged_in? %>
+      <div id="profile-menu-dropdown">
+        <%= image_tag(profile_icon(current_person, :portrait)) %>
+        <span class="fa fa-angle-down"></span>
+      </div>
+    <% else %>
+      <div id="profile-button">
+        <a href="#" id="login-button">
+          <span class="fa fa-user"></span>Login
+        </a>
+      </div>
+    <% end %>
+  </div>
 
   <div id="profile-div">
     <div class="profile-fields">
@@ -51,13 +53,13 @@
 <% end %>
 
 <script>
-	$(document).ready(function() {
-		$('#login-button').click(function() {
-			$('#profile-div').toggle();
+  $(document).ready(function() {
+    $('#profile-header-actions').click(function() {
+      $('#profile-div').toggle();
       $('#content').css('z-index', -1);
       $('#profile-div').css('z-index', 100);
       $('.highlights-container').css('z-index', 0);
-		});
+	});
   });
 
 </script>
