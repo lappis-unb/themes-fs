@@ -1,48 +1,47 @@
-<div class="profile-header">
-  <ul id="profile-down">
-    <li class="parent">
+<div id="profile-header-options">
+  <% if logged_in? %>
+    <div id="profile-menu-dropdown">
+      <%= image_tag(profile_icon(current_person, :portrait)) %>
+      <span class="fa fa-angle-down"></span>
+    </div>
+  <% else %>
+    <div id="profile-button">
+      <a href="#" id="login-button">
+        <span class="fa fa-user"></span>Login
+      </a>
+    </div>
+  <% end %>
+
+  <div id="profile-div">
+    <div class="profile-fields">
       <% if logged_in? %>
-          <%= link_to _("Bem-vindo, #{current_user.name}"), "#" %>
+        <%= link_to 'Painel de Controle', "/myprofile/#{user.identifier}" %>
+        <% if user.is_admin? %>
+          <%= link_to 'Administração',  "/admin" %>
+        <% end %>
+        <%= link_to 'Sair', "/account/logout" %>
       <% else %>
-        <div id="profile-button">
-          <a href="#" id="login-button">
-            <span class="fa fa-user"></span>Login
-          </a>
+        <form id="header-login" action="/account/login" method="post">
+          <input name="user[login]" placeholder="<%=_('email')%>" type="text" style="float: left;">
+          <input name="user[password]" placeholder="<%=_('Password')%>" type="password" style="float: right;">
+          <div class="profile-buttons">
+            <%= submit_button( 'login', _('Log in') )%>
+          </div>
+        </form>
+
+        <div>
+          <input type="checkbox" class="header-remember-me-checkbox">
         </div>
+
+        <div class="header-remember-me"><%= _('Remember me') %></div>
+
+        <span class="header-forgot-password">
+          <%= link_to _("Esqueci minha senha"), :controller => 'account', :action => 'forgot_password' %>
+        </span>
+
       <% end %>
-
-      <div id="profile-div">
-        <div class="profile-fields">
-          <% if logged_in? %>
-            <%= link_to 'Painel de Controle', "/myprofile/#{user.identifier}" %>
-            <% if user.is_admin? %>
-              <%= link_to 'Administração',  "/admin" %>
-            <% end %>
-            <%= link_to 'Sair', "/account/logout" %>
-          <% else %>
-            <form id="header-login" action="/account/login" method="post">
-              <input name="user[login]" placeholder="<%=_('email')%>" type="text" style="float: left;">
-              <input name="user[password]" placeholder="<%=_('Password')%>" type="password" style="float: right;">
-              <div class="profile-buttons">
-                <%= submit_button( 'login', _('Log in') )%>
-              </div>
-            </form>
-
-            <div>
-              <input type="checkbox" class="header-remember-me-checkbox">
-            </div>
-
-            <div class="header-remember-me"><%= _('Remember me') %></div>
-
-            <span class="header-forgot-password">
-              <%= link_to _("Esqueci minha senha"), :controller => 'account', :action => 'forgot_password' %>
-            </span>
-
-          <% end %>
-        </div>
-      </div>
-    </li>
-  </ul>
+    </div>
+  </div>
 </div>
 
 <% if not logged_in? %>

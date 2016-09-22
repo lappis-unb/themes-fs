@@ -848,9 +848,14 @@ body {
   font-weight: bold;
 }
 
-#profile-header{
+#profile-header-options {
   max-height: 217px;
+  width: 125px;
+  float: left;
+  text-align: center;
+  position: relative;
 }
+
 .action-home-index #content .main-block h1 {
    font-size: 16px;
    font-weight: bold;
@@ -1468,7 +1473,7 @@ span.publishing-info.has-flags{
   display: none;
 }
 
-#profile-header {
+#profile-header-options {
   margin-bottom:  6px;
 }
 
@@ -1807,6 +1812,20 @@ span.publishing-info.has-flags{
 #startups.navigation-dropdown-list li a,
 #info.navigation-dropdown-list li a{
   color: white;
+}
+
+#profile-menu-dropdown {
+  margin-top: 68px;
+}
+
+#profile-menu-dropdown img {
+  border-radius: 100%;
+  height: 50px;
+}
+
+#profile-menu-dropdown .fa.fa-angle-down {
+  padding-left: 5%;
+  font-size: 2em;
 }
 
 #navigation #login-button span {
