@@ -6,7 +6,7 @@
   font-family: "Aller";
   src: url('fonts/Aller_Lt.ttf');
 }
-p.customfont { 
+p.customfont {
   font-family: "My Custom Font", Verdana, Tahoma;
 }
 
@@ -1696,12 +1696,13 @@ span.publishing-info.has-flags{
   margin-top: 20px;
 }
 
-#profile-header {
+#profile-header-fga {
   max-height: 217px;
   float: left;
   text-align: center;
   position: relative;
   margin-bottom:  6px;
+  width: 125px;
 }
 
 #profile-header-actions {
