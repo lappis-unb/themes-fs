@@ -1633,17 +1633,18 @@ span.publishing-info.has-flags{
   padding-top: 5px !important;
 }
 
-.home-button {
+#navigation ul #home-button {
   margin-right: 80px;
 }
 
-#navigation ul .home-button span {
+#navigation ul #home-button span {
+  padding: 0 5px 0 0;
   color: #00D869;
 }
 
-#navigation ul .home-button a {
+#navigation ul #home-button a {
   line-height: 65px;
-  display: inline;
+  display: block;
 }
 
 #navigation ul li #news,
