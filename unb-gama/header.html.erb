@@ -1,8 +1,10 @@
 <!--<div id="barra-brasil"></div>-->
 
-<%= link_to "/" do %>
-  <img id="portal-logo" alt="UnB-FGA" />
+<%= link_to "/", id: 'portal-logo' do %>
+  <img alt="UnB-FGA" />
 <% end %>
+
+<div id="top-search-wrapper"></div>
 
 <div id="profile-header-fga">
   <div id="profile-header-actions">
@@ -16,6 +18,9 @@
         <a href="#" id="login-button">
           <span class="fa fa-user"></span>Login
         </a>
+      </div>
+      <div class="signup-form">
+        <%= link_to _("Cadastre-se"), :controller => 'account', :action => 'signup' %>
       </div>
     <% end %>
   </div>
@@ -52,12 +57,6 @@
   </div>
 </div>
 
-<% if not logged_in? %>
-  <div class="signup-form">
-    <%= link_to _("Cadastre-se"), :controller => 'account', :action => 'signup' %>
-  </div>
-<% end %>
-
 <script>
   $(document).ready(function() {
     $('#profile-header-actions').click(function() {
@@ -67,5 +66,4 @@
       $('.highlights-container').css('z-index', 0);
 	});
   });
-  jQuery("#top-search").appendTo("#wrap-2");
 </script>

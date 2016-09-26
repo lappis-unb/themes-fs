@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+  jQuery("#top-search").prependTo("#top-search-wrapper");
+
   // add new translations below!
   var translationsList = {
     en: {

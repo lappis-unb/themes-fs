@@ -36,8 +36,13 @@ body {
 }
 
 #portal-logo {
+  display: inline-block;
+  width: 15% !important;
+}
+
+#portal-logo img {
   position: static;
-  width: 15%;
+  width: 100%;
   content: url(images/logo.png);
 }
 
@@ -45,9 +50,9 @@ body {
 /* * * Controles do topo * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 #theme-header {
+  display: flex;
   z-index: 1;
   height: auto;
-  overflow: auto;
 }
 
 #wrap-2 #user {
