@@ -15,15 +15,7 @@ body {
   color: #000;
 }
 
-#wrap-2 {
-  margin-top: 0 !important;
-}
-
 /* BETA - INICIO */
-
-#site-title {
-  overflow: visible;
-}
 
 #beta {
   width: 98px;
@@ -44,14 +36,7 @@ body {
   position: relative;
 }
 
-#site-title {
-  width: 330px;
-  height: 72px;
-  left: 25px;
-  top: 70px;
-}
-
-#site-title a {
+#portal-logo {
   position: static;
   display: block;
   width: 330px;
@@ -61,17 +46,18 @@ body {
 /* * * Controles do topo * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 #theme-header {
-  position: absolute;
-  top: 0px;
-  width: 100%;
   z-index: 1;
-  height: 0px;
+  height: auto;
+  overflow: auto;
 }
 
 #wrap-2 #user {
   display: none !important;
 }
 
+#wrap-2 #site-title {
+  display: none !important;
+}
 
 #top-functions-box {
   margin: auto;
@@ -102,21 +88,6 @@ body {
 
 .logged-in #top-functions {
   padding-left: 6px;
-}
-
-#conecte-se {
-  display:inline-block;
-  position: relative;
-  right: 0px;
-  top: -7px;
-}
-#conecte-se a {
-  text-decoration: none;
-}
-
-#conecte-se .signup,
-#conecte-se .or {
-  display: none;
 }
 
 #user {
@@ -290,11 +261,6 @@ body {
 #menu-top #submenu-contents span {
   background-image: url(images/icons/icone-08.png);
 }
-#conecte-se span.label-conect {
-  display: none;
-  background-image: url(images/icons/icone-blogoosfero.png);
-}
-
 
 /* * * fim dos Controles do topo * * * * * * * * * * * * * * * * * * * * * */
 
@@ -306,9 +272,12 @@ body {
 }
 
 #wrap-2 {
-  margin: 20px auto 0px auto;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  position: static;
+  padding: 0px;
   border: none;
+/*  margin: 20px auto 0px auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  border: none; */
 }
 
 #content {
@@ -1124,11 +1093,6 @@ span.publishing-info.has-flags{
   padding-top: 0px;
 }
 
-#wrap-2 {
-  box-shadow: none;
-  padding-bottom: 20px;
-}
-
 #site-title a {
   margin-top: -17px;
 }
@@ -1148,11 +1112,14 @@ span.publishing-info.has-flags{
 
 
 #navigation {
+  position: static;
   margin: auto;
   color: #FFF;
   font-size: 13px;
-  margin-top: 116px;
-  background: none;
+  background: #005263;
+  text-align: center;
+  border-bottom: 5px solid #bbb;
+  height: 65px;
 }
 
 #navigation ul a {
@@ -1160,10 +1127,6 @@ span.publishing-info.has-flags{
 }
 
 #navigation {
-  background: #005263;
-  text-align: center;
-  border-bottom: 5px solid #bbb;
-  height: 65px;
 }
 
 #navigation > ul {
