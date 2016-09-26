@@ -1,4 +1,3 @@
-@import url(../unb-base/style.css);
 @import url(../base/style.css);
 @import url(../../icons/awesome/style.scss);
 
@@ -38,10 +37,10 @@ body {
 
 #portal-logo {
   position: static;
-  display: block;
-  width: 330px;
-  height: 72px;
+  width: 15%;
+  content: url(images/logo.png);
 }
+
 
 /* * * Controles do topo * * * * * * * * * * * * * * * * * * * * * * * * * */
 
@@ -281,9 +280,9 @@ body {
 }
 
 #content {
-  margin-top: 210px;
-  width: 65%;
-  margin-left: 17.5%
+  margin: 0 10% 5% 10%;
+  width: 80%;
+  z-index: 0;
 }
 
 #main-content-wrapper-1, #main-content-wrapper-2,
@@ -312,18 +311,6 @@ body {
   line-height: 26px;
   display: block;
 }
-/*#content .friends-block .block-title span,
-#content .people-block .block-title span,
-#content .profile-list-block .block-title span {
-  background: url(images/icons/persons.png) no-repeat 0% 50%;
-  padding-left: 15px;
-}
-
-#content .communities-block .block-title span {
-  background: url(images/icons/gear.png) no-repeat 0% 50%;
-  padding-left: 13px;
-}*/
-
 
 .login-box {
   background: #EEE;
@@ -927,12 +914,6 @@ text-decoration: none;
   display: block;
   width: 343px;
   height: 72px;
-}
-
-#portal-logo {
-  background: url(../unb-gama/images/logo.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
 }
 
 #site-title span {
@@ -1617,6 +1598,7 @@ span.publishing-info.has-flags{
 #navigation ul li #learn-more,
 #navigation ul li #startups {
   margin-top: 15px;
+  z-index: 10;
 }
 
 .navigation-dropdown-list li a {
