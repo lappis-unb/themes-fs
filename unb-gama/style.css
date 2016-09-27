@@ -51,6 +51,10 @@ body {
 /* * * Controles do topo * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 #theme-header {
+  height: auto;
+}
+
+#header-content {
   display: flex;
   z-index: 1;
   height: 128px;
@@ -217,7 +221,6 @@ body {
   display: block;
   border-color: #fff;
 }
-.template-default #content .box-2 .link-list-block li .link-this-page-background,
 .template-leftbar #content .box-2 .link-list-block li .link-this-page-background { /* left */
   /*background-image: url(images/selected-menu-left.png);*/
   right: -17px;
@@ -1045,10 +1048,6 @@ span.publishing-info.has-flags{
   margin-top: 5px;
 }
 
-#header-login > div.profile-button  > a {
-  width: 78px;
-}
-
 #fullscreen-btn {
   display: none;
 }
@@ -1208,7 +1207,7 @@ span.publishing-info.has-flags{
 }
 
 #profile-button {
-  width: 90%;
+  width: 125px;
   background-color: #009B37;
   height: 33px;
   border-radius: 6px;
@@ -1216,14 +1215,15 @@ span.publishing-info.has-flags{
 }
 
 #profile-button a {
-  border: none;
+  text-decoration: none;
   color: #FFFFFF;
   font-weight: 900;
-  line-height: 2;
+  line-height: 3;
 }
 
-#profile-button a:hover {
-  color: #FFFFFF;
+#profile-button .fa {
+  margin-right: 5px;
+  font-size: 16px;
 }
 
 .home-link:before {
@@ -1296,10 +1296,6 @@ span.publishing-info.has-flags{
   max-width: 125px;
 }
 
-#profile-header-actions #profile-button {
-  width: 125px;
-  margin-left: 0px;
-}
 
 #header-login input {
   display: inline;
