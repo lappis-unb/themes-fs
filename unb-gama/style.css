@@ -1182,16 +1182,6 @@ span.publishing-info.has-flags{
   display: block;
 }
 
-#navigation .signup-form {
-  margin-top: 50px;
-}
-
-#navigation .signup-form a {
-  text-align: center;
-  font-size: 13px;
-  border: none;
-  color: #7b7b7b;
-}
 
 #navigation ul a {
   border: none;
@@ -1200,10 +1190,6 @@ span.publishing-info.has-flags{
 #navigation ul a:hover {
   background: none;
   border: none;
-}
-
-#navigation .signup-form a:hover {
-  text-decoration: underline;
 }
 
 #profile-button {
@@ -1330,8 +1316,18 @@ span.publishing-info.has-flags{
   border-bottom: 5px solid #003A19 !important;
 }
 
-.signup-form {
-  padding-top: 5px !important;
+#theme-header .signup-form {
+  padding-top: 5px;
+}
+
+#theme-header .signup-form a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #7b7b7b;
+}
+
+#theme-header .signup-form a:hover {
+  text-decoration: underline;
 }
 
 #navigation ul #home-button {
