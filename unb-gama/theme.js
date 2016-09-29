@@ -1,5 +1,12 @@
 $(document).ready(function () {
 
+  $('#profile-header-actions').click(function() {
+    $('#profile-div').toggle();
+    $('#content').css('z-index', -1);
+    $('#profile-div').css('z-index', 100);
+    $('.highlights-container').css('z-index', 0);
+  });
+
   jQuery("#top-search").prependTo("#top-search-wrapper");
 
   // add new translations below!

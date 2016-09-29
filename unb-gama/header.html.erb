@@ -30,12 +30,14 @@
 
     <div id="profile-div">
       <div class="profile-fields">
-        <% if logged_in? %>
-          <%= link_to 'Painel de Controle', "/myprofile/#{user.identifier}" %>
-          <% if user.is_admin? %>
-            <%= link_to 'Administração',  "/admin" %>
-          <% end %>
-          <%= link_to 'Sair', "/account/logout" %>
+        <ul id="logged-options">
+          <% if logged_in? %>
+            <li><%= link_to 'Painel de Controle', "/myprofile/#{user.identifier}" %></li>
+            <% if user.is_admin? %>
+              <li><%= link_to 'Administração',  "/admin" %></li>
+            <% end %>
+            <li><%= link_to 'Sair', "/account/logout" %></li>
+        </ul>
         <% else %>
           <form id="header-login" action="/account/login" method="post">
             <input name="user[login]" placeholder="<%=_('email')%>" type="text" style="float: left;">
@@ -60,14 +62,3 @@
     </div>
   </div>
 </div>
-
-<script>
-  $(document).ready(function() {
-    $('#profile-header-actions').click(function() {
-      $('#profile-div').toggle();
-      $('#content').css('z-index', -1);
-      $('#profile-div').css('z-index', 100);
-      $('.highlights-container').css('z-index', 0);
-	});
-  });
-</script>
