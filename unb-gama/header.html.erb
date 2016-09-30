@@ -1,13 +1,16 @@
-<div id="barra-brasil"></div>
+<div id="barra-brasil">
+</div>
 
-<div id="header-content">"
+<div id="header-content">
+
   <div id="portal-logo" class="center-content">
     <%= link_to "/" do %>
       <img alt="UnB-FGA" />
     <% end %>
   </div>
 
-  <div id="top-search-wrapper" class="center-content"></div>
+  <div id="top-search-wrapper" class="center-content">
+  </div>
 
   <div id="profile-header-fga">
     <div id="profile-header-actions">
@@ -28,19 +31,22 @@
       <% end %>
     </div>
 
-    <div id="profile-div">
-      <div class="profile-fields">
-        <ul id="logged-options">
-          <% if logged_in? %>
+    <div id="profile-dropdown">
+      <% if logged_in? %>
+        <div id="profile-logged-in">
+          <span id="user-name"><%= _("Welcome, %s") % user.name %></span>
+          <ul id="logged-options">
             <li><%= link_to 'Painel de Controle', "/myprofile/#{user.identifier}" %></li>
             <% if user.is_admin? %>
               <li><%= link_to 'Administração',  "/admin" %></li>
             <% end %>
             <li><%= link_to 'Sair', "/account/logout" %></li>
-        </ul>
-        <% else %>
+          </ul>
+        </div>
+      <% else %>
+        <div id="profile-logged-out">
           <form id="header-login" action="/account/login" method="post">
-            <input name="user[login]" placeholder="<%=_('email')%>" type="text" style="float: left;">
+            <input name="user[login]" placeholder="<%=_('E-mail')%>" type="text" style="float: left;">
             <input name="user[password]" placeholder="<%=_('Password')%>" type="password" style="float: right;">
             <div class="profile-buttons">
               <%= submit_button( 'login', _('Log in') )%>
@@ -51,14 +57,15 @@
             <input type="checkbox" class="header-remember-me-checkbox">
           </div>
 
-          <div class="header-remember-me"><%= _('Remember me') %></div>
+          <div class="header-remember-me">
+            <%= _('Remember me') %>
+          </div>
 
           <span class="header-forgot-password">
             <%= link_to _("Esqueci minha senha"), :controller => 'account', :action => 'forgot_password' %>
           </span>
-
-        <% end %>
-      </div>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>

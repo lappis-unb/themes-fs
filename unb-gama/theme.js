@@ -1,9 +1,10 @@
 $(document).ready(function () {
 
   $('#profile-header-actions').click(function() {
-    $('#profile-div').toggle();
+    $('#profile-dropdown').toggle();
+    $('#profile-button').toggleClass("pressed");
     $('#content').css('z-index', -1);
-    $('#profile-div').css('z-index', 100);
+    $('#profile-dropdown').css('z-index', 100);
     $('.highlights-container').css('z-index', 0);
   });
 
