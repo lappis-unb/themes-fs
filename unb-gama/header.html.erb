@@ -46,24 +46,21 @@
       <% else %>
         <div id="profile-logged-out">
           <form id="header-login" action="/account/login" method="post">
-            <input name="user[login]" placeholder="<%=_('E-mail')%>" type="text" style="float: left;">
-            <input name="user[password]" placeholder="<%=_('Password')%>" type="password" style="float: right;">
-            <div class="profile-buttons">
-              <%= submit_button( 'login', _('Log in') )%>
+            <div id="login-inputs">
+              <input name="user[login]" placeholder="<%=_('E-mail')%>" type="text" />
+              <input name="user[password]" placeholder="<%=_('Password')%>" type="password" />
+            </div>
+            <div id="header-login-options">
+              <div class="header-login-options-col left">
+                <input type="checkbox" class="header-remember-me-checkbox" >
+                <%= _('Remember me') %>
+              </div>
+              <div class="header-login-options-col right">
+                <%= submit_button( 'login', _('Log in'), id: 'header-login-button')%>
+                <%= link_to _("Esqueci minha senha"), {:controller => 'account', :action => 'forgot_password'}, id: 'header-forgot-password' %>
+              </div>
             </div>
           </form>
-
-          <div>
-            <input type="checkbox" class="header-remember-me-checkbox">
-          </div>
-
-          <div class="header-remember-me">
-            <%= _('Remember me') %>
-          </div>
-
-          <span class="header-forgot-password">
-            <%= link_to _("Esqueci minha senha"), :controller => 'account', :action => 'forgot_password' %>
-          </span>
         </div>
       <% end %>
     </div>
