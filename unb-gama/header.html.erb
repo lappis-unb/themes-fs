@@ -52,12 +52,14 @@
             </div>
             <div id="header-login-options">
               <div class="header-login-options-col left">
-                <input type="checkbox" class="header-remember-me-checkbox" >
+                <input type="checkbox" id="remember-me-checkbox" >
+                <div id="remember-me-label">
                 <%= _('Remember me') %>
+                </div>
               </div>
               <div class="header-login-options-col right">
-                <%= submit_button( 'login', _('Log in'), id: 'header-login-button')%>
-                <%= link_to _("Esqueci minha senha"), {:controller => 'account', :action => 'forgot_password'}, id: 'header-forgot-password' %>
+                <%= submit_button( 'login', _('Log in')) %>
+                <%= link_to _("Esqueci minha senha"), {:controller => 'account', :action => 'forgot_password'}, id: 'forgot-password' %>
               </div>
             </div>
           </form>

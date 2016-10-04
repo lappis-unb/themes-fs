@@ -1,11 +1,21 @@
 $(document).ready(function () {
 
-  $('#profile-header-actions').click(function() {
+  $('#profile-header-actions').click(function(event) {
     $('#profile-dropdown').toggle();
     $('#profile-button').toggleClass("pressed");
     $('#content').css('z-index', -1);
     $('#profile-dropdown').css('z-index', 100);
     $('.highlights-container').css('z-index', 0);
+
+    event.stopPropagation();
+
+    $(document).one('click', function() {
+      $('#profile-dropdown').hide();
+    });
+  });
+
+  $('#profile-dropdown').click(function(event) {
+    event.stopPropagation();
   });
 
   jQuery("#top-search").prependTo("#top-search-wrapper");

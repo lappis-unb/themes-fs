@@ -1342,9 +1342,9 @@ span.publishing-info.has-flags{
   max-width: 125px;
 }
 
-#header-login-options {
+#header-login #header-login-options {
   display: flex;
-  margin-top: 8px;
+  margin-top: 12px;
 }
 
 .header-login-options-col {
@@ -1373,7 +1373,7 @@ span.publishing-info.has-flags{
   color: #CECECE;
 }
 
-#header-login .header-login-options-col #header-login-button {
+#header-login .header-login-options-col input[type=submit] {
   padding: 20px;
   margin: 0;
   text-transform: UPPERCASE;
@@ -1384,6 +1384,24 @@ span.publishing-info.has-flags{
   border: none;
   border-bottom: 5px solid #003A19;
   width: 85%;
+}
+
+#header-login .header-login-options-col input[type=submit]:hover {
+  cursor: pointer;
+}
+
+#header-login .header-login-options-col input[type=submit]:focus {
+  outline: none;
+  background-color: #003A19;
+}
+
+#profile-header-fga #header-login #remember-me-checkbox {
+  transform: scale(1.5);
+}
+
+#profile-header-fga #header-login #remember-me-label {
+  color: white;
+  margin-top: 10px;
 }
 
 .profile-buttons input:hover {
@@ -1483,11 +1501,16 @@ span.publishing-info.has-flags{
   justify-content: flex-end;
 }
 
-#profile-menu-dropdown img {
+#profile-menu-dropdown > img {
   border-radius: 100%;
   max-width: 50px;
   height: 50px;
   overflow: hidden;
+}
+
+#profile-menu-dropdown > img:hover,
+#profile-menu-dropdown > span:hover {
+  cursor: pointer;
 }
 
 #profile-menu-dropdown .fa.fa-angle-down {
@@ -1500,12 +1523,14 @@ span.publishing-info.has-flags{
   padding-right: 5px;
 }
 
-#header-forgot-password {
+#profile-header-fga #forgot-password {
+  display: block;
+  margin-top: 10px;
   text-decoration: none;
   color: #eee;
 }
 
-#header-forgot-password:hover {
+#profile-header-fga #forgot-password:hover {
   text-decoration: underline;
 }
 
@@ -1522,9 +1547,6 @@ span.publishing-info.has-flags{
   font-family: "Aller";
   float: left;
   padding-left: 0px;
-}
-
-.header-remember-me-checkbox {
 }
 
 .navigation-dropdown-list.arrow_box {
