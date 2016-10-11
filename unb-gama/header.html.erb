@@ -1,110 +1,70 @@
 <div id="barra-brasil">
 </div>
-<div id="top-functions-box">
-  <div id="top-functions">
-    <ul id="menu-top">
-      <li ><%= link_to 'Portal UnB',  "http://www.unb.br/" %></li>
-      <li><%= link_to 'MatrículaWeb',  "https://matriculaweb.unb.br/matriculaweb/" %></li>
-      <li><%= link_to 'SAEWeb',  "https://www.saeweb.unb.br/saeWeb/Fronteira/formloginaluno.aspx" %></li>
-      <li><%= link_to 'Moodle UnB',  "http://aprender.unb.br/" %></li>
-      <li><%= link_to 'Moodle FGA',  "http://gama.ead.unb.br/login/index.php" %></li>
-      <li><%= link_to 'UnB Doc',  "https://unbdoc.unb.br/" %></li>
-      <li><%= link_to 'Cardápio RU',  "http://www.ru.unb.br/cardapio-ru-unb" %></li>
-    </ul>
-  </div>
-</div>
 
-<div id="down-functions-box">
-  <div id="down-functions">
-    <ul id="menu-down">
-      <li>
-        <div class="dropdown-arrow">
-          <%= link_to 'Notícias',  "/unb-gama/noticias" %>
-          <span class="arrow-down">▼</span>
+<div id="header-content">
+
+  <div id="portal-logo" class="center-content">
+    <%= link_to "/" do %>
+      <img alt="UnB-FGA" />
+    <% end %>
+  </div>
+
+  <div id="top-search-wrapper" class="center-content">
+  </div>
+
+  <div id="profile-header-fga">
+    <div id="profile-header-actions">
+      <% if logged_in? %>
+        <div id="profile-menu-dropdown">
+          <%= image_tag(profile_icon(current_person, :portrait)) %>
+          <span class="fa fa-angle-down"></span>
         </div>
-        <ul id="news">
-          <li><%= link_to 'Eventos',"/unb-gama/eventos" %></li>
-          <li><%= link_to 'Oportunidades',"/unb-gama/oportunidades/" %></li>
-          <li><%= link_to 'Palestras',"/unb-gama/palestras" %></li>
-          <li><%= link_to 'UnB Agência',"/unb-gama/unb-agencia" %></li>
-          <li><%= link_to 'UnB Gama',  "/unb-gama/noticias" %></li>
-        </ul>
-      </li>
-      <li>
-        <div class="dropdown-arrow">
-          <%= link_to 'Engenharias',  "/unb-gama/graduacao" %>
-          <span class="arrow-down">▼</span>
+      <% else %>
+        <div id="profile-button">
+          <a href="#" id="login-button">
+            <span class="fa fa-user"></span>Login
+          </a>
         </div>
-        <ul id="engineerings">
-          <li><%= link_to 'Aeroespacial',  "/aeroespacial" %></li>
-          <li><%= link_to 'Automotiva',  "/automotiva" %></li>
-          <li><%= link_to 'Eletrônica',  "/eletronica" %></li>
-          <li><%= link_to 'Energia',  "/energia" %></li>
-          <li><%= link_to 'Software',  "/software" %></li>
-        </ul>
-      </li>
-      <li>
-        <div class="dropdown-arrow">
-          <%= link_to 'Pós-Graduação',  "/unb-gama/pos-graduacao" %>
-          <span class="arrow-down">▼</span>
+        <div class="signup-form">
+          <%= link_to _("Cadastre-se"), :controller => 'account', :action => 'signup' %>
         </div>
-        <ul id="pos-graduation">
-          <li><%= link_to 'Engenharia Biomédica', "/pgengbiomedica" %></li>
-          <li><%= link_to 'Engenharia Clínica', "/pgengclinica" %></li>
-          <li><a target="_blank" href="http://www.pgintegridade.unb.br">Integridade de Materiais</a></li>
-        </ul>
-      </li>
-      <li>
-        <div class="dropdown-arrow">
-          <%= link_to 'Laboratórios',  "/unb-gama/laboratorios" %>
-          <span class="arrow-down">▼</span>
+      <% end %>
+    </div>
+
+    <div id="profile-dropdown">
+      <% if logged_in? %>
+        <div id="profile-logged-in">
+          <span id="user-name"><%= _("Welcome, %s") % user.name %></span>
+          <ul id="logged-options">
+            <li><%= link_to 'Painel de Controle', "/myprofile/#{user.identifier}" %></li>
+            <% if user.is_admin? %>
+              <li><%= link_to 'Administração',  "/admin" %></li>
+            <% end %>
+            <li><%= link_to 'Sair', "/account/logout" %></li>
+          </ul>
         </div>
-        <ul id="labs">
-          <li><a target="_blank" href="http://fabrica.fga.unb.br">Fábrica de Software</a></li>
-          <li><a target="_blank" href="http://www.labnvh.unb.br">LabNVH</a></li>
-          <li><%= link_to 'LAPPIS',  "/lappis" %></li>
-          <li><%= link_to 'LART',  "/lart" %></li>
-          <li><%= link_to 'LEI',  "/lei" %></li>
-        </ul>
-      </li>
-      <li>
-        <div class="dropdown-arrow">
-          <%= link_to 'Empresas Juniores',  "/unb-gama/empresas-juniores" %>
-          <span class="arrow-down">▼</span>
+      <% else %>
+        <div id="profile-logged-out">
+          <form id="header-login" action="/account/login" method="post">
+            <div id="login-inputs">
+              <input name="user[login]" placeholder="<%=_('E-mail')%>" type="text" />
+              <input name="user[password]" placeholder="<%=_('Password')%>" type="password" />
+            </div>
+            <div id="header-login-options">
+              <div class="header-login-options-col left">
+                <input type="checkbox" id="remember-me-checkbox" >
+                <div id="remember-me-label">
+                <%= _('Remember me') %>
+                </div>
+              </div>
+              <div class="header-login-options-col right">
+                <%= submit_button( 'login', _('Log in')) %>
+                <%= link_to _("Esqueci minha senha"), {:controller => 'account', :action => 'forgot_password'}, id: 'forgot-password' %>
+              </div>
+            </div>
+          </form>
         </div>
-        <ul id="startups">
-          <li><%= link_to 'EletronJun', "/eletronjun" %></li>
-          <li><%= link_to 'InSoft',  "/insoft" %></li>
-          <li><a target="_blank" href="http://www.matrizenergia.com">Matriz Energia</a></li>
-          <li><a target="_blank" href="http://zenitaerospace.com">Zenit Aerospace</a></li>
-        </ul>
-      </li>
-      <li>
-        <div class="dropdown-arrow">
-          <%= link_to 'Informações',  "/unb-gama/sobre" %>
-          <span class="arrow-down">▼</span>
-        </div>
-        <ul id="info">
-          <li><%= link_to 'Contato',  "/unb-gama/contato" %></li>
-          <li><%= link_to 'Estágio FGA',  "/estagio" %></li>
-          <li><%= link_to 'Professores',  "/professores" %></li>
-          <li><%= link_to 'TCC FGA',  "/tcc" %></li>
-        </ul>
-      </li>
-      <li>
-        <div class="dropdown-arrow">
-          <%= link_to 'Aprenda Mais',  "/unb-gama/aprenda-mais" %>
-          <span class="arrow-down">▼</span>
-        </div>
-        <ul id="learn-more">
-          <li><%= link_to 'Biblioteca FGA',  "/biblioteca-fga" %></li>
-          <li><%= link_to 'Educação Tutorial',  "/unb-gama/aprenda-mais/programa-de-educacao-tutorial" %></li>
-          <li><%= link_to 'Iniciação Científica',  "/unb-gama/aprenda-mais/iniciacao-cientifica" %></li>
-          <li><%= link_to 'Intercâmbio',  "/unb-gama/aprenda-mais/intercambio" %></li>
-          <li><%= link_to 'Monitoria',  "/unb-gama/aprenda-mais/monitoria" %></li>
-          <li><%= link_to 'SOU FGA',  "/sou" %></li>
-        </ul>
-      </li>
-    </ul>
+      <% end %>
+    </div>
   </div>
 </div>
