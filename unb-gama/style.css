@@ -35,12 +35,6 @@ body {
   position: relative;
 }
 
-#portal-logo img {
-  position: static;
-  width: 100%;
-  content: url(images/logo.png);
-}
-
 /* * * Controles do topo * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 #theme-header {
@@ -54,10 +48,11 @@ body {
 }
 
 #header-content #portal-logo {
-  align-items: center;
+  background: url(images/logo.png) no-repeat center/100%;
+  height: 80px;
   width: 15%;
   left: 10%;
-  top: 34px;
+  top: 28px;
   position: absolute;
 }
 
