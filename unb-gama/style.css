@@ -339,6 +339,7 @@ body {
   border: none;
   /*padding-bottom: 10px;*/
   border-bottom: 1px solid #888;
+  font-family: 'Aller';
 }
 
 #portal-news ul {
@@ -349,40 +350,87 @@ body {
   color: #336699;
 }
 
-.news-area {
-  background-image:         linear-gradient(top, #EEE, #FFF 66%, #FFF);
+#content .news-area {
+  background: #FCFCFC;
+  border-bottom: 3px solid #D2D2D2;
+  border-radius: 7px;
+  height: 250px;
 }
 
 #content .news-area h3 {
-  background: #005263 !important;
-  padding: 0px 0px 14px 2px;
+  padding: 14px 0px 14px 14px;
   text-transform: uppercase;
+  border-left: 10px solid #B4BDBE;
+}
+
+#content .news-area.even h3 {
+  background: #005263;
 }
 
 #content .news-area h3 a {
   color: white;
 }
 
-.news-area ul {
+#content .news-area.odd h3 {
+  background: #008E32;
+}
+
+#content .news-area ul {
+  padding: 25px 25px 0 25px;
   background: transparent;
   border: none;
 }
 
-#content .news-area a.news-see-more {
-  background: url(images/icons/more.png);
-  display: none;
-  width: 20px;
-  height: 20px;
-  right: 12px;
-  top: 7px;
-  padding: 0px;
-  color: transparent;
-  overflow: hidden;
-  opacity: 0.7;
+#content .news-area li {
+  font-size: 12px;
+  list-style-image: none;
+  border-bottom: 1px solid #B4BDBE;
+  padding: 0px 0px 3px 0px;
+  margin: 0px 0px 16px 0px;
 }
+
+#content .news-area a {
+  color: #336699;
+}
+
+#content .news-area a:hover {
+  text-decoration: none;
+  color: #003540;
+}
+
+#highlighted-news .post-title {
+  color: #005263 !important;
+  font-size: 20px;
+}
+
+#highlighted-news p {
+  color: #999999;
+  font-size: 14px;
+}
+
+#content .news-area a.news-see-more {
+  border-radius: 3px;
+  padding: 5px 10px 5px 10px;
+  margin-top: 200px;
+  margin-right: 38px;
+  color: white;
+  font-family: "Aller";
+  font-size: 1.1em;
+  text-transform: uppercase;
+}
+
+#content .news-area.even a.news-see-more {
+  background: #005263;
+
+}
+
+#content .news-area.odd a.news-see-more {
+  background: #008E32;
+}
+
 #content .news-area a.news-see-more:hover {
-  color: transparent;
-  opacity: 1;
+  text-decoration: underline;
+  color: white;
 }
 
 /* * * Light Box * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -648,15 +696,28 @@ body {
 }
 
 .action-home-index #content .main-block h1 {
-   font-size: 16px;
-   font-weight: bold;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #EFEFEF;
+  border-left: 10px solid #008E32;
+  padding-left: 15px;
+  font-family: Liberation Sans, Arial, sans-serif;
+  height: 30px;
+  line-height: 300%;
+  text-transform: uppercase;
+  color: #aaa;
+  border-bottom: 0px;
 }
 
 body #content .highlighted-news-read-more a {
-   background: url(images/icons/lista-menu.jpg) left center no-repeat;
-   padding-left: 12px;
-   text-transform: lowercase;
-   text-decoration: underline;
+  background: url(images/icons/leiamais_24.png) left center no-repeat;
+  background-size: 16px 16px;
+  padding-left: 25px;
+}
+
+.action-home-index #highlighted-news .post-date {
+  color: #999999;
+  margin-top: 5px;
 }
 
 .feed-reader-block li,
@@ -670,17 +731,6 @@ body #content .highlighted-news-read-more a {
 
 #content .environment-statistics-block li {
   list-style: square;
-}
-
-.news-area li {
-  list-style-image: none;
-  margin-left: 0;
-}
-
-.news-area ul {
-  overflow: auto;
-  height: 165px;
-  padding: 0;
 }
 
 .main-block .article-body {
@@ -702,11 +752,6 @@ body #content .highlighted-news-read-more a {
 }
 
 /* content from UnB team*/
-
-#highlighted-news h2 a {
-  color: #336699;
-  font-size: 19px !important;
-}
 
 #article a {
   color: #003366;
@@ -1176,14 +1221,6 @@ span.publishing-info.has-flags{
 }
 
 #portal-news > ul > li > a {
-  color: #336699;
-}
-
-#block-1 > div > div > div > div.news-area.even > div > div > ul > li > a {
-  color: #336699;
-}
-
-#block-1 > div > div > div > div.news-area.odd > div > div > ul > li > a {
   color: #336699;
 }
 
