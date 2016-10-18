@@ -1,3 +1,12 @@
-#Linux backup files
+# Linux backup files
 *~
 *.swp
+
+# Debian Packages
+dist/
+debian/*.log
+debian/*.substvars
+debian/*.debhelper
+debian/files
+debian/portal-unb-theme
+pkg/
