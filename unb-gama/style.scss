@@ -1418,8 +1418,27 @@ span.publishing-info.has-flags{
 #footer-content ul li a {
   color: #707070;
 }
+
 .profile-homepage {
   .button.icon-feed.blog-feed-link {
     margin-top: 4.5em;
   }
+}
+
+div#notice {
+  opacity: 1 !important;
+  background: #003C47;
+  color: white;
+  border-radius: 0px;
+  box-shadow: 2px 2px 2px 0px black;
+  padding: 25px;
+  font-family: "Aller";
+  width: 250px;
+  min-height: 40px;
+  pointer-events: initial;
+  transition: opacity 0.1s ease-in-out;
+}
+
+div#notice:hover {
+  opacity: 0.6 !important;
 }
