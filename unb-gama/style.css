@@ -359,8 +359,8 @@ body {
 
 #content .news-area h3 {
   padding: 14px 0px 14px 14px;
-  text-transform: uppercase;
-  border-left: 10px solid #B4BDBE;
+  border-left: 10px solid black;
+  font-family: "Aller";
 }
 
 #content .news-area.even h3 {
@@ -394,13 +394,12 @@ body {
 }
 
 #content .news-area a:hover {
-  text-decoration: none;
-  color: #003540;
+  text-decoration: underline !important;
 }
 
 #highlighted-news .post-title {
-  color: #005263 !important;
-  font-size: 20px;
+  color: #005263;
+  font-size: 16px;
 }
 
 #highlighted-news p {
@@ -411,7 +410,7 @@ body {
 #content .news-area a.news-see-more {
   border-radius: 3px;
   padding: 5px 10px 5px 10px;
-  margin-top: 200px;
+  margin-top: 210px;
   margin-right: 38px;
   color: white;
   font-family: "Aller";
@@ -696,15 +695,14 @@ body {
 }
 
 .action-home-index #content .main-block h1 {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   background-color: #EFEFEF;
   border-left: 10px solid #008E32;
   padding-left: 15px;
-  font-family: Liberation Sans, Arial, sans-serif;
-  height: 30px;
+  font-family: "Aller";
+  height: 45px;
   line-height: 300%;
-  text-transform: uppercase;
   color: #aaa;
   border-bottom: 0px;
 }
