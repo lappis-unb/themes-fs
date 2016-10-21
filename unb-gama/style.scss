@@ -636,14 +636,6 @@ body {
   font-weight: bold;
 }
 
-#content .profile-info-block h2,
-#content .profile-image-block p,
-.action-profile-index #content .main-block h1,
-#content .main-block #article h1.title {
-  color: #336699;
-  font-weight: bold;
-}
-
 .action-home-index #content .main-block h1 {
   font-size: 20px;
   font-weight: bold;
@@ -684,9 +676,6 @@ body #content .highlighted-news-read-more a {
 .main-block .article-body {
   overflow-x: hidden;
 }
-.main-block #article-header .title {
-  overflow-x: hidden;
-}
 
 .controller-doc a:link,
 .controller-doc a:hover,
@@ -701,6 +690,10 @@ body #content .highlighted-news-read-more a {
 
 /* content from UnB team*/
 
+#article {
+  font-family: aller;
+}
+
 #article a {
   color: #003366;
 }
@@ -710,9 +703,9 @@ body #content .highlighted-news-read-more a {
 }
 
 #content .blog-post .title a {
-color: #003366;
-font-weight: normal;
-text-decoration: none;
+  color: #003366;
+  font-weight: normal;
+  text-decoration: none;
 }
 
 .menu-cursos {
@@ -1194,10 +1187,6 @@ span.publishing-info.has-flags{
   color: #555555;
 }
 
-#article-header > h1 {
-  color: #006633 !important;
-}
-
 .block-footer-content a.view-all {
   color: #336699;
   top: 8px;
@@ -1604,3 +1593,15 @@ div#article-parent {
   text-align: left;
   margin-bottom: 10px;
 }
+
+#content #article #article-toolbar #article-header h1.title {
+  color: #005263;
+  font-weight: bold;
+}
+
+#content #article .article-body {
+  ul,ol,dl {
+    text-align: left;
+  }
+}
+
