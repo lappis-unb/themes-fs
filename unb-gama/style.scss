@@ -784,10 +784,6 @@ div.article-body.article-body-tiny-mce-article.has-flags {
   margin-top: 37px;
 }
 
-
-.profile-info-options {
-}
-
 a.button.icon-add.with-text.join-community {
   width: 155px;
   margin-bottom: 4px !important;
@@ -799,11 +795,6 @@ a.button.icon-delete.with-text.leave-community {
 }
 
 a.button.icon-menu-mail.with-text {
-  width: 155px;
-  margin-bottom: 4px !important;
-}
-
-a.button.icon-alert.with-text.report-abuse-action {
   width: 155px;
   margin-bottom: 4px !important;
 }
@@ -1156,17 +1147,25 @@ span.publishing-info.has-flags{
   overflow: auto;
 }
 
-#article-actions > a {
+#content #article-actions > a.button {
   overflow: hidden;
-  width: 115px;
-  margin-top: 3px !important;
+  margin: 3px;
   display: inline-block;
-  width: 25%;
-  border: solid 1px black !important;
+  width: 22%;
+  border: solid 1px #005263;
+  color: #005263;
   text-align: center;
+  padding: 2px;
+  position: relative;
 }
 
-#article-actions > a#fullscreen-btn {
+#content #article-actions > a.button::before {
+  position: absolute;
+  left: 0;
+  top: 6px;
+}
+
+#content #article-actions > a.button#fullscreen-btn {
   display: none;
 }  
 
@@ -1572,28 +1571,30 @@ span.publishing-info.has-flags{
   color: #707070;
 }
 
-.button.with-text, a.button.with-text:visited, body.noosfero a.button.with-text, body.noosfero a.button.with-text:visited, input.button.with-text{
-  padding: 3px 2px 3px 2px !important;
+#article-parent .button.icon-back.with-text {
+  padding: 0;
+  color: #005263;
+  border: none;
+  background: none;
+  font-style: normal;
+  padding-left: 3px;
 }
 
-#article-parent .button.icon-back.with-text {
-  width: 149px;
-  text-align: center;
-  border-bottom: none;
-  box-shadow: 0 3px 0 #00814D;
-  border-radius: 5px;
+#article-parent .button.icon-back.with-text::before {
   color: white;
-  background: #009B37;
-  margin-bottom: 15px;
-  border-color: #009B37;
-  font-style: normal;
+  background: #008e32;
+  border-radius: 100%;
+  padding: 4px 0;
+  font-size: 10px;
+  margin-right: 3px;
 }
 
 #article-parent .button.icon-back.with-text:hover {
-  border-color: #009B37;
-  font-weight: bold;
+  color: #005263;
+  text-decoration: underline;
 }
 
 div#article-parent {
- text-align: left; 
+  text-align: left;
+  margin-bottom: 10px;
 }
