@@ -10,7 +10,14 @@ p.customfont {
   font-family: "My Custom Font", Verdana, Tahoma;
 }
 
+/*
+* I'm pretty sure it should't have a display table, but
+* it fixes the widht+overflow issue. Let's keep it like
+* this until we make the layout responsive.
+*/
 body {
+  display: table;
+  width: 100%;
   background: #FFF;
   color: #000;
 }
@@ -66,8 +73,8 @@ body {
 }
 
 #content {
-  margin: 1% 10% 5% 10%;
-  width: 80%;
+  margin: 1% auto 5% auto;
+  width: 1000px;
   z-index: 0;
 }
 
@@ -878,7 +885,6 @@ span.publishing-info.has-flags{
   text-align: center;
   border-bottom: 5px solid #bbb;
   height: 65px;
-  display: table;
 }
 
 #navigation ul a {
@@ -886,6 +892,7 @@ span.publishing-info.has-flags{
 }
 
 #navigation > ul {
+  float: none;
   width: 100%;
   padding: 0px;
   white-space: nowrap;
