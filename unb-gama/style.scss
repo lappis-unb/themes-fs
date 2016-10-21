@@ -1157,6 +1157,12 @@ span.publishing-info.has-flags{
   text-align: center;
   padding: 2px;
   position: relative;
+  transition: background 0.1s ease-in-out;
+}
+
+#content #article-actions > a.button:hover {
+  background: #005263;
+  color: white;
 }
 
 #content #article-actions > a.button::before {
