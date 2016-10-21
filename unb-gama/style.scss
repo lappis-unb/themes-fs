@@ -657,10 +657,15 @@ body {
   border-bottom: 0px;
 }
 
-body #content .highlighted-news-read-more a {
-  background: url(images/icons/leiamais_24.png) left center no-repeat;
-  background-size: 16px 16px;
-  padding-left: 25px;
+body #content .highlighted-news-read-more a::before {
+  font-family: FontAwesome;
+  content: "\f067";
+  color: white;
+  background: #008e32;
+  border-radius: 100%;
+  margin-right: 5px;
+  padding: 3px 4px;
+  font-size: 10px;
 }
 
 .action-home-index #highlighted-news .post-date {
