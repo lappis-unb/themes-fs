@@ -1,6 +1,7 @@
 @import url(../base/style.css);
 @import url(../../icons/awesome/style.scss);
 @import url(./stylesheets/header.scss);
+@import url(./stylesheets/search.scss);
 
 @font-face {
   font-family: "Aller";
@@ -16,6 +17,7 @@ p.customfont {
 * this until we make the layout responsive.
 */
 body {
+  font-family: Aller;
   display: table;
   width: 100%;
   background: #FFF;
@@ -1123,20 +1125,6 @@ span.publishing-info.has-flags{
   margin-top: 12px;
 }
 
-
-
-#search-results > div.search-results-articles.search-results-box > div > ul {
-  padding: 0 15px;
-}
-
-#search-results > div.search-results-articles.search-results-box > div {
-  border-radius: 10px;
-}
-
-#search-results > div.search-results-articles.search-results-box > div > ul > li {
-  border-bottom: 1px solid #CCC;
-}
-
 .block.main-block > div {
   margin-top: 5px;
 }
@@ -1206,33 +1194,12 @@ span.publishing-info.has-flags{
   color: #336699;
 }
 
-
-.search-results-articles.search-results-box {
-  margin-bottom: 10px;
-}
-
-.pagination {
-  font-size: 15px;
-}
-
-.controller-search a {
-  color: #336699;
-}
-
 #content #article .pagination .previous_page {
   float: left;
 }
 
 #box-2 {
   margin: 10px 0px 0px 10px !important;
-}
-
-#content-inner > div > div > div > div > div.search-form {
-  margin: 10px 10px 10px 10px;
-}
-
-#search-content {
-  margin: 10px 10px 10px 10px;
 }
 
 #box-184 > div {
