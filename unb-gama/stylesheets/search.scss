@@ -6,12 +6,13 @@
   #content .main-content { 
     padding: 15px;
 
-    .search-form {
+    div.search-form {
+      position: relative;
       margin-bottom: 20px;
 
-      #search-header {
+      div#search-header {
+        height: 25px;
         border-bottom: none;
-        margin-bottom: 5px;
 
         ul#assets-menu {
           margin: 0;
@@ -21,6 +22,25 @@
             border-bottom: 2px solid #005263;
           }
         }
+
+        div#search-filters {
+          float: none;
+          position: absolute;
+          right: 0;
+          width: 13%;
+
+          select {
+            width: 100%;
+          }
+        }
+      }
+
+      div#search-subheader {
+        select#submenu {
+          position: absolute;
+          top: 0;
+          right: 15%;
+        }
       }
 
       div.search-field {
@@ -28,6 +48,11 @@
 
         span.formfield {
           width: 85%;
+
+          input#search-input {
+            background: white;
+            border-radius: 3px;
+          }
         }
 
         input.button.icon-search {
@@ -35,6 +60,11 @@
           right: 0;
           width: 13%;
           margin: 0;
+        }
+
+        input.button.icon-search:hover {
+          background: #005263;
+          color: white;
         }
       }
     }
@@ -45,6 +75,16 @@
         border-radius: 3px;
         background: #FCFCFC;
         box-shadow: 0 3px 2px 0 #D2D2D2;
+
+        div.vcard span.profile-image {
+          width: 50px;
+          height: 50px;
+          margin: 0px auto 7px auto;
+          display: inline-flex;
+          align-items: center;
+          border-radius: 100%;
+          box-shadow: 1px 2px 2px 0 #D2D2D2;
+        }
       }
       
       .pagination {
