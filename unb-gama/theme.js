@@ -14,7 +14,7 @@
 
   // Profile dropdown menu events
   function profileDropDownActions() {
-    $('#profile-button').click(function(event) {
+    $('.profile-menu-trigger').click(function(event) {
       $('#profile-dropdown').toggle();
       $('#profile-button').toggleClass("pressed");
       $('#content').css('z-index', -1);

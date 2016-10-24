@@ -14,12 +14,12 @@
   <div id="profile-header-fga">
     <div id="profile-header-actions">
       <% if logged_in? %>
-        <div id="profile-menu-dropdown">
+        <div id="profile-menu-dropdown" class="profile-menu-trigger">
           <%= image_tag(profile_icon(current_person, :portrait)) %>
           <span class="fa fa-angle-down"></span>
         </div>
       <% else %>
-        <div id="profile-button">
+        <div id="profile-button" class="profile-menu-trigger">
           <a href="#" id="login-button">
             <span class="fa fa-user"></span>Login
           </a>
