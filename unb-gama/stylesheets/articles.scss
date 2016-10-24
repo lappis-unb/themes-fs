@@ -93,18 +93,11 @@
         text-align: left;
       }
 
-      > h2 {
-        background: url("images/divider.png") center top no-repeat;
-        left: 0;
-        right: 0;
-        padding-top: 14px;
-
-        > span > strong {
-          font-size: 34px;
-          font-weight: 300;
-          margin: 8px 0;
-          line-height: 1.15em;
-        }
+      > h2 > span > strong {
+        font-size: 34px;
+        font-weight: 300;
+        margin: 8px 0;
+        line-height: 1.15em;
       }
 
       .has-flags {
