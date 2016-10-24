@@ -51,9 +51,10 @@
               text-decoration: underline;
             }
 
-            &::before {
+            &:last-child::before {
               @extend %read-more-icon;
               margin-right: 3px;
+              margin-left: 10px;
               font-size: 6px;
               padding: 3px 3px;
             }
