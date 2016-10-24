@@ -1,0 +1,13 @@
+%base-icon {
+  font-family: FontAwesome;
+  color: white;
+  background: #008e32;
+  border-radius: 100%;
+  vertical-align: middle;
+}
+
+%read-more-icon {
+  @extend %base-icon;
+  content: "\f067";
+  padding: 3px 4px;
+}

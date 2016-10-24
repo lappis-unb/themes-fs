@@ -69,6 +69,14 @@
         color: #005263;
         font-weight: bold;
       }
+
+      a.button.icon-feed {
+        padding: 4px 1px 4px 3px;
+
+        &:hover {
+          background: #005263;
+        }
+      }
     }
 
     #article-sub-header {

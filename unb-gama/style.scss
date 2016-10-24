@@ -1,8 +1,11 @@
 @import url(../base/style.css);
 @import url(../../icons/awesome/style.scss);
-@import url(./stylesheets/header.scss);
-@import url(./stylesheets/search.scss);
-@import url(./stylesheets/articles.scss);
+
+@import 'stylesheets/icons';
+@import 'stylesheets/header';
+@import 'stylesheets/search';
+@import 'stylesheets/articles';
+@import 'stylesheets/blogs';
 
 @font-face {
   font-family: Aller;
@@ -84,8 +87,7 @@ body {
 #main-content-wrapper-1, #main-content-wrapper-2,
 #main-content-wrapper-3, #main-content-wrapper-4,
 #main-content-wrapper-5, #main-content-wrapper-6,
-#main-content-wrapper-7, #main-content-wrapper-8,
-.blog-post {
+#main-content-wrapper-7, #main-content-wrapper-8 {
   background: none;
 }
 
@@ -649,13 +651,8 @@ body {
 }
 
 body #content .highlighted-news-read-more a::before {
-  font-family: FontAwesome;
-  content: "\f067";
-  color: white;
-  background: #008e32;
-  border-radius: 100%;
+  @extend %read-more-icon;
   margin-right: 5px;
-  padding: 3px 4px;
   font-size: 10px;
 }
 
@@ -689,13 +686,6 @@ body #content .highlighted-news-read-more a::before {
 }
 
 /* content from UnB team*/
-
-
-#content .blog-post .title a {
-  color: #003366;
-  font-weight: normal;
-  text-decoration: none;
-}
 
 .menu-cursos {
     list-style: none outside none;
