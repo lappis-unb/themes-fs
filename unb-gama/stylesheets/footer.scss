@@ -1,0 +1,96 @@
+#theme-footer {
+  background: #EFEFEF;
+  width: auto;
+  margin: -5px 0px;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+}
+
+#footer-content {
+  background: #EFEFEF;
+  margin: -5px auto;
+  padding: 30px 20px 20px 20px;
+  width: 921px;
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  box-shadow: none;
+  font-size: 14px;
+}
+
+#footer-content ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+#footer-content li {
+  margin: 0px;
+  padding: 0px 47px;
+  display: block;
+  float: left;
+}
+
+#footer-content ul li a {
+  color: #707070;
+}
+
+#footer-content li ul {
+  padding: 5px 0px;
+}
+
+#footer-content li li {
+  float: none;
+  display: block;
+  padding: 5px 0px;
+}
+
+#footer-content a {
+  color: #003366;
+}
+#footer-content a:hover {
+  text-decoration: none;
+}
+
+#footer-cc {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url(images/cc.png);
+  float:left;
+  margin-right: 5px;
+}
+
+#footer-cc span {
+  display: none;
+}
+
+#powered-by-noosfero {
+  font-size: 11px;
+  text-align: center;
+}
+
+#social-media,
+#internal-link {
+  border-right: 2px #cccccc solid;
+  height: 204px;
+}
+
+#internal-link > ul,
+#social-media > div > ul,
+#footer-content > ul > li:nth-child(4) > ul {
+  margin-top: 10%;
+}
+
+#theme-footer #language-chooser {
+  clear: both;
+  margin-top: 1.5em;
+}
+
+#language-chooser {
+  display: none;
+}
+
+.footer-division-title {
+  text-transform: uppercase;
+}
