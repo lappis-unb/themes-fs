@@ -25,7 +25,7 @@
           </a>
         </div>
         <div class="signup-form">
-          <%= link_to _("Cadastre-se"), :controller => 'account', :action => 'signup' %>
+          <%= link_to "Cadastre-se", :controller => 'account', :action => 'signup' %>
         </div>
       <% end %>
     </div>
@@ -33,7 +33,7 @@
     <div id="profile-dropdown">
       <% if logged_in? %>
         <div id="profile-logged-in">
-          <span id="user-name"><%= _("Welcome, %s") % user.name %></span>
+          <span id="user-name"><%= "Olá, %s" % user.name %></span>
           <ul id="logged-options">
             <li><%= link_to 'Painel de Controle', "/myprofile/#{user.identifier}" %></li>
             <% if user.is_admin? %>
@@ -53,12 +53,12 @@
               <div class="header-login-options-col left">
                 <input type="checkbox" id="remember-me-checkbox" >
                 <div id="remember-me-label">
-                <%= _('Remember me') %>
+                <%= 'Lembrar meus dados' %>
                 </div>
               </div>
               <div class="header-login-options-col right">
                 <%= submit_button( 'login', _('Log in')) %>
-                <%= link_to _("Esqueci minha senha"), {:controller => 'account', :action => 'forgot_password'}, id: 'forgot-password' %>
+                <%= link_to "Esqueci minha senha", {:controller => 'account', :action => 'forgot_password'}, id: 'forgot-password' %>
               </div>
             </div>
           </form>

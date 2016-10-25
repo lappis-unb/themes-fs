@@ -1,13 +1,12 @@
-@import url(../unb-base/style.css);
+@import url(../unb-gama/style.css);
 
-#menu-top{
-text-align: left;
-margin-left:200px;
+#menu-top {
+  text-align: left;
+  margin-left:200px;
 }
 
-#top-functions{
-text-align: left;
-
+#top-functions {
+  text-align: left;
 }
 
 /************************** user bar ***************************/
@@ -20,20 +19,20 @@ text-align: left;
 /* * * Controles do topo * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 #theme-header {
-  position: absolute;
-  top: 0px;
   width: 100%;
   z-index: 100;
-  height: 0px;
 }
 
-#wrap-1 {
-  padding-top: 33px;
+div#navigation {
+  display: none;
 }
 
 #wrap-2 #user {
   display: none !important;
-  padding-top: 33px;
+}
+
+#content #content-inner #profile-header {
+  margin-bottom: 20px;
 }
 
 #top-functions-box {
@@ -51,8 +50,8 @@ text-align: left;
 }
 
 #top-functions {
-  float: right;
-  background: #006633;
+  position: relative;
+  background: #005263;
   white-space: nowrap;
   width: 100%;
   text-align: center;
@@ -63,8 +62,13 @@ text-align: left;
   font-weight: bold;
 }
 
-.logged-in #top-functions {
-  padding-left: 6px;
+#top-functions #top-user-access {
+  position: absolute;
+  right: 200px;
+  display: inline-flex;
+  height: 100%;
+  align-items: center;
+  float: right;
 }
 
 #conecte-se {
@@ -301,12 +305,4 @@ text-align: left;
 .post_comment_box h4 {
   background-color: #006633;
   color: #FFF;
-}
-
-/************************** theme footer ***************************/
-
-#footer-content a,
-#footer-content a:hover,
-#footer-content a:visited {
-  color: #006633;
 }
