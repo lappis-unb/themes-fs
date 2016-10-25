@@ -16,3 +16,26 @@
   font-family: FontAwesome;
   content: "\f002";
 }
+
+%cancel-button-icon {
+  @extend %base-icon;
+  content: "\f00d";
+  border-radius: 0px;
+  background: none;
+  padding-bottom: 2px;
+}
+
+%submit-comment-button-icon {
+  @extend %base-icon;
+  content: "\f00c";
+  border-radius: 0px;
+  background: none;
+  padding-bottom: 2px;
+}
+
+%reply-comment-button-icon {
+  @extend %base-icon;
+  content: "\f112";
+  background: none;
+  color: black;
+}
