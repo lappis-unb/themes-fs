@@ -1,0 +1,35 @@
+// Community Profile
+
+.action-profile_editor-edit {
+
+  .field-with-privacy-selector {
+
+    display: flex;
+    margin-bottom: 6px;
+
+    input { //.formfieldline formfield {
+       width: 30em;
+    }
+
+    textarea {
+      width: 30em;
+    }
+
+    &::after{
+      @extend %lock-icon;
+      margin-top: 22px;
+    } 
+  }
+
+  .formfieldline {
+    margin-bottom: 6px;
+  }
+
+  .field-privacy-selector {
+    display: none;
+  }
+}
+
+.controller-profile_editor #profile-data .field-with-privacy-selector .formfieldline {
+    width: 30em;
+}
