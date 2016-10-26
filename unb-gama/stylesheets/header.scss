@@ -18,6 +18,15 @@
     left: 54%;
     top: 50px;
 
+    #top-search:after {
+      @extend %search-icon;
+      position: absolute;
+      top: 7px;
+      right: 12px;
+      font-size: 14px;
+      color: #949494;
+    }
+
     #top-search {
       display: inline-block;
 
@@ -32,7 +41,6 @@
       input {
         width: 187px;
         padding: 7px 33px 7px 7px;
-        background: url(images/search.png) no-repeat scroll 200px 6px;
         border: 1px solid #A09890;
         border-radius: 3px;
         text-align: center;
