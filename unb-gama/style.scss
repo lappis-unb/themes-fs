@@ -176,9 +176,13 @@ body {
   padding: 20px;
 }
 
-.button {
-  padding: 0px 2px 0px 2px !important;
-  margin-left: 0px !important;
+input.button.with-text,
+a.button,
+#content a.button,
+#content input.button,
+.button-bar a.button.with-text {
+  padding: 0px 2px 0px 2px;
+  margin-left: 2px;
 }
 
 #content .login-block input.button.icon-login {
