@@ -15,6 +15,7 @@
   font-family: Aller;
   src: url('fonts/Aller_Lt.ttf');
 }
+
 p.customfont {
   font-family: "My Custom Font", Verdana, Tahoma;
 }
@@ -173,6 +174,39 @@ body {
 
 #content .login-block .button.with-text span {
   padding: 20px;
+}
+
+a.button,
+#content a.button,
+#content input.button,
+input.button.with-text,
+.button-bar a.button.with-text {
+  padding: 0px 2px 0px 2px;
+  margin-left: 2px;
+}
+
+%action-icons-buttons {
+  min-width: 25px;
+  min-height: 25px;
+  display: inline-block;
+  line-height: 25px;
+}
+
+#content .actions {
+  a.button {
+    @extend %action-icons-buttons;
+  }
+}
+
+.action-role-index #content table a.button {
+  @extend %action-icons-buttons;
+}
+
+
+#content a.button:hover,
+#content input.button:hover {
+  background-color: #005263;
+  border: 1px solid #013f4c;
 }
 
 #content .login-block input.button.icon-login {
@@ -870,4 +904,3 @@ div#notice {
 div#notice:hover {
   opacity: 0.6 !important;
 }
-
