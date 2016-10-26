@@ -9,6 +9,7 @@
 @import 'stylesheets/blogs';
 @import 'stylesheets/blocks';
 @import 'stylesheets/footer';
+@import 'stylesheets/comments';
 
 @font-face {
   font-family: Aller;
@@ -869,3 +870,4 @@ div#notice {
 div#notice:hover {
   opacity: 0.6 !important;
 }
+

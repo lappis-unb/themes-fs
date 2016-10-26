@@ -25,6 +25,7 @@
 
       $(document).one('click', function() {
         $('#profile-dropdown').hide();
+        $('#profile-button').toggleClass("pressed");
       });
     });
 
