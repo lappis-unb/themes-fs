@@ -117,7 +117,7 @@
         }
       }
 
-      &:hover { 
+      &:hover {
         ul {
           display: block;
         }
@@ -129,5 +129,9 @@
         }
       }
     }
-  }  
+  }
+
+  #navigation-end {
+    display: none;
+  }
 }

@@ -51,6 +51,21 @@
           border-right: 2px #cccccc solid;
           height: 204px;
         }
+
+        #unb span {
+          background: url(images/logo-unb-footer.png) top left no-repeat;
+          color: transparent;
+          display: block;
+          height: 100px;
+          margin: 5px;
+          width: 100px;
+          opacity: 0.7;
+          transition: opacity 0.3s ease-in-out;
+        }
+
+        #unb span:hover {
+          opacity: 1;
+        }
       }
     }
 
@@ -86,5 +101,13 @@
       margin-top: 1.5em;
       display: none;
     }
+
+    #license-on-footer {
+      padding: 240px 48px 0;
+      font-size: 11px;
+      text-align: left;
+      color: #003366;
+    }
   }
 }
+

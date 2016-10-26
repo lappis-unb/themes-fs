@@ -54,39 +54,24 @@ body {
   position: relative;
 }
 
-/* * * Controles do topo * * * * * * * * * * * * * * * * * * * * * * * * * */
-
-#theme-header {
-  height: auto;
-}
-
-#wrap-2 #user {
-  display: none;
-}
-
-#wrap-2 #site-title {
-  display: none !important;
-}
-
-/* o bloco navigation será degenerado para um simples separador */
-
-#navigation-end {
-  display: none;
-}
-
 #wrap-2 {
   position: static;
   padding: 0px;
   border: none;
-/*  margin: 20px auto 0px auto;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  border: none; */
-}
 
-#content {
-  margin: 1% auto 5% auto;
-  width: 1000px;
-  z-index: 0;
+  #user {
+    display: none;
+  }
+
+  #site-title {
+    display: none !important;
+  }
+
+  #content {
+    margin: 1% auto 5% auto;
+    width: 1000px;
+    z-index: 0;
+  }
 }
 
 #main-content-wrapper-1, #main-content-wrapper-2,
@@ -115,65 +100,42 @@ body {
   display: block;
 }
 
-.login-box {
-  background: #EEE;
-  padding: 10px 5px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
-}
-
-#content .login-block h2 {
-  background: url(images/icons/persons.png) no-repeat 0% 50%;
-  border: none;
-  color: #000;
-  font-variant: normal;
-  font-weight: normal;
-  padding-left: 15px;
-  margin-top: 10px;
-}
-
-.login-block {
+#content .login-block {
   border-top: 1px solid #888;
-}
 
-.login-block .login-box form {
-  padding: 0px;
-}
+  h2 {
+    background: url(images/icons/persons.png) no-repeat 0% 50%;
+    border: none;
+    color: #000;
+    font-variant: normal;
+    font-weight: normal;
+    padding-left: 15px;
+    margin-top: 10px;
+  }
 
-.login-block .forgot-passwd a {
-  font-size: 11px;
-  color: #651;
-}
+  .login-box form {
+    padding: 0px;
+  }
 
-.login-box .formfieldline input {
-  background: #FFF;
-  color: #651;
-  border: none;
-  -moz-border-radius: 8px;
-  border-radius: 8px;
-  padding: 7px 0px;
-  font-size: 15px;
-}
+  .forgot-passwd a {
+    font-size: 11px;
+    color: #651;
+  }
 
-.icon-menu-logout{
-  background-image: url('images/icons/exit.png');
-}
-.icon-menu-logout span{
-  padding-left: 7px;
-}
+  .button {
+    line-height: auto;
+    max-height: none;
+    color: #651;
 
-#content .login-block .button {
-  line-height: auto;
-  max-height: none;
-  color: #651;
-}
-#content .login-block .button:hover {
-  color: #000;
-  border: none;
-}
+    &.with-text span {
+      padding: 20px;
+    }
 
-#content .login-block .button.with-text span {
-  padding: 20px;
+    &:hover {
+      color: #000;
+      border: none;
+    }
+  }
 }
 
 a.button,
@@ -426,38 +388,6 @@ h1.title a {
   color: white;
 }
 
-/* * * Light Box * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-
-#TB_window {
-  background-image: -webkit-linear-gradient(top, #F4F4F4, #F4F4F4, #D0D0D0);
-  background-image:    -moz-linear-gradient(top, #F4F4F4, #F4F4F4, #D0D0D0);
-  background-image:     -ms-linear-gradient(top, #F4F4F4, #F4F4F4, #D0D0D0);
-  background-image:      -o-linear-gradient(top, #F4F4F4, #F4F4F4, #D0D0D0);
-  background-image:         linear-gradient(top, #F4F4F4, #F4F4F4, #D0D0D0);
-  box-shadow: 3px 3px 25px #000;
-}
-
-#TB_window .login-box {
-  background: transparent;
-}
-
-#TB_window .formfieldline input {
-  -webkit-box-shadow: inset 1px 1px 3px #BBB;
-  -moz-box-shadow: inset 1px 1px 3px #BBB;
-  box-shadow: inset 1px 1px 3px #BBB;
-}
-
-/* * * Footer * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-
-
-
-#license-on-footer {
-  padding: 240px 48px 0;
-  font-size: 11px;
-  text-align: left;
-  color: #003366;
-}
-
 /* mudancas joenio */
 
 .highlights-block {
@@ -507,21 +437,6 @@ h1.title a {
   padding-bottom: 0px;
   margin-bottom: -5px;
   font-size: 14px;
-}
-
-#unb span{
-  background: url(images/logo-unb-footer.png) top left no-repeat;
-  color: transparent;
-  display: block;
-  float: left;
-  height: 100px;
-  margin: 5px;
-  opacity: 0.7;
-  width: 100px;
-}
-
-#unb span:hover{
-  opacity: 1;
 }
 
 /* Primeira imagem */
