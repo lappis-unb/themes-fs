@@ -1,32 +1,47 @@
-#content #article {
+#content {
   .publishing-info a {
     color: #005263;
   }
 
   #article-actions {
     > a.button {
+      width: 22%;
+      padding: 2px;
+    }
+  }
+
+  .profile-info-options ul li {
+    > a.button {
+      width: 12em;
+    }
+  }
+
+  div a.button.icon-alert.with-text.report-abuse-action {
+    width: 84%;
+  }
+
+  .link-list-block ul li, #article-actions, .profile-info-options ul li, #public-profile-search, .my-network-actions ul li {
+    > a.button, input.button, a.icon-, a.icon-no-icon, div a.button {
       overflow: hidden;
       margin: 3px;
       display: inline-block;
-      width: 22%;
       border: solid 1px #005263;
       color: #005263;
       text-align: center;
-      padding: 2px;
       position: relative;
       transition: background 0.1s ease-in-out;
-  
+
       &:hover {
         background: #005263;
         color: white;
       }
-      
+
       &::before {
         position: absolute;
         left: 0;
         top: 6px;
       }
-      
+
       &#fullscreen-btn {
         display: none;
       }
@@ -36,7 +51,7 @@
   div#article-parent {
     text-align: left;
     margin-bottom: 10px;
-  
+
     .button.icon-back.with-text {
       padding: 0;
       color: #005263;
@@ -83,7 +98,7 @@
       display: none;
     }
   }
-  
+
   .article-body {
     padding: 0 3px;
     line-height: 1.9em;
