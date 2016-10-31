@@ -1,8 +1,26 @@
+#content {
+  .main-block {
+    .main-content {
+      h1 {
+        color: #005263;
+      }
+    }
+  }
+}
+
+.profile-image-block {
+  p {
+    color: #005263;
+  }
+}
+
 .block.members-block {
   border: none;
   border-radius: 3px;
-  background: #FCFCFC;
-  box-shadow: 0 3px 2px 0 #D2D2D2;
+}
+
+.block-footer-content {
+  margin-top: 10px;
 }
 
 .profile-homepage {
@@ -35,6 +53,7 @@
 .block-title {
   span {
     border-bottom: 2px solid #005263;
+    color: #005263;
   }
 }
 

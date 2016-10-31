@@ -1,0 +1,34 @@
+#content {
+  #public-profile-search {
+    form {
+      .search-field {
+        input[type="submit"] {
+          padding: 16px;
+          border-radius: 0px;
+        }
+      }
+    }
+  }
+  .link-list-block {
+    ul {
+      li {
+        a {
+          display: block;
+          width: 76%;
+          margin: 3px;
+        }
+
+        a.link-this-page {
+          background: #005263;
+          color: white;
+          width: 76%;
+          margin: 3px;
+
+          &:hover {
+            border-right: none;
+          }
+        }
+      }
+    }
+  }
+}
