@@ -1,6 +1,14 @@
 #content {
-  .publishing-info a {
-    color: #005263;
+  .main-block .publishing-info {
+    margin-top: 10px;
+    text-align: left;
+    color: #AAA;
+    font-size: 11px;
+    margin-bottom:15px;
+
+    a {
+      color: #005263;
+    }
   }
 
   #article-actions {
@@ -131,18 +139,8 @@
   padding-top: 96px;
 }
 
-span.publishing-info.has-flags{
+span.publishing-info.has-flags {
   float: left;
   margin-top: 1px;
 }
 
-.publishing-info {
-  margin-top: 10px;
-}
-
-#content .main-block .publishing-info {
-  text-align: left;
-  color: #AAA;
-  font-size: 11px;
-  margin-bottom:15px;
-}

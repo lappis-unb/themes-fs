@@ -157,70 +157,57 @@
   -webkit-border-radius: 0;
   margin-left: 3% !important;
   z-index: 0;
-}
 
-.highlights-image-link {
-  width: 100% !important;
-  font-weight: bold;
-  text-decoration: none;
-  text-align: center;
-  background: #fff;
-}
+  .highlights-image-link {
+    width: 100% !important;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    background: #fff;
+  }
 
-.highlights-container,
-.highlights-image-link {
-  height: 275px !important;
-  border:none;
-}
+  .highlights-container,
+  .highlights-image-link {
+    height: 275px !important;
+    border:none;
+    position: absolute;
+    left: 0px;
+  }
 
-.highlights-block-pager {
-  width: 100%;
-  margin-top: 10px;
-}
+  .highlights-block-pager {
+    width: 100%;
+    margin-top: 10px;
 
-.highlights-label {
-  padding-left: 5px;
-  text-align: left;
-  position: absolute;
-  z-index: 2;
-  left: 0;
-  bottom: 0;
-  font-weight: bold;
-  background: transparent url(/images/black-alpha-pixel.png) left top repeat;
-}
+    a {
+      height: 17px;
+      width: 25px;
+      margin-left: 0px;
+      padding: 10px;
+      color: transparent;
+      background: url(images/highlights-image-link.png) center center no-repeat;
 
-.highlights-label {
-  padding: 10px;
-  padding-bottom: 0px;
-  margin-bottom: -5px;
-  font-size: 14px;
-}
+      &.activeSlide,
+      &.activeSlide:visited,
+      &:visited,
+      &:hover {
+        color: transparent;
+        background: url(images/highlights-image-link-active.png) center center no-repeat;
+      }
+    }
+  }
 
-/* Primeira imagem */
-.highlights-block-pager a {
-  height: 17px;
-  width: 25px;
-  margin-left: 0px;
-  padding: 10px;
-  color: transparent;
-  background: url(images/highlights-image-link.png) center center no-repeat;
-}
-.highlights-block-pager a.activeSlide,
-.highlights-block-pager a.activeSlide:visited,
-.highlights-block-pager a:visited,
-.highlights-block-pager a:hover {
-  color: transparent;
-  background: url(images/highlights-image-link-active.png) center center no-repeat;
-}
-
-.block a.highlights-image-link {
-  position: absolute;
-  left: 0px;
-}
-
-
-#block-614 .block-title span {
-  background-image: url(images/icons/icon-twitter-gray.png) !important;
+  .highlights-label {
+    text-align: left;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    bottom: 0;
+    font-weight: bold;
+    padding: 10px 10px 0;
+    margin-bottom: -5px;
+    font-size: 14px;
+    background: transparent url(/images/black-alpha-pixel.png) left top repeat;
+  }
 }
 
 #content .profile-info-block h2,

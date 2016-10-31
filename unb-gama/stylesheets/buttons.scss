@@ -9,12 +9,13 @@
       }
     }
   }
+
+  a.button:hover,
+  input.button:hover {
+    background-color: #005263;
+    border: 1px solid #013f4c;
+  }
 }
-
-
-
-
-
 
 a.button,
 #content a.button,
@@ -42,34 +43,30 @@ input.button.with-text,
   @extend %action-icons-buttons;
 }
 
-#content a.button:hover,
-#content input.button:hover {
-  background-color: #005263;
-  border: 1px solid #013f4c;
+a.button.with-text {
+  &.icon-add.join-community {
+    width: 155px;
+   margin-bottom: 4px !important;
+  }
+
+  &.icon-delete.leave-community {
+   width: 155px;
+   margin-bottom: 4px !important;
+  }
+
+  &.icon-menu-mail {
+    width: 155px;
+   margin-bottom: 4px !important;
+  }
+
+  &.icon-vertical-toggle {
+    padding-top: 0px !important;
+   padding-bottom: 0px !important;
+   position: static;
+   float: right;
+  }
 }
 
 .members-buttons-cell {
   width: 100% !important;
-}
-
-a.button.icon-add.with-text.join-community {
-  width: 155px;
-  margin-bottom: 4px !important;
-}
-
-a.button.icon-delete.with-text.leave-community {
-  width: 155px;
-  margin-bottom: 4px !important;
-}
-
-a.button.icon-menu-mail.with-text {
-  width: 155px;
-  margin-bottom: 4px !important;
-}
-
-.button.icon-vertical-toggle.with-text {
-  padding-top: 0px !important;
-  padding-bottom: 0px !important;
-  position: static;
-  float: right;
 }
