@@ -20,7 +20,7 @@
     width: 84%;
   }
 
-  .link-list-block ul li, #article-actions, .profile-info-options ul li, #public-profile-search, .my-network-actions ul li {
+  #article-actions, .profile-info-options ul li, #public-profile-search, .my-network-actions ul li {
     > a.button, input.button, a.icon-, a.icon-no-icon, div a.button {
       overflow: hidden;
       margin: 3px;
@@ -124,4 +124,25 @@
 
 #article-tags {
   display: none;
+}
+
+.article-translations {
+  margin-top: -39px;
+  padding-top: 96px;
+}
+
+span.publishing-info.has-flags{
+  float: left;
+  margin-top: 1px;
+}
+
+.publishing-info {
+  margin-top: 10px;
+}
+
+#content .main-block .publishing-info {
+  text-align: left;
+  color: #AAA;
+  font-size: 11px;
+  margin-bottom:15px;
 }

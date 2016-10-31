@@ -9,26 +9,67 @@
       }
     }
   }
-  .link-list-block {
-    ul {
-      li {
-        a {
-          display: block;
-          width: 76%;
-          margin: 3px;
-        }
+}
 
-        a.link-this-page {
-          background: #005263;
-          color: white;
-          width: 76%;
-          margin: 3px;
 
-          &:hover {
-            border-right: none;
-          }
-        }
-      }
-    }
+
+
+
+
+a.button,
+#content a.button,
+#content input.button,
+input.button.with-text,
+.button-bar a.button.with-text {
+  padding: 0px 2px 0px 2px;
+  margin-left: 2px;
+}
+
+%action-icons-buttons {
+  min-width: 25px;
+  min-height: 25px;
+  display: inline-block;
+  line-height: 25px;
+}
+
+#content .actions {
+  a.button {
+    @extend %action-icons-buttons;
   }
+}
+
+.action-role-index #content table a.button {
+  @extend %action-icons-buttons;
+}
+
+#content a.button:hover,
+#content input.button:hover {
+  background-color: #005263;
+  border: 1px solid #013f4c;
+}
+
+.members-buttons-cell {
+  width: 100% !important;
+}
+
+a.button.icon-add.with-text.join-community {
+  width: 155px;
+  margin-bottom: 4px !important;
+}
+
+a.button.icon-delete.with-text.leave-community {
+  width: 155px;
+  margin-bottom: 4px !important;
+}
+
+a.button.icon-menu-mail.with-text {
+  width: 155px;
+  margin-bottom: 4px !important;
+}
+
+.button.icon-vertical-toggle.with-text {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  position: static;
+  float: right;
 }

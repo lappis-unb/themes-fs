@@ -1,8 +1,98 @@
-#content {
+#content div.blocks {
+  div.block {
+    .block-title {
+      border: none;
+      font-size: 14px;
+      font-variant: normal;
+      padding: 0px 0px 10px 0px;
+
+      span {
+        border-bottom: 2px solid #005263;
+        color: #005263;
+        line-height: 26px;
+        display: block;
+
+        &.control-panel-title, &.control-panel-sep {
+          display: none;
+        }
+      }
+    }
+  }
+
   .main-block {
     .main-content {
       h1 {
         color: #005263;
+      }
+    }
+
+    h1 {
+      padding: 0px 0px 14px 0px;
+      font-variant: normal;
+      font-weight: normal;
+      border-bottom: 1px solid #888;
+    }
+  }
+
+  .login-block {
+    border-top: 1px solid #888;
+
+    h2 {
+      background: url(images/icons/persons.png) no-repeat 0% 50%;
+      border: none;
+      color: #000;
+      font-variant: normal;
+      font-weight: normal;
+      padding-left: 15px;
+      margin-top: 10px;
+    }
+
+    .login-box form {
+      padding: 0px;
+    }
+
+    .forgot-passwd a {
+      font-size: 11px;
+      color: #651;
+    }
+
+    .button {
+      line-height: auto;
+      max-height: none;
+      color: #651;
+
+      &.with-text span {
+        padding: 20px;
+      }
+
+      &:hover {
+        color: #000;
+        border: none;
+      }
+    }
+  }
+
+  .block.link-list-block {
+     ul > li a {
+      width: 76%;
+      margin: 3px;
+      padding: 2px 1px 2px 23px;
+      border-radius: 0px;
+      border-left: 5px solid #B4BDBE;
+      background-color: #FCFCFC;
+      box-shadow: 0 1px 2px 0 #D2D2D2;
+
+      &.link-this-page {
+        background: #005263;
+        color: white;
+        width: 76%;
+        margin: 3px;
+        border-right: none;
+      }
+
+      &:hover, &:active {
+        background-color: #F0F0F0;
+        color: #003366;
       }
     }
   }
@@ -50,16 +140,141 @@
   }
 }
 
-.block-title {
-  span {
-    border-bottom: 2px solid #005263;
-    color: #005263;
-  }
-}
-
 .even-post-inner.blog-post-inner, .odd-post-inner.blog-post-inner {
   background: #fafafa;
   padding: 10px;
   box-shadow: 0 1px 5px 0 #D2D2D2;
   border-bottom: 0px;
+}
+
+.highlights-block {
+  height: 277px;
+  width: 95%;
+  border: 0;
+  background: transparent;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  margin-left: 3% !important;
+  z-index: 0;
+}
+
+.highlights-image-link {
+  width: 100% !important;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  background: #fff;
+}
+
+.highlights-container,
+.highlights-image-link {
+  height: 275px !important;
+  border:none;
+}
+
+.highlights-block-pager {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.highlights-label {
+  padding-left: 5px;
+  text-align: left;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  bottom: 0;
+  font-weight: bold;
+  background: transparent url(/images/black-alpha-pixel.png) left top repeat;
+}
+
+.highlights-label {
+  padding: 10px;
+  padding-bottom: 0px;
+  margin-bottom: -5px;
+  font-size: 14px;
+}
+
+/* Primeira imagem */
+.highlights-block-pager a {
+  height: 17px;
+  width: 25px;
+  margin-left: 0px;
+  padding: 10px;
+  color: transparent;
+  background: url(images/highlights-image-link.png) center center no-repeat;
+}
+.highlights-block-pager a.activeSlide,
+.highlights-block-pager a.activeSlide:visited,
+.highlights-block-pager a:visited,
+.highlights-block-pager a:hover {
+  color: transparent;
+  background: url(images/highlights-image-link-active.png) center center no-repeat;
+}
+
+.block a.highlights-image-link {
+  position: absolute;
+  left: 0px;
+}
+
+
+#block-614 .block-title span {
+  background-image: url(images/icons/icon-twitter-gray.png) !important;
+}
+
+#content .profile-info-block h2,
+#content .profile-image-block p,
+.action-profile-index #content .main-block h1 {
+  font-weight: bold;
+}
+
+.feed-reader-block li,
+.recent-documents-block li {
+  list-style-image: url("images/icons/lista-menu.jpg");
+}
+
+.recent-documents-block ul {
+  padding-left: 13px;
+}
+
+#content .environment-statistics-block li {
+  list-style: square;
+}
+
+.menu-cursos {
+    list-style: none outside none;
+    padding: 1px;
+}
+
+.menu-cursos img {
+  opacity: 1;
+  transition: opacity 0.2s ease 0s;
+}
+
+.menu-cursos img:hover {
+  opacity: 0.5;
+}
+
+.my-network-block ul {
+  padding: 0px 0px 10px 6px;
+}
+
+.block-inner-2 > ul > li > a {
+  color: #003366;
+}
+
+.block-inner-2 > div > div.admin-link > a {
+  color: #003366;
+}
+
+.block-footer-content a.view-all {
+  color: #336699;
+  top: 8px;
+}
+
+#content .people-block .block-footer-content a.view-all, #content .friends-block .block-footer-content a.view-all, #content .members-block .block-footer-content a.view-all {
+  background: url(/designs/themes/base/imgs/arrow-right-p.png) 0% 50% no-repeat ;
+  background-size: 7px;
+  padding-left: 11px;
 }
