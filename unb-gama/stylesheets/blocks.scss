@@ -147,7 +147,7 @@
   border-bottom: 0px;
 }
 
-.highlights-block {
+#content .block.highlights-block {
   height: 277px;
   width: 95%;
   border: 0;
@@ -155,7 +155,7 @@
   border-radius: 0;
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
-  margin-left: 3% !important;
+  margin-left: 3%;
   z-index: 0;
 
   .highlights-image-link {
@@ -264,4 +264,9 @@
   background: url(/designs/themes/base/imgs/arrow-right-p.png) 0% 50% no-repeat ;
   background-size: 7px;
   padding-left: 11px;
+}
+
+.block-config-options {
+  padding: 0 10px 0;
+  margin: 0 20px 0;
 }

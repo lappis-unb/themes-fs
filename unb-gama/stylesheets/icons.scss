@@ -39,3 +39,13 @@
   background: none;
   color: black;
 }
+
+.icon-down-disabled:before {
+  content: "\f063";
+  color: #c5c5c5;
+}
+
+.icon-up-disabled:before {
+  content: "\f062";
+  color: #c5c5c5;
+}
