@@ -35,6 +35,7 @@
         <div id="profile-logged-in">
           <span id="user-name"><%= "Olá, %s" % user.name %></span>
           <ul id="logged-options">
+            <li><%= link_to 'Párgina de Perfil', "/profile/#{user.identifier}" %></li>
             <li><%= link_to 'Painel de Controle', "/myprofile/#{user.identifier}" %></li>
             <% if user.is_admin? %>
               <li><%= link_to 'Administração',  "/admin" %></li>
