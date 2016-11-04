@@ -1,87 +1,89 @@
-#content-inner > div > div > div > div > h1 {
-  font-variant: normal !important;
-}
-
-#signup-form #signup-form-header {
-  margin: 0px auto 5px;
-
-  .formlabel {
-    margin-top: 10px;
-    font-size: 17px;
-    font-weight: bold;
-  }
-  
-  input {
-    height: 15px;
-    font-size: 17px;
-    background: none;
-  }
-}
-
-
-
-
-
-
-#signup-login-field {
-  margin-right: 313px !important;
-}
-
-#signup-domain {
-  min-width: 79px;
-  border: none !important;
-  background: none !important;
-  padding: 0px !important;  
-  font-size: 18px;
-}
-
-.formfield type-text, .formfield type-password {
-  background: black !important;
-} 
-
-#password-check, #url-check, #email-check {
-  p{
-    display: none;
-  }
-}
-
 .action-account-signup #content {
-  text-align: initial !important;
+  text-align: initial;
 }
 
-#template-options > ul{
-  margin-left: 200px !important;
-}
-
-
-#signup-form #template-options li label{
-  font-size: 17px !important;
-}
-
-
-#template-options > ul > li a {
-  text-decoration: none;
-}
-
-#template-options > ul > li:hover {
-  text-decoration: underline;
-}
-
-#terms-of-use-box {
-  margin: 20px 40px 30px 40px;
-  text-align: center;
-}
-
-#terms-of-use-box > label > a {
-  color: #005263 !important;
-} 
-
-#content #signup-form .submit {
+#content-inner .main-content h1 {
+  font-variant: normal;
   background: #005263;
-  padding: 5px 10px 5px 10px;
+  border-left: 15px solid #ccc;
+  color: white;
+  border-bottom: none;
+  padding: 10px;
+}
+
+#content #content-inner .main-content .atention {
+  border: none;
+  background: #f9f9f9;
+  box-shadow: 0 3px 2px 0 #D2D2D2;
+}
+
+#content #signup-form {
   width: 100%;
 
-  &:hover {
-    text-decoration: underline;
+  #signup-form-header {
+    margin: 0px auto 5px;
+  
+    .formlabel {
+      margin-top: 10px;
+      font-size: 17px;
+      font-weight: bold;
+    }
+    
+    input {
+      @extend %form-input-style;
+      height: 15px;
+      font-size: 17px;
+    }
+  
+    #signup-domain {
+      min-width: 79px;
+      border: none;
+      background: none;
+      padding: 0px;
+      font-size: 18px;
+    }
   }
-}  
+
+  #template-options {
+    > p, > ul {
+      margin-left: 0px !important;
+      padding-left: 0px !important;
+    }
+  
+    > ul li {
+      label {
+        font-size: 17px;
+      }
+  
+      a {
+        text-decoration: none;
+      }
+  
+      &:hover {
+      text-decoration: underline;
+      }
+    }
+  }
+
+  #terms-of-use-box {
+    margin: 0;
+  
+    > label > a {
+      color: #005263;
+    } 
+
+    input[type='checkbox'] {
+      height: auto;
+    }
+  }
+
+  .submit {
+    background: #005263;
+    padding: 5px 10px 5px 10px;
+    width: 100%;
+  
+    &:hover {
+      text-decoration: underline;
+    }
+  }  
+}
