@@ -1,11 +1,24 @@
-#cancel-comment::before {
-  @extend %cancel-button-icon;
-}
+#content .comment_form .button-bar {
 
-#cancel-comment {
-  height: 12px !important;
-  line-height: 0px !important;
-  border-radius: 3px !important;
+  %base-comment-button-bar {
+    height: 25px;
+    line-height: 25px;
+    border-radius: 3px;
+  }
+
+  a.button.with-text {
+    @extend %base-comment-button-bar;
+  }
+
+  input.button.with-text {
+    @extend %base-comment-button-bar;
+    max-height: 25px;
+    padding: 0 10px 0;
+  }
+
+  #cancel-comment::before {
+      @extend %cancel-button-icon;
+  }
 }
 
 #new_comment .button-bar > input::before {
@@ -32,13 +45,6 @@
 
 #content input.button.with-text {
   line-height: 0px;
-}
-
-#comment_body {
-  background: none;
-  border: 1px solid #999;
-  background-color: #F3F2F1;
-  width: 99%;
 }
 
 #comment_title {
@@ -128,106 +134,25 @@
   @extend %reply-comment-button-icon;
 }
 
-//////////////////////////////// comments
-
-
-.required-field label.formlabel {
-      //font-weight: bold;
-     // color: #444;
-}
-
 .required-field label.formlabel:after {
-      font-weight: bold;
-      color: #c00;
+    font-weight: bold;
+    color: #c00;
 }
 
 .formlabel {
   font-weight: bold;
-  color: #555753 !important;
+  color: #555753;
 }  
 
-.formfield input, .formfield textarea{
-  background-color: #f9f9f9 !important;
+.formfield input, .formfield textarea, {
+  @extend %form-input-style;
 }
 
-#content #signup-form .submit {
-  background: #005263;
-  padding: 5px 10px 5px 10px;
-  width: 100%;
-}  
-
-#terms-of-use-box {
-  margin: 20px 40px 30px 40px;
-  text-align: center;
-}
-
-#template-options > ul > li a {
-  text-decoration: none;
-}
-
-#template-options > ul > li:hover {
-  text-decoration: underline;
+#comment_body {
+  @extend %form-input-style;
+  width: 99%;
 }
 
 .post_comment_box .formfield * {
   width: 99.6%;
 }
-
-// User registration area
-
-#terms-of-use-box > label > a {
-  color: #005263 !important;
-} 
-
-#signup-form .formlabel {
-  margin-top: 10px !important;
-  font-size: 17px !important;
-  font-weight: bold !important;
-}
-#signup-form input {
-  height: 15px;
-  font-size: 17px;
-}
-
-#signup-login-field {
-  margin-right: 313px !important;
-}
-
-#signup-domain {
-  min-width: 79px;
-  border: none !important;
-  background: none !important;
-  padding: 0px !important;  
-  font-size: 18px;
-}
-
-.formfield type-text, .formfield type-password {
-  background: black !important;
-} 
-
-#password-check, #url-check, #email-check {
-  p{
-    display: none;
-  }
-}
-
-.action-account-signup #content {
-  text-align: initial !important;
-}
-
-#template-options > ul{
-  margin-left: 200px !important;
-}
-
-#signup-form #signup-form-header {
-  margin: 0px auto 5px;
-}
-
-#content-inner > div > div > div > div > h1 {
-  font-variant: normal !important;
-}
-
-#signup-form #template-options li label{
-  font-size: 17px !important;
-}
-
