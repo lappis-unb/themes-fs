@@ -1,0 +1,51 @@
+#content .profile-info-options {
+
+  > ul > li a.button {
+    width: 170px;
+  }
+
+  #circles-container {
+    width: 170px;
+    padding-top: 10px;
+    background: #fcfcfc;
+    box-shadow: 0 3px 5px 1px #d2d2d2;
+
+    #follow-circles-form {
+      #circles-list {
+        text-align: left;
+
+        #circles-checkboxes {
+          margin-top: 10px;
+          margin-left: 10px;
+        }
+
+        #new-circle {
+          width: 90px;
+          text-align: right;
+        }
+
+        #new-circle-form .button-bar {
+          text-align: center;
+          margin-bottom: 0px;
+
+          a {
+            text-align: right;
+            width: 42%;
+            float: none;
+            margin: 3px 0 3px;
+          }
+        }
+      }
+
+      #circle-actions {
+        text-align: center;
+
+        input {
+          height: 22px;
+          width: 48%;
+          margin: 3px 0 3px;
+        }
+      }
+    }
+  }
+}
