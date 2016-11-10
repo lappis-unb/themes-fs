@@ -1,35 +1,144 @@
-// Community Profile
-
 .action-profile_editor-edit {
 
   .field-with-privacy-selector {
 
     display: flex;
-    margin-bottom: 6px;
+    margin-bottom: 1px;
+    position: relative;
 
-    input { //.formfieldline formfield {
-       width: 30em;
+    .field-privacy-selector {
+      position: absolute;
+      right: 0;
+      input {
+        margin: 15px 12px  0 164px;
+      }
+      label {
+        margin-left: 15px;
+      }
     }
 
     textarea {
-      width: 30em;
+      width: 475px;
     }
 
-    &::after{
-      @extend %lock-icon;
-      margin-top: 22px;
-    } 
   }
 
   .formfieldline {
-    margin-bottom: 6px;
-  }
+    margin-bottom: 1px;
+    input {
+      margin-bottom: 6px;
+      width: 480px;
+    }
 
-  .field-privacy-selector {
-    display: none;
+    .type-text #a {
+      margin-bottom: 0px;
+    }
+  }
+  .field-privacy-selector, #profile_change_picture_title {
+
+    input[type='checkbox'] {
+      display: none;
+    }
+
+    input[type='checkbox'] + label:before {
+      display: inline-block;
+    }
+
+    input[type='checkbox'] + label:before {
+      @extend %privacy-unchecked-button-icon;
+      font-size: 12px;
+      padding-bottom: 8px;
+    }
+
+    input[type='checkbox'] + label:after {
+      content: "Privado";
+      font-size: 12px;
+      line-height: 65px;
+      margin-left: 5px;
+    }
+
+    input[type='checkbox'] + label {
+      cursor: pointer;
+      font-size: 0;
+    }
+
+    input[type='checkbox']:checked + label:before {
+      @extend %privacy-checked-button-icon;
+      font-size: 12px;
+    }
+
+    input[type='checkbox']:checked + label:after {
+      content: "Público";
+      font-size: 12px;
+      line-height: 65px;
+      margin-left: 5px;
+    }
   }
 }
 
+#profile_change_picture_title span label {
+  position: absolute;
+  left: 491px;
+}
 .controller-profile_editor #profile-data .field-with-privacy-selector .formfieldline {
-    width: 30em;
+  width: 30em;
+}
+
+.controller-profile_editor #profile-is-template {
+  width: 548px;
+}
+
+.controller-profile_editor #category-ajax-selector {
+  width: 460px;
+}
+
+.controller-profile_editor .formfield.type-radio.fieldgroup.linesize0 {
+  #profile_data_sex_male, #profile_data_sex_female {
+    width: 15px;
+  }
+}
+
+.controller-profile_editor .formfield input {
+  height: 16px;
+}
+
+#category-ajax-selector .select-subcategory-link:hover, .select-subcategory-link:hover {
+  background: #005263 !important;
+  border-color: #013f4c !important;
+  color: #FFF !important;
+}
+
+#profile-data {
+  color: #555753;
+}
+
+.controller-profile_editor #delete-profile {
+  margin-top: 12px;
+}
+
+#select-categories > div > hr {
+  margin-top: auto;
+}
+
+label[for=profile_data_description] {
+  margin-top: 6px;
+}
+
+.formfield.type-file #file_image {
+  background: none;
+  border: none;
+}
+
+.formfield.type-file #profile_data_image_builder_uploaded_data {
+  background: none;
+  border: none;
+  margin-bottom: 0px;
+}
+
+.formfieldline #profile_data_image_builder_label {
+  margin-bottom: 0px;
+}
+
+#profile_change_picture{
+  margin-top: 0px;
 }

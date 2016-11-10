@@ -141,8 +141,8 @@
 
 .formlabel {
   font-weight: bold;
-  color: #555753;
-}  
+  color: #555753 !important;
+}
 
 .formfield input, .formfield textarea, {
   @extend %form-input-style;

@@ -48,6 +48,20 @@
   color: black;
 }
 
+%privacy-unchecked-button-icon {
+  @extend %base-icon;
+  content: "\f023";
+  background: none;
+  color: black;
+}
+
+%privacy-checked-button-icon {
+  @extend %base-icon;
+  content: "\f09c";
+  background: none;
+  color: black;
+}
+
 .icon-down-disabled:before {
   content: "\f063";
   color: #c5c5c5;
