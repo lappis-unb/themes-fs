@@ -1,7 +1,7 @@
 (function($, undefined) {
   // Async load brazil bar, so it wont slow our js script
   function loadBrazilBar() {
-    var url = "http://barra.brasil.gov.br/barra.js?cor=cinza";
+    var url = "https://barra.brasil.gov.br/barra.js?cor=cinza";
     var scriptElement = document.createElement("script");
 
     scriptElement.src = url;
