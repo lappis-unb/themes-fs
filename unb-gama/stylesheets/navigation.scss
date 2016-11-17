@@ -135,3 +135,21 @@
     display: none;
   }
 }
+
+.main-content {
+  #access-denied,
+  #not-found {
+    h1 {
+      text-align: center;
+      font-variant: normal;
+    }
+    .button-bar {
+      margin-left: 370px;
+    }
+  }
+}
+
+#content #access-denied p,
+#content #not-found p {
+  text-align: center;
+}
