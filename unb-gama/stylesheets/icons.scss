@@ -9,7 +9,15 @@
 %read-more-icon {
   @extend %base-icon;
   content: "\f067";
-  padding: 3px 4px;
+}
+
+%lock-icon {
+  @extend %base-icon;
+  color: #005263;
+  border: none;
+  content: "\f023";
+  background: transparent;
+  font-size: 1.5em;
 }
 
 %search-icon {
@@ -36,6 +44,20 @@
 %reply-comment-button-icon {
   @extend %base-icon;
   content: "\f112";
+  background: none;
+  color: black;
+}
+
+%privacy-unchecked-button-icon {
+  @extend %base-icon;
+  content: "\f023";
+  background: none;
+  color: black;
+}
+
+%privacy-checked-button-icon {
+  @extend %base-icon;
+  content: "\f09c";
   background: none;
   color: black;
 }
