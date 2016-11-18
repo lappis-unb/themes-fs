@@ -1,8 +1,12 @@
-unb-gama (0.1.2-1.1) UNRELEASED; urgency=medium
+unb-gama (1.0.0) unstable; urgency=medium
 
+  [ paulo ]
   * Non-maintainer upload.
 
- -- paulo <paulo@Workstation.home>  Tue, 18 Oct 2016 12:38:29 -0200
+  [ Gabriel ]
+  * First stable release
+
+ -- Gabriel Silva <gabriel93.silva@gmail.com>  Fri, 18 Nov 2016 17:38:25 +0000
 
 unb-gama (0.1.0-1) unstable; urgency=low
 
