@@ -8,7 +8,6 @@
 
       span {
         border-bottom: 2px solid #005263;
-        color: #005263;
         line-height: 26px;
         display: block;
 
@@ -75,26 +74,130 @@
   .block.link-list-block {
     padding: 0;
 
-     ul > li a {
-      width: 170px;
-      margin: 3px;
-      padding: 2px 1px 2px 2px;
-      border-radius: 0px;
-      border-left: 5px solid #B4BDBE;
-      background-color: #FCFCFC;
-      box-shadow: 0 1px 2px 0 #D2D2D2;
+     ul > li {
 
-      &.link-this-page {
+       // direcao
+       .fa-child:before, .icon-menu-people:before, .icon-person:before {
+         color: #21BA57;
+         margin-right: 5px;
+         content: "\f0b1";
+       }
+
+
+       // guia universitario
+       .fa-eye:before, .icon-eyes:before {
+         color: #21BA57;
+         margin-right: 5px;
+         content: "\f19d";
+       }
+
+       // aeroespacial
+       .fa-send-o:before, .icon-send:before, .fa-paper-plane-o:before {
+         color: #21BA57;
+         content: "\f197";
+         margin-right: 5px;
+       }
+
+       // guia fga
+       .fa-th-list:before, .icon-todo:before {
+         color: #21BA57;
+         content: "\f02d";
+         margin-right: 5px;
+       }
+
+       // coordenacao
+       .fa-search:before, .icon-menu-search:before, .icon-search:before {
+         color: #21BA57;
+         content: "\f19c";
+         margin-right: 5px;
+       }
+
+       // automotiva
+       .fa-gift:before, .icon-menu-product:before, .icon-product:before {
+         color: #21BA57;
+         margin-right: 5px;
+         content: "\f1b9";
+       }
+
+       // eletronica
+       .fa-home:before, .icon-home:before, .icon-content-enterprise-homepage:before, .icon-menu-home:before {
+         color: #21BA57;
+         content: "\f0eb";
+         margin-right: 5px;
+       }
+
+       // energia
+       .fa-comments:before, .icon-chat:before, .icon-forum:before, .icon-content-forum:before, .icon-newforum:before {
+         color: #21BA57;
+         content: "\f0e7";
+         margin-right: 5px;
+       }
+
+       // software
+       .fa-photo:before, .fa-image:before, .fa-picture-o:before, .icon-gallery:before, .icon-newgallery:before, .icon-photos:before, .image-gallery-item.gallery:before {
+         color: #21BA57;
+         margin-right: 5px;
+         content: "\f109";
+       }
+
+       a {
+         border-radius: 0px;
+         border-left: 5px solid #B4BDBE;
+         background-color: #FCFCFC;
+         position: relative;
+         transition: opacity 0.2s ease 0s;
+         opacity: 1.0;
+         &:hover {
+           opacity: 0.5;
+         }
+
+         &.link-this-page {
+           background: #005263;
+           width: 170px;
+           color: white;
+           margin: 3px;
+           border-right: none;
+         }
+
+         &:hover, &:active {
+           background-color: #F0F0F0;
+           color: #003366;
+         }
+       }
+    }
+  }
+  .block-outer {
+    .block.link-list-block, .block.recent-documents-block {
+      .block-title {
         background: #005263;
-        width: 170px;
-        color: white;
-        margin: 3px;
-        border-right: none;
+        color: #FCFAFA;
+        text-transform: uppercase;
+        font-family: "Aller";
+        padding: 10px;
+        padding-left: 15px;
+        border-bottom: 2px solid #CAC8C8;
+        margin-bottom: 0px;
+        transition: opacity 0.2s ease 0s;
+        opacity: 1.0;
+        &:hover {
+          opacity: 0.5;
+        }
       }
-
-      &:hover, &:active {
-        background-color: #F0F0F0;
-        color: #003366;
+      ul {
+        li {
+          margin-top: 0px;
+          a {
+            margin: 0px;
+            background: #F8F8F8;
+            color: #737373;
+            font-family: "Aller";
+            font-weight: 900;
+            border-left: 0px;
+            margin-right: 0px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+          }
+        }
       }
     }
   }
