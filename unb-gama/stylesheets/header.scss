@@ -202,8 +202,9 @@
               display: block;
               border-radius: 4px;
               width: 108px;
-              height: 20px;
-              padding: 3px;
+              height: 25px;
+              border: none;
+              padding: 3px 10px;
 
               &::-webkit-input-placeholder,
               &:-moz-placeholder,
