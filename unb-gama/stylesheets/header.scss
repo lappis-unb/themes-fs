@@ -189,12 +189,22 @@
           min-width: 240px;
 
           #header-login {
+            > #login-inputs input[type="text"] {
+              width: 230px;
+              margin-bottom: 5px;
+            }
+
+            >#login-inputs input[type="password"] {
+              width: 230px;
+            }
+
             > #login-inputs input {
-              display: inline;
+              display: block;
               border-radius: 4px;
               width: 108px;
-              height: 20px;
-              padding: 3px;
+              height: 25px;
+              border: none;
+              padding: 3px 10px;
 
               &::-webkit-input-placeholder,
               &:-moz-placeholder,
@@ -308,3 +318,4 @@
     }
   }
 }
+
