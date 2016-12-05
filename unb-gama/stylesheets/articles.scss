@@ -33,13 +33,13 @@
   #article-actions, .profile-info-options ul li, #public-profile-search, .my-network-actions ul li {
     > a.button, input.button, a.icon-, a.icon-no-icon, div a.button {
       overflow: hidden;
-      margin: 3px;
       display: inline-block;
       border: solid 1px #005263;
       color: #005263;
       text-align: center;
       position: relative;
       transition: background 0.1s ease-in-out;
+      padding-left: 20px;
 
       &:hover {
         background: #005263;

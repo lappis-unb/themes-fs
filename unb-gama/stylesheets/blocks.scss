@@ -1,19 +1,18 @@
 #content div.blocks {
   div.block {
     .block-title {
-      border: none;
-      font-size: 14px;
-      font-variant: normal;
-      padding: 0px 0px 10px 0px;
-
-      span {
-        border-bottom: 2px solid #005263;
-        line-height: 26px;
-        display: block;
-
-        &.control-panel-title, &.control-panel-sep {
-          display: none;
-        }
+      background: #005263;
+      color: #FCFAFA;
+      text-transform: uppercase;
+      font-family: "Aller";
+      padding: 10px;
+      padding-left: 15px;
+      border-bottom: 2px solid #CAC8C8;
+      margin-bottom: 0px;
+      transition: opacity 0.2s ease 0s;
+      opacity: 1.0;
+      &:hover {
+        opacity: 0.5;
       }
     }
   }
@@ -167,39 +166,7 @@
     }
   }
   .block-outer {
-    .block.my-network-block, .block.recent-documents-block, .block.raw-html-block, .block.members-block {
-      .block-title {
-        background: #005263;
-        color: #FCFAFA;
-        text-transform: uppercase;
-        font-family: "Aller";
-        padding: 10px;
-        padding-left: 15px;
-        border-bottom: 2px solid #CAC8C8;
-        margin-bottom: 0px;
-        transition: opacity 0.2s ease 0s;
-        opacity: 1.0;
-        &:hover {
-          opacity: 0.5;
-        }
-      }
-    }
     .block.link-list-block{
-      .block-title {
-        background: #005263;
-        color: #FCFAFA;
-        text-transform: uppercase;
-        font-family: "Aller";
-        padding: 10px;
-        padding-left: 15px;
-        border-bottom: 2px solid #CAC8C8;
-        margin-bottom: 0px;
-        transition: opacity 0.2s ease 0s;
-        opacity: 1.0;
-        &:hover {
-          opacity: 0.5;
-        }
-      }
       ul {
         li {
           margin-top: 0px;
@@ -391,4 +358,27 @@
 .block-config-options {
   padding: 0 10px 0;
   margin: 0 20px 0;
+}
+
+#article-suggestion {
+  .suggest-article-icon:before {
+    content: "\f1ea";
+    color: #21BA57;
+    font: normal normal normal 15px FontAwesome;
+    margin-right: 10px;
+  }
+  background: #005263;
+  padding: 15px;
+  transition: opacity 0.2s ease 0s;
+  opacity: 1.0;
+  &:hover {
+    opacity: 0.5;
+  }
+  color: white;
+  font-family: "Aller";
+  font-weight: 900;
+  font-size: 14px;
+  text-decoration: none;
+  display: block;
+  text-transform: uppercase;
 }
