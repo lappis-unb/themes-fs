@@ -167,7 +167,24 @@
     }
   }
   .block-outer {
-    .block.link-list-block, .block.recent-documents-block {
+    .block.my-network-block, .block.recent-documents-block, .block.raw-html-block, .block.members-block {
+      .block-title {
+        background: #005263;
+        color: #FCFAFA;
+        text-transform: uppercase;
+        font-family: "Aller";
+        padding: 10px;
+        padding-left: 15px;
+        border-bottom: 2px solid #CAC8C8;
+        margin-bottom: 0px;
+        transition: opacity 0.2s ease 0s;
+        opacity: 1.0;
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+    .block.link-list-block{
       .block-title {
         background: #005263;
         color: #FCFAFA;
