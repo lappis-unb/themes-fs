@@ -2,18 +2,19 @@
   position: static;
   margin: auto;
   color: #FFF;
-  font-size: 13px;
   background: #005263;
-  text-align: center;
-  border-bottom: 5px solid #bbb;
-  height: 65px;
+  box-shadow: 0px 3px 2px #999;
+  height: 45px;
 
   > ul {
     float: none;
-    width: 100%;
-    padding: 0px;
-    white-space: nowrap;
-    font-size: 15px;
+    margin: 0 auto;
+    width: 1020px;
+    height: 100%;
+    padding: 0;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
 
     a {
       color: #FFF;
@@ -25,45 +26,31 @@
       }
     }
 
-    #home-button {
-      display: inline-flex;
-      margin-right: 80px;
-
-      span {
-        padding: 0 5px 0 0;
-        color: #00D869;
-      }
-    }
-
     li {
-      padding-bottom: 10px;
-      display: inline-block;
+      display: inline-flex;
       float: none;
       width: auto;
-      margin-right: 30px;
+      height: 100%;
 
       .list-title {
         text-transform: UPPERCASE;
       }
 
       a {
-        font-size: 13px;
+        font-size: 11px;
         line-height: normal;
-        text-align: left;
         white-space: nowrap;
       }
-
 
       ul.navigation-dropdown-list {
         height: auto;
         position: absolute;
         display: none;
-        padding: 5px 0px;
+        padding: 2px 4px 4px;
         top: 100%;
         background: #00814D;
-        min-width: 200px;
-        border-radius: 5px;
-        border: 0px;
+        min-width: 170px;
+        border-radius: 3px;
         z-index: 1;
 
         &.arrow_box:after {
@@ -83,21 +70,18 @@
 
         li {
           display: block;
-          margin: 2px 0px 2px 0px;
+          margin-top: 3px;
           background: #009B37;
           padding-bottom: 0px;
-          margin-left: 5px;
-          margin-right: 5px;
-          border-radius: 5px;
+          border-radius: 2px;
 
           a {
-            padding-top: 10px;
-            padding-bottom: 10px;
-            padding-left: 10px;
+            padding-top: 7px;
+            padding-bottom: 7px;
             color: white;
 
             &:hover {
-              font-weight: bold;
+              text-decoration: underline;
             }
           }
         }
@@ -105,8 +89,8 @@
 
       .dropdown-arrow {
         display: inline-flex;
-        margin-top: 15px;
-        padding: 10px;
+        margin: 6px 0 10px;
+        padding: 11px 11px 20px;
 
         a {
           margin-right: 5px;
@@ -124,7 +108,7 @@
 
         .dropdown-arrow {
           background: #009B37;
-          border-radius: 5px;
+          border-radius: 3px;
           box-shadow: 0 3px 0 #00814D;
         }
       }
