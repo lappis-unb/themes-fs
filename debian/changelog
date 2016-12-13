@@ -1,3 +1,11 @@
+unb-gama (1.0.1) unstable; urgency=medium
+
+  [ Gabriel ]
+  * Improves theme header
+  * Bug fixes
+
+ -- Gabriel Silva <gabriel93.silva@gmail.com>  Mon, 05 Dec 2016 18:23:50 +0000
+
 unb-gama (1.0.0) unstable; urgency=medium
 
   [ paulo ]
