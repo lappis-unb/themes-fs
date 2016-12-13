@@ -8,5 +8,5 @@ Homepage: https://gitlab.com/unb-gama/themes
 
 Package: portal-unb-theme
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, noosfero (>>1.5)
+Depends: ${shlibs:Depends}, ${misc:Depends}, noosfero (>>1.6)
 Description: Portal FGA theme for the Noosfero platform

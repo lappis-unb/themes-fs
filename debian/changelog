@@ -1,3 +1,13 @@
+unb-gama (1.0.2) unstable; urgency=medium
+
+  [ Paulo ]
+  * Carousel resize
+  * Transform HTML raw blocks into link blocks
+  * Header community image resize
+  * Fix profile image shape
+
+ -- Paulo Tada <paulohtfs@gmail.com>  Tue, 13 Dec 2016 12:03:20 -0200
+
 unb-gama (1.0.1) unstable; urgency=medium
 
   [ Gabriel ]
