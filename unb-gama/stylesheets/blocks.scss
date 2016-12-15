@@ -236,15 +236,14 @@
   border-bottom: 0px;
 }
 
+.highlights-container {
+  margin-top: 12px;
+}
+
 #content .block.highlights-block {
   height: 277px;
-  width: 95%;
-  border: 0;
+  width: 100%;
   background: transparent;
-  border-radius: 0;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  margin-left: 10px;
   z-index: 0;
 
   .highlights-image-link {
@@ -255,8 +254,8 @@
     background: #fff;
   }
 
-  .highlights-container,
-  .highlights-image-link {
+  .highlights-container {
+    width: 100% !important;
     height: 275px !important;
     border:none;
     position: absolute;
@@ -266,6 +265,8 @@
   .highlights-block-pager {
     width: 100%;
     margin-top: 295px;
+    padding: 0;
+    margin-bottom: 20px;
 
     a {
       height: 17px;

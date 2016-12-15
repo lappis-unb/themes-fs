@@ -65,9 +65,13 @@ body {
   }
 }
 
-.block.main-block {
+#content .box.box-1 {
+  margin-left: 220px;
+}
+
+#content .block.main-block {
   width: auto;
-  margin: 0px 20px !important;
+  margin: 0;
 }
 
 .main-content {
@@ -130,11 +134,6 @@ body {
   padding-top: 0px;
 }
 
-.highlights-container {
-  margin-top: 12px;
-  width: 979px !important;
-}
-
 .block.main-block > div {
   margin-top: 5px;
 }
@@ -172,10 +171,6 @@ body {
 
 .blog-post {
   background: none;
-}
-
-#box-3 > div:nth-child(1) > div:nth-child(1) {
-  margin-left: -1%;
 }
 
 .profile-homepage {
