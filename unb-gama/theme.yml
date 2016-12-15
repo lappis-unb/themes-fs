@@ -1,4 +1,4 @@
 name: "New-UnB-Gama"
 layout: "application-ng"
 jquery_theme: "smoothness"
-icon_theme: [flaticons]
+icon_theme: [awesome]
