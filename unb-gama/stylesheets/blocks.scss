@@ -1,26 +1,27 @@
 #content div.blocks {
+  %block-title {
+    background: #005263;
+    color: #FCFAFA;
+    text-transform: uppercase;
+    padding: 10px;
+    padding-left: 15px;
+    border-bottom: 2px solid #CAC8C8;
+    margin-bottom: 0px;
+    opacity: 1.0;
+  }
+
   div.block {
     .block-title {
-      background: #005263;
-      color: #FCFAFA;
-      text-transform: uppercase;
-      font-family: "Aller";
-      padding: 10px;
-      padding-left: 15px;
-      border-bottom: 2px solid #CAC8C8;
-      margin-bottom: 0px;
-      transition: opacity 0.2s ease 0s;
-      opacity: 1.0;
-      &:hover {
-        opacity: 0.5;
-      }
+      @extend %block-title;
     }
   }
 
   .main-block {
     .main-content {
       h1 {
-        color: #005263;
+        @extend %block-title;
+        margin-top: 0;
+        font-size: 14px;
       }
     }
 
