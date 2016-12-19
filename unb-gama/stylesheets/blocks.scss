@@ -1,28 +1,27 @@
 #content div.blocks {
+  %block-title {
+    background: #005263;
+    color: #FCFAFA;
+    text-transform: uppercase;
+    padding: 10px;
+    padding-left: 15px;
+    border-bottom: 2px solid #CAC8C8;
+    margin-bottom: 0px;
+    opacity: 1.0;
+  }
+
   div.block {
     .block-title {
-      border: none;
-      font-size: 14px;
-      font-variant: normal;
-      padding: 0px 0px 10px 0px;
-
-      span {
-        border-bottom: 2px solid #005263;
-        color: #005263;
-        line-height: 26px;
-        display: block;
-
-        &.control-panel-title, &.control-panel-sep {
-          display: none;
-        }
-      }
+      @extend %block-title;
     }
   }
 
   .main-block {
     .main-content {
-      h1 {
-        color: #005263;
+      > h1 {
+        @extend %block-title;
+        margin-top: 0;
+        font-size: 14px;
       }
     }
 
@@ -75,26 +74,114 @@
   .block.link-list-block {
     padding: 0;
 
-     ul > li a {
-      width: 170px;
-      margin: 3px;
-      padding: 2px 1px 2px 2px;
-      border-radius: 0px;
-      border-left: 5px solid #B4BDBE;
-      background-color: #FCFCFC;
-      box-shadow: 0 1px 2px 0 #D2D2D2;
-
-      &.link-this-page {
-        background: #005263;
-        width: 170px;
-        color: white;
-        margin: 3px;
-        border-right: none;
+    ul > li {
+      // direcao
+      .fa-child:before, .icon-menu-people:before, .icon-person:before {
+        color: #21BA57;
+        margin-right: 5px;
+        content: "\f0b1";
       }
 
-      &:hover, &:active {
-        background-color: #F0F0F0;
-        color: #003366;
+      // guia universitario
+      .fa-eye:before, .icon-eyes:before {
+        color: #21BA57;
+        margin-right: 5px;
+        content: "\f19d";
+      }
+
+      // aeroespacial
+      .fa-send-o:before, .icon-send:before, .fa-paper-plane-o:before {
+        color: #21BA57;
+        content: "\f197";
+        margin-right: 5px;
+      }
+
+      // guia fga
+      .fa-th-list:before, .icon-todo:before {
+        color: #21BA57;
+        content: "\f02d";
+        margin-right: 5px;
+      }
+
+      // coordenacao
+      .fa-search:before, .icon-menu-search:before, .icon-search:before {
+        color: #21BA57;
+        content: "\f19c";
+        margin-right: 5px;
+      }
+
+      // automotiva
+      .fa-gift:before, .icon-menu-product:before, .icon-product:before {
+        color: #21BA57;
+        margin-right: 5px;
+        content: "\f1b9";
+      }
+
+      // eletronica
+      .fa-home:before, .icon-home:before, .icon-content-enterprise-homepage:before, .icon-menu-home:before {
+        color: #21BA57;
+        content: "\f0eb";
+        margin-right: 5px;
+      }
+
+      // energia
+      .fa-comments:before, .icon-chat:before, .icon-forum:before, .icon-content-forum:before, .icon-newforum:before {
+        color: #21BA57;
+        content: "\f0e7";
+        margin-right: 5px;
+      }
+
+      // software
+      .fa-photo:before, .fa-image:before, .fa-picture-o:before, .icon-gallery:before, .icon-newgallery:before, .icon-photos:before, .image-gallery-item.gallery:before {
+        color: #21BA57;
+        margin-right: 5px;
+        content: "\f109";
+      }
+
+       a {
+        border-radius: 0px;
+        border-left: 5px solid #B4BDBE;
+        background-color: #FCFCFC;
+        position: relative;
+        transition: opacity 0.2s ease 0s;
+        opacity: 1.0;
+        box-shadow: 0px 1px 1px 0px #D2D2D2;
+
+        &:hover {
+          opacity: 0.5;
+        }
+
+        &.link-this-page {
+          background: #005263;
+          color: white;
+          margin: 3px;
+          border-right: none;
+        }
+
+        &:hover, &:active {
+          background-color: #F0F0F0;
+          color: #003366;
+        }
+      }
+    }
+  }
+  .block-outer {
+    .block.link-list-block{
+      ul {
+        li {
+          margin-top: 0px;
+          a {
+            margin: 0px;
+            background: #F8F8F8;
+            color: #737373;
+            font-family: "Aller";
+            font-weight: 900;
+            border-left: 0px;
+            margin-right: 0px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+          }
+        }
       }
     }
   }
@@ -130,7 +217,6 @@
     color: white;
     padding-top: 10px !important;
     padding-left: 10px !important;
-    border-left: 15px solid #ccc;
     color: white !important;
   }
 
@@ -138,7 +224,7 @@
     display: inline-flex;
     align-items: center;
     border-radius: 100%;
-    box-shadow: 1px 2px 2px 0 #D2D2D2
+    box-shadow: 1px 2px 2px 0 #D2D2D2;
   }
 }
 
@@ -149,15 +235,14 @@
   border-bottom: 0px;
 }
 
+.highlights-container {
+  margin-top: 12px;
+}
+
 #content .block.highlights-block {
   height: 277px;
-  width: 95%;
-  border: 0;
+  width: 100%;
   background: transparent;
-  border-radius: 0;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  margin-left: 10px;
   z-index: 0;
 
   .highlights-image-link {
@@ -168,8 +253,8 @@
     background: #fff;
   }
 
-  .highlights-container,
-  .highlights-image-link {
+  .highlights-container {
+    width: 100% !important;
     height: 275px !important;
     border:none;
     position: absolute;
@@ -179,6 +264,8 @@
   .highlights-block-pager {
     width: 100%;
     margin-top: 295px;
+    padding: 0;
+    margin-bottom: 20px;
 
     a {
       height: 17px;
@@ -271,4 +358,27 @@
 .block-config-options {
   padding: 0 10px 0;
   margin: 0 20px 0;
+}
+
+#article-suggestion {
+  .suggest-article-icon:before {
+    content: "\f1ea";
+    color: #21BA57;
+    font: normal normal normal 15px FontAwesome;
+    margin-right: 10px;
+  }
+  background: #005263;
+  padding: 15px;
+  transition: opacity 0.2s ease 0s;
+  opacity: 1.0;
+  &:hover {
+    opacity: 0.5;
+  }
+  color: white;
+  font-family: "Aller";
+  font-weight: 900;
+  font-size: 14px;
+  text-decoration: none;
+  display: block;
+  text-transform: uppercase;
 }
