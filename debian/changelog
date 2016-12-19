@@ -1,3 +1,13 @@
+unb-gama (1.0.3) unstable; urgency=medium
+
+  [ Gabriel ]
+  * Updates link list block style
+  * Improves boxes positioning
+  * Navigation improvements for small screens
+  * Bug fixes
+
+ -- Gabriel Silva <gabriel93.silva@gmail.com>  Mon, 19 Dec 2016 16:09:07 +0000
+
 unb-gama (1.0.2) unstable; urgency=medium
 
   [ Paulo ]
