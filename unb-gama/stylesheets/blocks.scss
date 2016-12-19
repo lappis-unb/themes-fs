@@ -18,7 +18,7 @@
 
   .main-block {
     .main-content {
-      h1 {
+      > h1 {
         @extend %block-title;
         margin-top: 0;
         font-size: 14px;
@@ -74,96 +74,95 @@
   .block.link-list-block {
     padding: 0;
 
-     ul > li {
+    ul > li {
+      // direcao
+      .fa-child:before, .icon-menu-people:before, .icon-person:before {
+        color: #21BA57;
+        margin-right: 5px;
+        content: "\f0b1";
+      }
 
-       // direcao
-       .fa-child:before, .icon-menu-people:before, .icon-person:before {
-         color: #21BA57;
-         margin-right: 5px;
-         content: "\f0b1";
-       }
+      // guia universitario
+      .fa-eye:before, .icon-eyes:before {
+        color: #21BA57;
+        margin-right: 5px;
+        content: "\f19d";
+      }
 
+      // aeroespacial
+      .fa-send-o:before, .icon-send:before, .fa-paper-plane-o:before {
+        color: #21BA57;
+        content: "\f197";
+        margin-right: 5px;
+      }
 
-       // guia universitario
-       .fa-eye:before, .icon-eyes:before {
-         color: #21BA57;
-         margin-right: 5px;
-         content: "\f19d";
-       }
+      // guia fga
+      .fa-th-list:before, .icon-todo:before {
+        color: #21BA57;
+        content: "\f02d";
+        margin-right: 5px;
+      }
 
-       // aeroespacial
-       .fa-send-o:before, .icon-send:before, .fa-paper-plane-o:before {
-         color: #21BA57;
-         content: "\f197";
-         margin-right: 5px;
-       }
+      // coordenacao
+      .fa-search:before, .icon-menu-search:before, .icon-search:before {
+        color: #21BA57;
+        content: "\f19c";
+        margin-right: 5px;
+      }
 
-       // guia fga
-       .fa-th-list:before, .icon-todo:before {
-         color: #21BA57;
-         content: "\f02d";
-         margin-right: 5px;
-       }
+      // automotiva
+      .fa-gift:before, .icon-menu-product:before, .icon-product:before {
+        color: #21BA57;
+        margin-right: 5px;
+        content: "\f1b9";
+      }
 
-       // coordenacao
-       .fa-search:before, .icon-menu-search:before, .icon-search:before {
-         color: #21BA57;
-         content: "\f19c";
-         margin-right: 5px;
-       }
+      // eletronica
+      .fa-home:before, .icon-home:before, .icon-content-enterprise-homepage:before, .icon-menu-home:before {
+        color: #21BA57;
+        content: "\f0eb";
+        margin-right: 5px;
+      }
 
-       // automotiva
-       .fa-gift:before, .icon-menu-product:before, .icon-product:before {
-         color: #21BA57;
-         margin-right: 5px;
-         content: "\f1b9";
-       }
+      // energia
+      .fa-comments:before, .icon-chat:before, .icon-forum:before, .icon-content-forum:before, .icon-newforum:before {
+        color: #21BA57;
+        content: "\f0e7";
+        margin-right: 5px;
+      }
 
-       // eletronica
-       .fa-home:before, .icon-home:before, .icon-content-enterprise-homepage:before, .icon-menu-home:before {
-         color: #21BA57;
-         content: "\f0eb";
-         margin-right: 5px;
-       }
-
-       // energia
-       .fa-comments:before, .icon-chat:before, .icon-forum:before, .icon-content-forum:before, .icon-newforum:before {
-         color: #21BA57;
-         content: "\f0e7";
-         margin-right: 5px;
-       }
-
-       // software
-       .fa-photo:before, .fa-image:before, .fa-picture-o:before, .icon-gallery:before, .icon-newgallery:before, .icon-photos:before, .image-gallery-item.gallery:before {
-         color: #21BA57;
-         margin-right: 5px;
-         content: "\f109";
-       }
+      // software
+      .fa-photo:before, .fa-image:before, .fa-picture-o:before, .icon-gallery:before, .icon-newgallery:before, .icon-photos:before, .image-gallery-item.gallery:before {
+        color: #21BA57;
+        margin-right: 5px;
+        content: "\f109";
+      }
 
        a {
-         border-radius: 0px;
-         border-left: 5px solid #B4BDBE;
-         background-color: #FCFCFC;
-         position: relative;
-         transition: opacity 0.2s ease 0s;
-         opacity: 1.0;
-         &:hover {
-           opacity: 0.5;
-         }
+        border-radius: 0px;
+        border-left: 5px solid #B4BDBE;
+        background-color: #FCFCFC;
+        position: relative;
+        transition: opacity 0.2s ease 0s;
+        opacity: 1.0;
+        box-shadow: 0px 1px 1px 0px #D2D2D2;
 
-         &.link-this-page {
-           background: #005263;
-           width: 170px;
-           color: white;
-           margin: 3px;
-           border-right: none;
-         }
+        &:hover {
+          opacity: 0.5;
+        }
 
-         &:hover, &:active {
-           background-color: #F0F0F0;
-           color: #003366;
-         }
-       }
+        &.link-this-page {
+          background: #005263;
+          color: white;
+          margin: 3px;
+          border-right: none;
+        }
+
+        &:hover, &:active {
+          background-color: #F0F0F0;
+          color: #003366;
+        }
+      }
     }
   }
   .block-outer {
@@ -218,7 +217,6 @@
     color: white;
     padding-top: 10px !important;
     padding-left: 10px !important;
-    border-left: 15px solid #ccc;
     color: white !important;
   }
 
@@ -226,7 +224,7 @@
     display: inline-flex;
     align-items: center;
     border-radius: 100%;
-    box-shadow: 1px 2px 2px 0 #D2D2D2
+    box-shadow: 1px 2px 2px 0 #D2D2D2;
   }
 }
 

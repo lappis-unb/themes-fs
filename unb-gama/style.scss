@@ -65,8 +65,10 @@ body {
   }
 }
 
-#content .box.box-1 {
-  margin-left: 220px;
+.action-home-index {
+  #content .box.box-1 {
+    margin-left: 220px;
+  }
 }
 
 #content .block.main-block {
@@ -94,11 +96,13 @@ body {
   font-weight: bold;
   background-color: #EFEFEF;
   border-left: 10px solid #008E32;
-  padding-left: 15px;
   height: 45px;
   line-height: 300%;
   color: #aaa;
   border-bottom: 0px;
+  text-transform: none;
+  padding: 0 0 14px 15px;
+  margin-bottom: 10px;
 }
 
 /* Header */
