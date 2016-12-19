@@ -138,3 +138,16 @@
 #content #not-found p {
   text-align: center;
 }
+
+@media screen and (max-width: 1180px) {
+  #navigation > ul > li:last-child > ul:last-child {
+    left: initial;
+    right: 0%;
+
+    &.arrow_box:after {
+      left: initial;
+      right: 10%;
+    }
+  }
+}
+
