@@ -23,12 +23,10 @@
   #signup-form-header {
     margin: 0px auto 5px;
   
-    .formlabel {
-      margin-top: 10px;
-      font-size: 17px;
-      font-weight: bold;
+    p {
+      display: none;
     }
-    
+
     input {
       @extend %form-input-style;
       height: 15px;
@@ -42,6 +40,18 @@
       padding: 0px;
       font-size: 18px;
     }
+  }
+
+  .formlabel {
+    margin-top: 10px;
+    font-size: 17px;
+    font-weight: bold;
+  }
+
+  textarea {
+    @extend %form-input-style;
+    font-size: 47px;
+    width: 97%;
   }
 
   #template-options {
