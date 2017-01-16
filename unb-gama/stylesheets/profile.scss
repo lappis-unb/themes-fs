@@ -157,11 +157,12 @@ label[for=profile_data_description] {
 }
 
 #profile-header > div > a > img {
-  width: 977px;
+  width: 100%;
   margin-left: 0px !important;
 }
 
 #profile-header {
-  padding-bottom: 75px;
+  max-height: none;
+  margin-bottom: 10px;
 }
 
