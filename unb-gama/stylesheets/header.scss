@@ -1,5 +1,4 @@
 #theme-header {
-  width: 1000px;
   margin: 0 auto;
   height: auto;
 
@@ -7,6 +6,7 @@
     z-index: 10;
     height: 100px;
     position: relative;
+    margin: 0 175.500px 0 175.500px;
 
     #portal-logo {
       background: url(images/unb_fga_logo.png) no-repeat center/100%;
@@ -316,4 +316,3 @@
     }
   }
 }
-
