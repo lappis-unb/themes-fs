@@ -1,3 +1,11 @@
+unb-gama (1.0.5) unstable; urgency=medium
+
+  [ Tallys ]
+  * Adds CPL lab link
+  * Fixes redirection of Engrena's link
+
+ -- Tallys Martins <tallysmartins@gmail.com>  Thu, 09 Mar 2017 18:12:54 +0000
+
 unb-gama (1.0.3) unstable; urgency=medium
 
   [ Gabriel ]
