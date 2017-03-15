@@ -5,7 +5,7 @@
 .action-account-signup #content-inner .main-content h1 {
   font-variant: normal;
   background: #005263;
-  border-left: 15px solid #ccc;
+  border-left: 15px solid #009b37;
   color: white;
   border-bottom: none;
   padding: 10px;
@@ -18,11 +18,12 @@
 }
 
 #content #signup-form {
-  width: 100%;
+  width: 60%;
+  margin: 0px 200px 0px 200px;
 
   #signup-form-header {
     margin: 0px auto 5px;
-  
+
     p {
       display: none;
     }
@@ -30,16 +31,20 @@
     input {
       @extend %form-input-style;
       height: 15px;
-      font-size: 17px;
+      font-size: 16px;
     }
-  
+
     #signup-domain {
       min-width: 79px;
       border: none;
       background: none;
       padding: 0px;
-      font-size: 18px;
+      font-size: 16px;
     }
+  }
+
+  .formlabel[for="user_email"] {
+    text-transform: capitalize;
   }
 
   .formlabel {
@@ -59,28 +64,28 @@
       margin-left: 0px !important;
       padding-left: 0px !important;
     }
-  
+
     > ul li {
       label {
         font-size: 17px;
       }
-  
+
       a {
         text-decoration: none;
       }
-  
+
       &:hover {
-      text-decoration: underline;
+        text-decoration: underline;
       }
     }
   }
 
   #terms-of-use-box {
     margin: 0;
-  
+
     > label > a {
       color: #005263;
-    } 
+    }
 
     input[type='checkbox'] {
       height: auto;
@@ -91,9 +96,68 @@
     background: #005263;
     padding: 5px 10px 5px 10px;
     width: 100%;
-  
+    margin-left: 0px;
     &:hover {
       text-decoration: underline;
     }
-  }  
+  }
+}
+
+.action-account-signup #content #signup-form textarea {
+  font-size: 16px;
+  width: 90%;
+}
+
+
+#content #signup-form .formlabel {
+  font-weight: 400;
+}
+
+#content #signup-form #signup-form-header input, #content #signup-form textarea, .formfield input, .formfield textarea, #comment_body {
+  border: 1px solid #999;
+  outline: none;
+}
+
+#content #signup-form .required-field #user_login:focus {
+  border: none;
+  border-bottom: 1px solid #999;
+}
+
+#content #signup-form .required-field #user_login {
+  border: none;
+  border-bottom: 1px solid #999;
+  background: none;
+}
+
+.no-boxes {
+  margin: 20px;
+}
+
+.controller-account .no-boxes {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+#signup-form .filled-in, #signup-form .invalid, #signup-form input.validated, #signup-form .checking {
+  box-shadow: none;
+}
+
+#signup-form input.invalid_input {
+  box-shadow: none;
+}
+
+#signup-form small#signup-balloon, #signup-form small#password-balloon, #signup-form small#password-confirmation-balloon, #signup-form small#email-balloon, #signup-form small#name-balloon {
+  display: none !important;
+}
+
+#signup-form select, #signup-form textarea, #signup-form input {
+  padding: 7px 6.5% 10px 3%;
+}
+
+#signup-form .filled-in, #signup-form .invalid, #signup-form input.validated, #signup-form .checking {
+  padding: 7px 6.5% 10px 3%;
+}
+
+#signup-form #signup-form-header #user_login {
+  width: 475px;
 }
