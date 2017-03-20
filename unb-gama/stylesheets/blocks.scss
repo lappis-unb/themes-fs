@@ -387,3 +387,13 @@
   display: block;
   text-align: center;
 }
+
+#block-229 .block-inner-2 {
+  overflow: auto;
+  height: 300px;
+}
+
+#block-229 .block-title,
+.block-footer-content {
+  display:none;
+}
