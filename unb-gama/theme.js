@@ -11,6 +11,9 @@
     brazilBarConteinerDiv.appendChild(scriptElement);
   }
 
+  function addSignupAlertMessage() {
+    $("form#signup-form").prepend("<div class='signup-alert-message'> Após se cadastrar é necessário aguardar a ativação da conta pelo administrador. </div>");
+  }
 
   // Profile dropdown menu events
   function profileDropDownActions() {
@@ -42,6 +45,6 @@
     profileDropDownActions();
     putSearchInputAtTop();
     loadBrazilBar();
+    addSignupAlertMessage();
   });
 }) (jQuery);
-
