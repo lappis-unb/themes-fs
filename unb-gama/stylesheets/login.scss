@@ -1,0 +1,39 @@
+.login-box {
+  width: 50%;
+  margin: auto;
+}
+
+.login-box .formfieldline input {
+  width: 99.5%;
+  height: 28px;
+  font-size: 16px;
+  text-indent: 10px;
+}
+
+.formlabel {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+#content form input.button.submit {
+  max-height: none;
+  height: 34px;
+  width: 100%;
+  font-size: 15px;
+  background-color: #005263;
+  color: white;
+  margin-left: 0px;
+}
+
+#content input.button.with-text, #content a.button.with-text {
+  margin-left: 0px;
+  margin-right: 10px;
+}
+
+.login-box form .checkbox {
+  margin: 3px 0;
+}
+
+.login-box .button-bar {
+  margin-bottom: 0px;
+}
