@@ -17,6 +17,15 @@
   box-shadow: 0 3px 2px 0 #D2D2D2;
 }
 
+#email-check,
+#fake-check,
+#password-rate,
+#password-check {
+  margin: 1px 0px -10px 13px;
+  text-align: right;
+  clear: both;
+}
+
 #content #signup-form {
   width: 60%;
   margin: 0px 200px 0px 200px;
@@ -24,8 +33,8 @@
   #signup-form-header {
     margin: 0px auto 5px;
 
-    p {
-      display: none;
+    p:first-letter {
+      text-transform: uppercase;
     }
 
     input {
