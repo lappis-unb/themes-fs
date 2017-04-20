@@ -70,10 +70,10 @@
 
         #profile-button {
           width: 125px;
-          background-color: #009B37;
+          background-color: $success-fs;
           height: 33px;
           border-radius: 6px;
-          border-bottom: 4px solid #146543;
+          border-bottom: 4px solid $login-button-border;
           cursor: pointer;
           text-align: center;
 
@@ -285,7 +285,7 @@
             margin: 0;
 
             li {
-              background: #009B37;
+              background: $success-fs;
               padding-bottom: 0px;
               min-width: 190px;
               border-radius: 5px;

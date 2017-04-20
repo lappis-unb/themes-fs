@@ -7,7 +7,7 @@
     margin-bottom:15px;
 
     a {
-      color: #005263;
+      color: $primary-fs;
     }
   }
 
@@ -34,15 +34,15 @@
     > a.button, input.button, a.icon-, a.icon-no-icon, div a.button {
       overflow: hidden;
       display: inline-block;
-      border: solid 1px #005263;
-      color: #005263;
+      border: solid 1px $primary-fs;
+      color: $primary-fs;
       text-align: center;
       position: relative;
       transition: background 0.1s ease-in-out;
       padding-left: 20px;
 
       &:hover {
-        background: #005263;
+        background: $primary-fs;
         color: white;
       }
 
@@ -64,12 +64,12 @@
 
     .button.icon-back.with-text {
       padding: 0;
-      color: #005263;
+      color: $primary-fs;
       border: none;
       background: none;
       font-style: normal;
       padding-left: 3px;
-    
+
       &::before {
         color: white;
         background: #008e32;
@@ -78,9 +78,9 @@
         font-size: 10px;
         margin-right: 5px;
       }
-      
+
       &:hover {
-        color: #005263;
+        color: $primary-fs;
         text-decoration: underline;
       }
     }
@@ -91,7 +91,7 @@
       padding: 0 3px;
 
       h1.title {
-        color: #005263;
+        color: $primary-fs;
         font-weight: bold;
       }
 
@@ -99,7 +99,7 @@
         padding: 4px 1px 4px 3px;
 
         &:hover {
-          background: #005263;
+          background: $primary-fs;
         }
       }
     }

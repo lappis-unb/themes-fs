@@ -1,5 +1,5 @@
 #theme-footer {
-  background: #EFEFEF;
+  background: $footer-background;
   width: auto;
   margin: -5px 0px;
   position: relative;
@@ -7,7 +7,7 @@
   overflow: hidden;
 
   #footer-content {
-    background: #EFEFEF;
+    background: $footer-background;
     margin: -5px auto;
     padding: 30px 0px 20px;
     width: 1000px;

@@ -26,7 +26,7 @@
 }
 
 #new_comment .button-bar > input, #new_comment .button-bar > a {
-  background: #005263;
+  background: $primary-fs;
   margin-right: 10px;
   border-radius: 3px;
   color: white;
@@ -38,7 +38,7 @@
 
 #new_comment .button-bar > input:hover, #new_comment .button-bar > a:hover {
   text-decoration: underline;
-  background: #005263;
+  background: $primary-fs;
   border: none;
   border-radius: 3px !important;
 }
@@ -52,7 +52,7 @@
 }
 
 #page-comment-form > div > div.post_comment_box.closed > a {
-  background: #005263;
+  background: $primary-fs;
   font-weight: normal;
   color: white;
   border: none;

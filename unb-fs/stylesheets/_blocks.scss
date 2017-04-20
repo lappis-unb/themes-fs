@@ -1,6 +1,6 @@
 #content div.blocks {
   %block-title {
-    background: #005263;
+    background: $primary-fs;
     color: #FCFAFA;
     text-transform: uppercase;
     padding: 10px;
@@ -157,7 +157,7 @@
         }
 
         &.link-this-page {
-          background: #005263;
+          background: $primary-fs;
           color: white;
           margin: 3px;
           border-right: none;
@@ -177,7 +177,7 @@
           margin-top: 0px;
           a {
             margin: 0px;
-            background: #F8F8F8;
+            background: $link-list-block-background;
             color: #737373;
             font-family: "Aller";
             font-weight: 900;
@@ -194,7 +194,7 @@
 
 .profile-image-block {
   p {
-    color: #005263;
+    color: $primary-fs;
   }
 }
 
@@ -214,7 +214,7 @@
 
   #article-header {
     h1.title {
-      background: #005263;
+      background: $primary-fs;
     }
   }
 
@@ -372,7 +372,7 @@
     font: normal normal normal 17px FontAwesome;
     margin-right: 10px;
   }
-  background: #005263;
+  background: $primary-fs;
   padding: 15px;
   transition: opacity 0.2s ease 0s;
   opacity: 1.0;

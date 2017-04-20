@@ -4,8 +4,8 @@
 
 .action-account-signup #content-inner .main-content h1 {
   font-variant: normal;
-  background: #005263;
-  border-left: 15px solid #009b37;
+  background: $primary-fs;
+  border-left: 15px solid $success-fs;
   color: white;
   border-bottom: none;
   padding: 10px;
@@ -84,7 +84,7 @@
     margin: 0;
 
     > label > a {
-      color: #005263;
+      color: $primary-fs;
     }
 
     input[type='checkbox'] {
@@ -93,7 +93,7 @@
   }
 
   .submit {
-    background: #005263;
+    background: $primary-fs;
     padding: 5px 10px 5px 10px;
     width: 100%;
     margin-left: 0px;

@@ -2,7 +2,7 @@
   position: static;
   margin: auto;
   color: #FFF;
-  background: #005263;
+  background: $primary-fs;
   box-shadow: 0px 3px 2px #999;
   height: 45px;
 
@@ -49,7 +49,7 @@
         padding: 2px 4px 4px;
         top: 100%;
         left: 0%;
-        background: #00814D;
+        background: $success-darker-fs;
         min-width: 170px;
         border-radius: 3px;
         z-index: 1;
@@ -64,7 +64,7 @@
           position: absolute;
           pointer-events: none;
           border-color: rgba(136, 183, 213, 0);
-          border-bottom-color: #00814D;
+          border-bottom-color: $success-darker-fs;
           border-width: 5px;
           margin-left: -5px;
         }
@@ -72,7 +72,7 @@
         li {
           display: block;
           margin-top: 3px;
-          background: #009B37;
+          background: $success-fs;
           padding-bottom: 0px;
           border-radius: 2px;
 
@@ -108,9 +108,9 @@
         }
 
         .dropdown-arrow {
-          background: #009B37;
+          background: $success-fs;
           border-radius: 3px;
-          box-shadow: 0 3px 0 #00814D;
+          box-shadow: 0 3px 0 $success-darker-fs;
         }
       }
     }

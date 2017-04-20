@@ -8,7 +8,7 @@
     }
 
     .post-title {
-      color: #005263;
+      color: $primary-fs;
       font-size: 16px;
     }
 
@@ -74,11 +74,11 @@
 
     &.even {
       h3 {
-        background: #005263;
+        background: $primary-fs;
       }
 
       a.news-see-more {
-        background: #005263;
+        background: $primary-fs;
       }
     }
 
