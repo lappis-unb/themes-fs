@@ -1,0 +1,70 @@
+<div id="barra-brasil">
+</div>
+
+<div id="header-content">
+
+  <a href="/">
+    <div id="portal-logo" >
+    </div>
+  </a>
+
+  <div id="top-search-wrapper">
+  </div>
+
+  <div id="profile-header-fga">
+    <div id="profile-header-actions">
+      <% if logged_in? %>
+        <div id="profile-menu-dropdown" class="profile-menu-trigger">
+          <%= image_tag(profile_icon(current_person, :portrait)) %>
+          <span class="fa fa-angle-down"></span>
+        </div>
+      <% else %>
+        <div id="profile-button" class="profile-menu-trigger">
+          <a href="#" id="login-button">
+            <span class="fa fa-user"></span>Login
+          </a>
+        </div>
+        <div class="signup-form">
+          <%= link_to "Cadastre-se", :controller => 'account', :action => 'signup' %>
+        </div>
+      <% end %>
+    </div>
+
+    <div id="profile-dropdown">
+      <% if logged_in? %>
+        <div id="profile-logged-in">
+          <span id="user-name"><%= "Olá, %s" % user.name %></span>
+          <ul id="logged-options">
+            <li><%= link_to 'Página de Perfil', "/profile/#{user.identifier}" %></li>
+            <li><%= link_to 'Painel de Controle', "/myprofile/#{user.identifier}" %></li>
+            <% if user.is_admin? %>
+              <li><%= link_to 'Administração',  "/admin" %></li>
+            <% end %>
+            <li><%= link_to 'Sair', "/account/logout" %></li>
+          </ul>
+        </div>
+      <% else %>
+        <div id="profile-logged-out">
+          <form id="header-login" action="/account/login" method="post">
+            <div id="login-inputs">
+              <input name="user[login]" placeholder="<%=_('E-mail ou nome de usuário')%>" type="text" />
+              <input name="user[password]" placeholder="<%=_('Password')%>" type="password" />
+            </div>
+            <div id="header-login-options">
+              <div class="header-login-options-col left">
+                <input type="checkbox" id="remember-me-checkbox" >
+                <div id="remember-me-label">
+                <%= 'Lembrar meus dados' %>
+                </div>
+              </div>
+              <div class="header-login-options-col right">
+                <%= submit_button( 'login', _('Log in')) %>
+                <%= link_to "Esqueci minha senha", {:controller => 'account', :action => 'forgot_password'}, id: 'forgot-password' %>
+              </div>
+            </div>
+          </form>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

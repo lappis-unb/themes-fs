@@ -1,0 +1,4 @@
+name: "UnB-FS"
+layout: "application-ng"
+jquery_theme: "smoothness"
+icon_theme: [awesome]

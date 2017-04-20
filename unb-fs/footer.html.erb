@@ -1,0 +1,80 @@
+<div id="footer-content">
+<ul>
+  <li id="unb-logo">
+    <a href="http://unb.br" target="_blank" id="unb"><span>Universidade de Brasília</span></a>
+  </li>
+  <li id="empty-column">
+   <div>
+    </div>
+  </li>
+  <li id="internal-link">
+    <strong class="footer-division-title">Portal FS</strong>
+    <ul class="footer-list">
+      <li><%= link_to 'Sobre',  "#" %></li>
+      <li><%= link_to 'Graduação',  "#" %></li>
+      <li><%= link_to 'Pós-Graduação',  "#" %></li>
+      <li><%= link_to 'Termos de Uso', "#" %></li>
+      <li><%= link_to 'Contato',  "#" %></li>
+    </ul>
+  </li>
+  <li id="util-links">
+    <strong class="footer-division-title">Links Úteis</strong>
+    <ul>
+      <li ><%= link_to 'Portal UnB',  "http://www.unb.br/" %></li>
+      <li><%= link_to 'MatrículaWeb',  "https://matriculaweb.unb.br/matriculaweb/" %></li>
+      <li><%= link_to 'SAEWeb',  "https://www.saeweb.unb.br/saeWeb/Fronteira/formloginaluno.aspx" %></li>
+      <li><%= link_to 'Moodle UnB',  "http://aprender.unb.br/" %></li>
+      <li><%= link_to 'UnB Doc',  "https://unbdoc.unb.br/" %></li>
+      <li><%= link_to 'Cardápio RU',  "http://www.ru.unb.br/cardapio-ru-unb" %></li>
+    </ul>
+  </li>
+</ul>
+
+<div id='license-on-footer'>
+<a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.pt_BR" id="footer-cc"><span>Licença Creative Commons</span></a>
+Todo o conteúdo e dados do Portal da Faculdade de Ciências da Saúde estão disponíveis sob a licença <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.pt_BR">Creative Commons Atribuição 3.0 Unported (CC BY 3.0)</a>, exceto quando especificado em contrário e nos conteúdos replicados de outras fontes.
+</div>
+<%= language_chooser(environment) %>
+<p id="powered-by-noosfero">Esta rede social utiliza o software livre Noosfero, licenciado pela GNU Affero General Public License, versão 3 ou superior.</p>
+</div><!-- fim id="footer-content" -->
+
+<script type="text/javascript">
+jQuery(document).ready(function(){
+  // Corrige borda duplicada da ultima notica em destaque
+  (function(){
+    var busca = jQuery("#highlighted-news .highlighted-news-item");
+    var nLast = busca.length-1;
+
+    jQuery(busca[nLast]).css("border-bottom", "none");
+  })();
+
+  // Evento da dados do perfil do usuario
+  jQuery("#q").ready(function(){
+    jQuery("#q").val("Busca no perfil...");
+    jQuery("#q").click(function(){
+      jQuery(this).val("");
+    });
+    jQuery("#q").blur(function(){
+      if( jQuery("#q").val().length == 0 ) {
+        jQuery("#q").val("Busca no perfil...");
+      }
+    });
+  });
+
+  // Oculta painel para usuarios nao autorizados
+  (function(){
+    var logado = jQuery("#usuario_logado").val();
+
+    if( logado == "Nao" ) jQuery(".my-network-actions").css("display", "none");
+  })();
+});
+</script>
+
+<% if logged_in? %>
+<input type="hidden" id="usuario_logado" value="Sim">
+<% else %>
+<input type="hidden" id="usuario_logado" value="Nao">
+<% end %>
+</script>
+
+<div id="brazil-bar-goes-here"></div>

@@ -1,0 +1,163 @@
+#content .comment_form .button-bar {
+
+  %base-comment-button-bar {
+    height: 25px;
+    line-height: 25px;
+    border-radius: 3px;
+  }
+
+  a.button.with-text {
+    @extend %base-comment-button-bar;
+  }
+
+  input.button.with-text {
+    @extend %base-comment-button-bar;
+    max-height: 25px;
+    padding: 0 10px 0;
+  }
+
+  #cancel-comment::before {
+      @extend %cancel-button-icon;
+  }
+}
+
+#new_comment .button-bar > input::before {
+  @extend %submit-comment-button-icon;
+}
+
+#new_comment .button-bar > input, #new_comment .button-bar > a {
+  background: #005263;
+  margin-right: 10px;
+  border-radius: 3px;
+  color: white;
+  font-family: Aller;
+  padding: 5px 10px 5px 10px;
+  font-size: 1.1em;
+  border: none;
+}
+
+#new_comment .button-bar > input:hover, #new_comment .button-bar > a:hover {
+  text-decoration: underline;
+  background: #005263;
+  border: none;
+  border-radius: 3px !important;
+}
+
+#content input.button.with-text {
+  line-height: 0px;
+}
+
+#comment_title {
+  width: 99.6%;
+}
+
+#page-comment-form > div > div.post_comment_box.closed > a {
+  background: #005263;
+  font-weight: normal;
+  color: white;
+  border: none;
+  padding: 5px 10px 5px 10px;
+}
+
+#page-comment-form > div > div.post_comment_box.closed > a:hover {
+  text-decoration: underline;
+}
+
+.article-comments-list > li > div > div > a {
+  img {
+    border-radius: 100%;
+    box-shadow: 0 3px 2px 0 #D2D2D2;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  span {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 5px;
+  }
+}
+
+#comments_list > ul {
+  margin: 40px 0 10px 0 !important;
+}
+
+// images for comments box
+.article-comment-inner > div > div > div > div > div > div > div {
+  background: url(../unb-gama/images/comment-bg-SL.png) 100% 100% no-repeat;
+}
+
+.article-comment-inner > div > div > div > div > div > div > div > div {
+  background: url(../unb-gama/images/comment-bg-SO.png) 0% 100% no-repeat;
+}
+
+.article-comment-inner > div > div > div > div {
+  background: url(../unb-gama/images/comment-bg-S.png) 0% 100% repeat-x;
+}
+
+.article-comment-inner > div > div > div {
+  margin-left: 70px;
+}
+
+#top-post-comment-button {
+  display: none;
+}
+
+.comment-actions > li > div .menu-submenu-content {
+  background: none;
+}
+
+.comment-actions > li > div > div.menu-submenu-content > ul {
+  margin-top: 29px !important;
+  margin-right: 137px !important;
+}
+
+#content .comment-header .comment-actions-reply {
+  background: #efefef;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  padding: 3px 0 0 0;
+  border-radius: 5px;
+}
+
+#content .comment-header .comment-actions-reply:hover {
+  background: white;
+  border-radius: 5px;
+}
+
+#content .comment-actions .vcard .menu-submenu-trigger:hover {
+  border-color: black;
+}
+
+#content .comment-header .comment-actions-reply::before {
+  @extend %reply-comment-button-icon;
+}
+
+.required-field label.formlabel:after {
+    font-weight: bold;
+    color: #c00;
+}
+
+.formlabel {
+  font-weight: bold;
+  color: #555753 !important;
+}
+
+.formfield input, .formfield textarea, {
+  @extend %form-input-style;
+}
+
+#comment_body {
+  @extend %form-input-style;
+  width: 99%;
+}
+
+.post_comment_box .formfield * {
+  width: 99.6%;
+}
+
+.article-comments-list > li > div > div > a img {
+  width: 50px;
+  height: 50px;
+}

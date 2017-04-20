@@ -1,0 +1,251 @@
+@import url(../base/style.css);
+
+@import 'stylesheets/icons';
+@import 'stylesheets/forms';
+
+@import 'stylesheets/header';
+@import 'stylesheets/navigation';
+@import 'stylesheets/news';
+@import 'stylesheets/search';
+@import 'stylesheets/articles';
+@import 'stylesheets/blogs';
+@import 'stylesheets/profiles';
+@import 'stylesheets/blocks';
+@import 'stylesheets/footer';
+@import 'stylesheets/signup';
+@import 'stylesheets/comments';
+@import 'stylesheets/inputs';
+@import 'stylesheets/buttons';
+@import 'stylesheets/profile';
+@import 'stylesheets/login';
+
+@font-face {
+  font-family: Aller;
+  src: url('fonts/Aller_Lt.ttf');
+}
+
+p.customfont {
+  font-family: "My Custom Font", Verdana, Tahoma;
+}
+
+/*
+* I'm pretty sure it should't have a display table, but
+* it fixes the widht+overflow issue. Let's keep it like
+* this until we make the layout responsive.
+*/
+body {
+  font-family: Aller;
+  display: table;
+  width: 100%;
+  background: #FFF;
+  color: #000;
+}
+
+#wrap-1 {
+  width: auto;
+  position: relative;
+}
+
+#wrap-2 {
+  position: static;
+  padding: 0px;
+  border: none;
+
+  #user {
+    display: none;
+  }
+
+  #site-title {
+    display: none !important;
+  }
+
+  #content {
+    margin: 1% auto 5% auto;
+    width: 1000px;
+    z-index: 0;
+  }
+}
+
+.action-home-index {
+  #content .box.box-1 {
+    margin-left: 220px;
+  }
+}
+
+#content .block.main-block {
+  width: auto;
+  margin: 0;
+}
+
+.main-content {
+  border-width: 0px;
+  border-radius: 0px;
+  box-shadow: 0px 0px 0px;
+  padding: 0px 0px;
+}
+
+/* * * INI Blocos * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+#public-profile-search, #profile-search-results form, .profile-search-block form {
+  background-color: white;
+}
+
+/* * * FIM Blocos * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.action-home-index #content div.blocks .block.main-block h1 {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #EFEFEF;
+  border-left: 10px solid #008E32;
+  height: 45px;
+  line-height: 300%;
+  color: #aaa;
+  border-bottom: 0px;
+  text-transform: none;
+  padding: 0 0 14px 15px;
+  margin-bottom: 10px;
+}
+
+/* Header */
+
+#agenda > div.agenda-calendar > table > caption > a.button.icon-next.with-text{
+  padding-left: 6px !important;
+  padding-right: 21px !important;
+}
+
+#events-of-the-day {
+  padding-top: 10px;
+}
+
+#content-inner > div.no-boxes > div > div > div > div.text-editor-sidebar > div.header {
+  height: 20px;
+}
+
+#content-inner > div.no-boxes > div > div > div > div.with_media_panel {
+  width: 940px;
+}
+
+/* fixing flag and bookmark style */
+
+#addThis {
+  margin-top: -37px;
+}
+
+#bt_addThis.without-flags > img {
+  padding-top: 15px;
+}
+
+#bt_addThis.with-flags > img {
+  padding-top: 0px;
+}
+
+#fullscreen-btn {
+  display: none;
+}
+
+.my-network-block ul {
+  padding: 0px 0px 10px 6px;
+}
+
+.block-inner-2 > ul > li > a {
+  color: #003366;
+}
+
+.block-inner-2 > div > div.admin-link > a {
+  color: #003366;
+}
+
+.block-footer-content a.view-all {
+  color: #336699;
+  top: 8px;
+}
+
+#content .people-block .block-footer-content a.view-all, #content .friends-block .block-footer-content a.view-all, #content .members-block .block-footer-content a.view-all {
+  background: url(/designs/themes/base/imgs/arrow-right-p.png) 0% 50% no-repeat ;
+  background-size: 7px;
+  padding-left: 11px;
+}
+
+.block.recent-documents-block > div > div > div.block-footer-content > a {
+  color: #336699;
+}
+
+.blog-post {
+  background: none;
+}
+
+.profile-homepage {
+  .button.icon-feed.blog-feed-link {
+    margin-top: 4.5em;
+  }
+}
+
+div#notice {
+  opacity: 1 !important;
+  background: #003C47;
+  color: white;
+  border-radius: 0px;
+  box-shadow: 2px 2px 2px 0px black;
+  padding: 25px;
+  font-family: "Aller";
+  width: 250px;
+  min-height: 40px;
+  pointer-events: initial;
+  transition: opacity 0.1s ease-in-out;
+}
+
+div#notice:hover {
+  opacity: 0.6 !important;
+}
+
+.ui-tabs {
+  padding: 0;
+
+  .ui-tabs-nav.ui-widget-header {
+    background: #005263;
+    border: none;
+    border-radius: 0;
+    padding: 10px 10px 0;
+
+    .tab.ui-state-default {
+      background: #D0D0D0;
+
+      &.ui-state-active {
+        background: white; 
+      }
+
+      a {
+        outline: none;
+      }
+    }
+  }
+  
+  .ui-widget-content {
+    th {
+      color: #005263;
+    }
+
+    &#profile-wall #leave_scrap {
+      border: 1px solid #aaa;
+
+      #leave_scrap_form {
+        #leave_scrap_content {
+          border: none;
+          width: 99%;
+        }
+
+        .button.submit {
+          margin-bottom: 1px;
+        }
+      }
+    }
+  }
+}
+
+#signup-form .formlabel {
+  font-size: 18px;
+}
+
+.controller-admin_panel #box-1 {
+    margin: 0 0 0 205px;
+}

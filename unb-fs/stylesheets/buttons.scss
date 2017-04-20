@@ -1,0 +1,72 @@
+#content {
+  #public-profile-search {
+    form {
+      .search-field {
+        input[type="submit"] {
+          padding: 16px;
+          border-radius: 0px;
+        }
+      }
+    }
+  }
+
+  a.button:hover,
+  input.button:hover {
+    background-color: #005263;
+    border-color: #013f4c;
+  }
+}
+
+a.button,
+#content a.button,
+#content input.button,
+input.button.with-text,
+.button-bar a.button.with-text {
+  padding: 0px 2px 0px 2px;
+  margin-left: 2px;
+}
+
+%action-icons-buttons {
+  min-width: 25px;
+  min-height: 25px;
+  display: inline-block;
+  line-height: 25px;
+}
+
+#content .actions {
+  a.button {
+    @extend %action-icons-buttons;
+  }
+}
+
+.action-role-index #content table a.button {
+  @extend %action-icons-buttons;
+}
+
+a.button.with-text {
+  &.icon-add.join-community {
+    width: 155px;
+   margin-bottom: 4px !important;
+  }
+
+  &.icon-delete.leave-community {
+   width: 155px;
+   margin-bottom: 4px !important;
+  }
+
+  &.icon-menu-mail {
+    width: 155px;
+   margin-bottom: 4px !important;
+  }
+
+  &.icon-vertical-toggle {
+    padding-top: 0px !important;
+   padding-bottom: 0px !important;
+   position: static;
+   float: right;
+  }
+}
+
+.members-buttons-cell {
+  width: 100% !important;
+}

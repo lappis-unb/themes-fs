@@ -1,0 +1,97 @@
+%base-icon {
+  font-family: FontAwesome;
+  color: white;
+  background: #008e32;
+  border-radius: 100%;
+  vertical-align: middle;
+}
+
+%read-more-icon {
+  @extend %base-icon;
+  content: "\f067";
+}
+
+%lock-icon {
+  @extend %base-icon;
+  color: #005263;
+  border: none;
+  content: "\f023";
+  background: transparent;
+  font-size: 1.5em;
+}
+
+%search-icon {
+  font-family: FontAwesome;
+  content: "\f002";
+}
+
+%cancel-button-icon {
+  @extend %base-icon;
+  content: "\f00d";
+  border-radius: 0px;
+  background: none;
+  padding-bottom: 2px;
+}
+
+%submit-comment-button-icon {
+  @extend %base-icon;
+  content: "\f00c";
+  border-radius: 0px;
+  background: none;
+  padding-bottom: 2px;
+}
+
+%reply-comment-button-icon {
+  @extend %base-icon;
+  content: "\f112";
+  background: none;
+  color: black;
+}
+
+%privacy-unchecked-button-icon {
+  @extend %base-icon;
+  content: "\f023";
+  background: none;
+  color: black;
+}
+
+%privacy-checked-button-icon {
+  @extend %base-icon;
+  content: "\f09c";
+  background: none;
+  color: black;
+}
+
+.icon-down-disabled:before {
+  content: "\f063";
+  color: #c5c5c5;
+}
+
+.icon-up-disabled:before {
+  content: "\f062";
+  color: #c5c5c5;
+}
+
+.icon-reset-admin-role:before {
+  content: "\f235";
+}
+
+.icon-welcome-page:before {
+  content: "\f015";
+}
+
+.icon-blocks:before {
+  content: "\f009";
+}
+
+.icon-appearance:before {
+  content: "\f1fc";
+}
+
+.icon-header-footer:before {
+  content: "\f0c9";
+}
+
+.icon-unfollow:before {
+  content: "\f00d";
+}
