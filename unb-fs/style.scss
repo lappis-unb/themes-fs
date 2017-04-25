@@ -1,4 +1,4 @@
-@import url(../base/style.css);
+@import '../base/style.css';
 
 // Variables
 @import 'stylesheets/1_variables/main';
@@ -20,6 +20,7 @@
 @import 'stylesheets/inputs';
 @import 'stylesheets/buttons';
 @import 'stylesheets/profile';
+@import 'stylesheets/profile_wall';
 @import 'stylesheets/login';
 
 @font-face {
