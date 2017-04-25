@@ -1,6 +1,6 @@
 .controller-search {
   a {
-    color: #005263;
+    color: $primary-fs;
   }
 
   #content .main-content {
@@ -18,8 +18,8 @@
           margin: 0;
 
           li.selected a {
-            color: #005263;
-            border-bottom: 2px solid #005263;
+            color: $primary-fs;
+            border-bottom: 2px solid $primary-fs;
           }
         }
 
@@ -63,7 +63,7 @@
         }
 
         input.button.icon-search:hover {
-          background: #005263;
+          background: $primary-fs;
           color: white;
         }
       }
@@ -93,7 +93,7 @@
 
         a:hover {
           text-decoration: underline;
-          color: #005263;
+          color: $primary-fs;
         }
       }
 
