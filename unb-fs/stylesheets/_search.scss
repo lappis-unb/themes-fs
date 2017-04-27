@@ -11,7 +11,7 @@
       margin-bottom: 20px;
 
       div#search-header {
-        height: 25px;
+        min-height: 25px;
         border-bottom: none;
 
         ul#assets-menu {
@@ -24,13 +24,11 @@
         }
 
         div#search-filters {
-          float: none;
-          position: absolute;
-          right: 0;
           width: 13%;
 
           select {
             width: 100%;
+            margin-bottom: 5px;
           }
         }
       }
@@ -109,4 +107,14 @@
       }
     }
   }
+}
+
+
+#search-results {
+
+  .search-results-box {
+    margin-bottom: 50px;
+    margin-right: 9px;
+  }
+
 }
