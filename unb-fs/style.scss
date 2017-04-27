@@ -250,5 +250,16 @@ div#notice:hover {
   font-size: 18px;
 }
 
-.controller-admin_panel #box-1 {
+/* Override base box-1 "pseudo margin-top" */
+.box-1 .blocks {
+  float: none;
 }
+
+.action-home-index #content .box.box-1 {
+    margin-left: 200px;
+}
+
+.highlights-container {
+    margin-top: 0px;
+}
+
