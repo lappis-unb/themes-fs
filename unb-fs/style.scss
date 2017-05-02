@@ -22,6 +22,7 @@
 @import 'stylesheets/profile';
 @import 'stylesheets/profile_wall';
 @import 'stylesheets/login';
+@import 'stylesheets/admin_users';
 
 @font-face {
   font-family: Aller;
@@ -261,5 +262,11 @@ div#notice:hover {
 
 .highlights-container {
     margin-top: 0px;
+}
+
+
+/* Fix wrong distance of tables under some bars */
+.button-bar {
+  height: 35px;
 }
 

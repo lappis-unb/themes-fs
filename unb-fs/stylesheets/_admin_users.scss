@@ -1,0 +1,16 @@
+#users-list {
+  .environment-profiles-results-header {
+    height: 35px;
+  }
+
+  table colgroup {
+    col:first-child {
+      width: 75%;
+    }
+
+    col:last-child {
+      width: 25%;
+    }
+  }
+}
+
