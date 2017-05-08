@@ -273,3 +273,9 @@ div#notice:hover {
 .ui-tabs .ui-tabs-nav.ui-widget-header {
   display: flex;
 }
+
+// Fix distance error on events
+.action-events-events .main-content div {
+  clear: none !important;
+}
+
