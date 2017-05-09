@@ -279,3 +279,19 @@ div#notice:hover {
   clear: none !important;
 }
 
+// Fix CMS table last-update width problems
+table.cms-articles {
+  td {
+    padding: 2px 0px;
+    overflow: hidden;
+  }
+
+  td.article-name {
+    width: 40%;
+  }
+
+  td.article-controls {
+    width: 90px;
+    overflow: visible;
+  }
+}
