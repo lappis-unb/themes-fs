@@ -295,3 +295,14 @@ table.cms-articles {
     overflow: visible;
   }
 }
+
+// Fix Sugest an article text field wrong distance to email field
+.action-cms-suggest_an_article {
+  .main-content form {
+    .required-field + br {
+      width: 0px;
+      height: 0px;
+      clear: none !important;
+    }
+  }
+}
