@@ -306,3 +306,9 @@ table.cms-articles {
     }
   }
 }
+
+// Fix radio button on profile wall, it were been hidden by the wall
+#public-profile-search .search-field div {
+  margin-top: 10px;
+  clear: none;
+}
