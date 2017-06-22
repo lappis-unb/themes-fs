@@ -1,12 +1,12 @@
-Source: unb-gama
+Source: unb-fs
 Section: web
 Priority: optional
-Maintainer: Paulo Tada <paulohtfs@gmail.com>
+Maintainer: Fabio Teixeira <fabio1079@gmail.com>
 Build-Depends: debhelper (>= 9)
 Standards-Version: 3.9.5
-Homepage: https://gitlab.com/unb-gama/themes
+Homepage: https://gitlab.com/unb-gama/themes-fs
 
-Package: portal-unb-theme
-Architecture: any
+Package: portal-fs-theme
+Architecture: amd64
 Depends: ${shlibs:Depends}, ${misc:Depends}, noosfero (>>1.6)
-Description: Portal FGA theme for the Noosfero platform
+Description: Portal FS theme for the Noosfero platform
