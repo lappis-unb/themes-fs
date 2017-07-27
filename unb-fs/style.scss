@@ -312,3 +312,13 @@ table.cms-articles {
   margin-top: 10px;
   clear: none;
 }
+
+#navigation > ul > li > div > a {
+  font-size: 14px;
+}
+
+#navigation > ul li .dropdown-arrow {
+  display: inline-flex;
+  margin: 4px 0 10px;
+  padding: 11px 11px 20px;
+}
