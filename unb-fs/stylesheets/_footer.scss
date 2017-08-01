@@ -47,14 +47,9 @@
           }
         }
 
-        &#internal-link {
-          border-right: 2px #cccccc solid;
-          height: 204px;
-        }
-
         &#empty-column {
           height: 204px;
-          padding-right: 415px;
+          padding-right: 4px;
           border-right: none;
         }
 
@@ -125,3 +120,9 @@
   }
 }
 
+#institutional-link,
+#research-links,
+#internal-links {
+  border-right: 2px #cccccc solid;
+  height: 204px;
+}
