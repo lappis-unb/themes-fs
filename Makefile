@@ -1,9 +1,9 @@
-PACKAGE = unb-gama
+PACKAGE = unb-fs
 VERSION = $(shell cat VERSION)
 DISTDIR = $(PACKAGE)_$(VERSION)
 TARBALL = $(DISTDIR).orig.tar.gz
 
-THEME_NAME 	= unb-gama
+THEME_NAME 	= unb-fs
 THEME_SRC 	= $(THEME_NAME)
 THEME_DIR 	= /usr/share/noosfero/public/designs/themes
 
@@ -17,6 +17,9 @@ help:
 	@echo ' 	distclean 		Clean the dist path'
 	@echo ' 	install 	Install Portal Theme'
 	@echo ' 	build-pkg 		Create a debian package from the src'
+	@echo 'Src: $(THEME_SRC) Dest: $(DESTDIR) Install: $(INSTALL_DIR)'
+
+
 
 dist: distclean
 	mkdir -p dist/$(DISTDIR)
