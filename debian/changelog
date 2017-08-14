@@ -1,3 +1,9 @@
+unb-fs (0.0.5) unstable; urgency=medium
+
+  * Fix footer problem on firefox
+
+ -- Vagrant Default User <vagrant@jessie.vagrantup.com>  Mon, 14 Aug 2017 17:43:19 +0000
+
 unb-fs (0.0.4) unstable; urgency=medium
 
   [ Victor N. ]
