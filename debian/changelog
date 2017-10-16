@@ -1,51 +1,6 @@
-unb-gama (1.0.5) unstable; urgency=medium
+unb-fs (0.0.6) unstable; urgency=medium
 
-  [ Tallys ]
-  * Adds CPL lab link
-  * Fixes redirection of Engrena's link
+  * Adds "see more" link to main news
 
- -- Tallys Martins <tallysmartins@gmail.com>  Thu, 09 Mar 2017 18:12:54 +0000
+ -- Victor Navarro <victor@navarro-pc>  Mon, 16 Oct 2017 13:26:34 -0200
 
-unb-gama (1.0.3) unstable; urgency=medium
-
-  [ Gabriel ]
-  * Updates link list block style
-  * Improves boxes positioning
-  * Navigation improvements for small screens
-  * Bug fixes
-
- -- Gabriel Silva <gabriel93.silva@gmail.com>  Mon, 19 Dec 2016 16:09:07 +0000
-
-unb-gama (1.0.2) unstable; urgency=medium
-
-  [ Paulo ]
-  * Carousel resize
-  * Transform HTML raw blocks into link blocks
-  * Header community image resize
-  * Fix profile image shape
-
- -- Paulo Tada <paulohtfs@gmail.com>  Tue, 13 Dec 2016 12:03:20 -0200
-
-unb-gama (1.0.1) unstable; urgency=medium
-
-  [ Gabriel ]
-  * Improves theme header
-  * Bug fixes
-
- -- Gabriel Silva <gabriel93.silva@gmail.com>  Mon, 05 Dec 2016 18:23:50 +0000
-
-unb-gama (1.0.0) unstable; urgency=medium
-
-  [ paulo ]
-  * Non-maintainer upload.
-
-  [ Gabriel ]
-  * First stable release
-
- -- Gabriel Silva <gabriel93.silva@gmail.com>  Fri, 18 Nov 2016 17:38:25 +0000
-
-unb-gama (0.1.0-1) unstable; urgency=low
-
-  * Initial release
-
- -- Paulo Tada <paulohtfs@gmail.com>  Fri, 12 Aug 2016 05:12:53 -0300

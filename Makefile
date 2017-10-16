@@ -1,9 +1,9 @@
-PACKAGE = unb-gama
+PACKAGE = unb-fs
 VERSION = $(shell cat VERSION)
 DISTDIR = $(PACKAGE)_$(VERSION)
 TARBALL = $(DISTDIR).orig.tar.gz
 
-THEME_NAME 	= unb-gama
+THEME_NAME 	= unb-fs
 THEME_SRC 	= $(THEME_NAME)
 THEME_DIR 	= /usr/share/noosfero/public/designs/themes
 
