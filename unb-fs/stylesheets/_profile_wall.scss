@@ -1,13 +1,10 @@
 #public-profile-search {
   padding: 0px;
   margin-top: 10px;
+  height: 50px;
 
   input.button.with-text {
-    background-color: #EEE !important;
-    width: 12% !important;
-    margin-right: 0px !important;
     float: right;
-    padding: 10px !important;
   }
   input.button.with-text:hover {
     background-color: $primary-fs !important;
@@ -16,5 +13,9 @@
 
   .formfield {
     width: 85%;
+
+    #q {
+      padding: 9px;
+    }
   }
 }

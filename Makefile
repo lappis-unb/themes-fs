@@ -17,6 +17,9 @@ help:
 	@echo ' 	distclean 		Clean the dist path'
 	@echo ' 	install 	Install Portal Theme'
 	@echo ' 	build-pkg 		Create a debian package from the src'
+	@echo 'Src: $(THEME_SRC) Dest: $(DESTDIR) Install: $(INSTALL_DIR)'
+
+
 
 dist: distclean
 	mkdir -p dist/$(DISTDIR)

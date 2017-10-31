@@ -15,6 +15,7 @@
     width: 50%;
   }
 
+  #community_image_builder_uploaded_data,
   #article_image_builder_uploaded_data {
     border:none;
     text-indent:0;
@@ -49,17 +50,14 @@ div.with_media_panel ~ .text-editor-sidebar {
   margin-right:40px;
 }
 
-#edit-article-options {
+input[type="checkbox"] {
+  padding:0;
+  margin:0;
+  vertical-align: bottom;
+  margin-top:10px;
+  margin-left: 6px;
+}
 
-  input[type="checkbox"] {
-    padding:0;
-    margin:0;
-    vertical-align: bottom;
-    margin-top:10px;
-    margin-left: 6px;
-  }
-
-  label {
-    padding-left:5px;
-  }
+label {
+  padding-left:5px;
 }

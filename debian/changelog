@@ -4,3 +4,24 @@ unb-fs (0.0.6) unstable; urgency=medium
 
  -- Victor Navarro <victor@navarro-pc>  Mon, 16 Oct 2017 13:26:34 -0200
 
+unb-fs (0.0.5) unstable; urgency=medium
+
+  * Fix footer problem on firefox
+
+ -- Vagrant Default User <vagrant@jessie.vagrantup.com>  Mon, 14 Aug 2017 17:43:19 +0000
+
+unb-fs (0.0.4) unstable; urgency=medium
+
+  [ Victor N. ]
+  * Adds links in footer
+  * Adds contact info
+  * Increase font size in navigation
+
+ -- Victor Navarro <victor.matias.navarro@gmail.com>  Mon, 07 Aug 2017 12:08:26 -0300
+
+unb-fs (0.0.3) unstable; urgency=medium
+
+  [ Fabio T. ]
+  * Changes top navigation links
+
+ -- Fabio Teixeira <fabio1079@gmail.com>  Thu, 22 Jun 2017 12:43:23 -0300

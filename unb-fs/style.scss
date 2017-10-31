@@ -22,6 +22,7 @@
 @import 'stylesheets/profile';
 @import 'stylesheets/profile_wall';
 @import 'stylesheets/login';
+@import 'stylesheets/admin_users';
 
 @font-face {
   font-family: Aller;
@@ -250,5 +251,74 @@ div#notice:hover {
   font-size: 18px;
 }
 
-.controller-admin_panel #box-1 {
+/* Override base box-1 "pseudo margin-top" */
+.box-1 .blocks {
+  float: none;
+}
+
+.action-home-index #content .box.box-1 {
+    margin-left: 200px;
+}
+
+.highlights-container {
+    margin-top: 0px;
+}
+
+
+/* Fix wrong distance of tables under some bars */
+.button-bar {
+  height: 35px;
+}
+
+.ui-tabs .ui-tabs-nav.ui-widget-header {
+  display: flex;
+}
+
+// Fix distance error on events
+.action-events-events .main-content div {
+  clear: none !important;
+}
+
+// Fix CMS table last-update width problems
+table.cms-articles {
+  td {
+    padding: 2px 0px;
+    overflow: hidden;
+  }
+
+  td.article-name {
+    width: 40%;
+  }
+
+  td.article-controls {
+    width: 90px;
+    overflow: visible;
+  }
+}
+
+// Fix Sugest an article text field wrong distance to email field
+.action-cms-suggest_an_article {
+  .main-content form {
+    .required-field + br {
+      width: 0px;
+      height: 0px;
+      clear: none !important;
+    }
+  }
+}
+
+// Fix radio button on profile wall, it were been hidden by the wall
+#public-profile-search .search-field div {
+  margin-top: 10px;
+  clear: none;
+}
+
+#navigation > ul > li > div > a {
+  font-size: 14px;
+}
+
+#navigation > ul li .dropdown-arrow {
+  display: inline-flex;
+  margin: 4px 0 10px;
+  padding: 11px 11px 20px;
 }
