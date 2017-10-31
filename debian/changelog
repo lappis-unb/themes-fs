@@ -1,3 +1,9 @@
+unb-fs (0.0.7) unstable; urgency=medium
+
+  * Fix see more link on home page
+
+ -- Fabio Teixeira <fabio1079@gmail.com>  Tue, 31 Oct 2017 13:14:34 +0000
+
 unb-fs (0.0.6) unstable; urgency=medium
 
   * Adds "see more" link to main news
